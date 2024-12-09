@@ -13,9 +13,9 @@ html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-05.html"
 html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-17.html"
 html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-56-31.html"
 html_path = CUR_DIR / "wayfair_detail_one.html"
-html_path = CUR_DIR / "wayfair_detail_two.html"
-html_path = CUR_DIR / "wayfair-variation.html"
 html_path = CUR_DIR / "wayfair-variants.html"
+html_path = CUR_DIR / "wayfair-variation.html"
+html_path = CUR_DIR / "wayfair_detail_two.html"
 
 output_path = CUR_DIR / "wayfair-result.json"
 
@@ -40,9 +40,13 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
 
     data_json = None
     try:
-        data_json = json.loads(page_elem.select("script")[-4].text.splitlines()[4].strip()[29:-1])
+        script = page_elem.select("script")[-4]
+        script_str = script.text
+        script_str = script_str.split('window["WEBPACK_ENTRY_DATA"]')[-1].strip("=; \t\r\n")
+        script_str = script_str[:-1].strip("; \t\r\n")
+        data_json = json.loads(script_str)
     except:  # noqa: E722
-        pass
+        logger.warning("failed json loading. progress with html content only")
     product_data = get_from_json(data_json, ["application", "props", "productData"])
     price_data = get_from_json(product_data, ["price"])
 
@@ -178,29 +182,30 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
     # ================================
     variants = {}
     categories = get_from_json(product_data, ["options", "standardOptions"])
-    for category in categories:
-        type_name = get_from_json(category, ["category_name"])
-        variants[type_name] = []
+    if categories is not None:
+        for category in categories:
+            type_name = get_from_json(category, ["category_name"])
+            variants[type_name] = []
 
-        options = get_from_json(category, ["options"])
-        for option in options:
-            option_value = get_from_json(option, ["name"])
-            option_id = get_from_json(option, ["option_id"])
-            if option_id in selected_options:
-                detail["variant"].append(
-                    {
-                        "type":type_name,
-                        "value":option_value,
-                    }
-                )
+            options = get_from_json(category, ["options"])
+            for option in options:
+                option_value = get_from_json(option, ["name"])
+                option_id = get_from_json(option, ["option_id"])
+                if option_id in selected_options:
+                    detail["variant"].append(
+                        {
+                            "type":type_name,
+                            "value":option_value,
+                        }
+                    )
 
-            thumbnail_id = str(get_from_json(option, ["thumbnail_id"]))
-            image_url = re.sub(r"/\d+/\d+/", f"/{thumbnail_id[:4]}/{thumbnail_id}/", main_image)
-            variants[type_name].append({
-                "type": type_name,
-                "value": option_value,
-                "image_url": image_url,
-            })
+                thumbnail_id = str(get_from_json(option, ["thumbnail_id"]))
+                image_url = re.sub(r"/\d+/\d+/", f"/{thumbnail_id[:4]}/{thumbnail_id}/", main_image)
+                variants[type_name].append({
+                    "type": type_name,
+                    "value": option_value,
+                    "image_url": image_url,
+                })
     detail["variants"] = variants
 
     # ================================

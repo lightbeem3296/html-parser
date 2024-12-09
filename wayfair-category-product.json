@@ -1,0 +1,179 @@
+{
+  "sku": "W010094182",
+  "url": "https:\/\/www.wayfair.com\/furniture\/pdp\/17-stories-welton-arched-metal-curio-cabinet-w010094182.html?piid=906766978&categoryid=170&placement=16&slot=&sponsoredid=c4f3e24d7c566cbdeac37d24fc535e7582cdad4b093b6f2c22f60804fdf5f8a8&_txid=I%2BF9OmdVsvRo3gKJWNYEAg%3D%3D&isB2b=&auctionId=24d5b8b8-8e52-4a4c-b67d-b3ac652ff44d",
+  "product_name": "Welton Arched Metal Curio Cabinet",
+  "manufacturer": "17 Stories",
+  "image_data": {
+    "name": "custom_image",
+    "ireid": 284111940,
+    "height": null,
+    "width": null,
+    "image_type": null,
+    "productImageType": null,
+    "alt_text": ""
+  },
+  "free_ship_text": "Free shipping",
+  "average_overall_rating": "4.5",
+  "review_count": 45,
+  "option_summary_text": "Color",
+  "show_more_options_text": true,
+  "promo_text": "Sale",
+  "is_set_top_ranking_flag": true,
+  "show_product_name": true,
+  "favorites_item": {
+    "object_key": "W010094182",
+    "sku": "W010094182",
+    "option_ids": "906766978",
+    "type": 1,
+    "dataActionTrigger": ""
+  },
+  "show_manufacturer": true,
+  "show_shipping_info": true,
+  "has_stock": true,
+  "free_shipping_text": "Free shipping",
+  "has_free_shipping": true,
+  "data_click_location": "product1",
+  "percent_off_amount": 33,
+  "is_on_sale": true,
+  "flag_variation": "sale",
+  "color_option_count": 2,
+  "category_count": 1,
+  "color_option_icon_count": 2,
+  "features_array": [
+    "Add a touch of elegance and sophistication to any space with this black metal and glass cabinet that features arched doors and three shelves",
+    "This cabinet is perfect for industrial, modern, or classic-style homes",
+    "The cabinet is easy to assemble with the included hardware and instructions and is made of metal and glass, with a black finish"
+  ],
+  "selected_product_option_ids": "906766978",
+  "unique_key": "XRL19980",
+  "romance_copy": "Enhance the home with this stunning and functional black metal and glass cabinet. Featuring two glass doors with arched frames, it reveals three spacious shelves for storing and displaying favorite items, which hold up to 133 pounds. The glass shelves add a touch of lightness and elegance, while the black metal frame provides a striking contrast. With its simple and elegant design, this cabinet complements any decor style. Whether in the living room, dining room, or office, this black metal and glass cabinet will impress with its style and functionality.",
+  "is_featured": true,
+  "impression_logger": 2,
+  "sponsored_skus_data": {
+    "msptbs": -0.01,
+    "position": 1,
+    "placement_id": 16,
+    "slot_id": 0,
+    "campaign_id": -1,
+    "is_b2b": false,
+    "auction_id": "24d5b8b8-8e52-4a4c-b67d-b3ac652ff44d",
+    "sponsored_id": "34d5743a5e25f0c2e8a95270f03fdb8c269ec235d1a1c484f46746f454e2162f"
+  },
+  "raw_pricing_data": {
+    "sku": "XRL19980",
+    "pricing": {
+      "bulkPrice": {
+        "maxPercentageOff": null,
+        "currentTierDiscountDetail": null
+      },
+      "pricePerItem": null,
+      "clearancePrice": null,
+      "customerPrice": {
+        "appliedPromotion": "SALE",
+        "discount": {
+          "appliedDiscount": {
+            "amount": 535,
+            "discountType": "EVERYDAY",
+            "percentageOff": 33
+          },
+          "b2bDiscount": null,
+          "listDiscount": {
+            "amount": 535,
+            "discountType": "EVERYDAY",
+            "percentageOff": 33
+          },
+          "suggestedRetailDiscount": null
+        },
+        "display": {
+          "__typename": "SFPricing_SinglePrice",
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1089.99
+        },
+        "itemPrice": null,
+        "quantityPrice": {
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1089.99
+        },
+        "unitPrice": {
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1089.99
+        }
+      },
+      "everydayPrice": {
+        "display": {
+          "__typename": "SFPricing_SinglePrice",
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1089.99
+        },
+        "itemPrice": null,
+        "quantityPrice": {
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1089.99
+        },
+        "unitPrice": {
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1089.99
+        }
+      },
+      "listPrice": {
+        "display": {
+          "__typename": "SFPricing_SinglePrice",
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1624.99
+        },
+        "itemPrice": null,
+        "quantityPrice": {
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1624.99
+        },
+        "unitPrice": {
+          "currency": "USD",
+          "label": "NONE",
+          "measurement": "REGULAR",
+          "value": 1624.99
+        }
+      },
+      "priceBlockElements": [
+        {
+          "__typename": "SFPricing_CustomerPrice",
+          "display": {
+            "__typename": "SFPricing_SinglePrice",
+            "currency": "USD",
+            "label": "NONE",
+            "measurement": "REGULAR",
+            "value": 1089.99
+          },
+          "appliedPromotion": "SALE"
+        },
+        {
+          "__typename": "SFPricing_ListPrice",
+          "display": {
+            "__typename": "SFPricing_SinglePrice",
+            "currency": "USD",
+            "label": "NONE",
+            "measurement": "REGULAR",
+            "value": 1624.99
+          }
+        }
+      ],
+      "suggestedRetailPrice": null
+    }
+  },
+  "is_eligible_free_white_glove": true
+}

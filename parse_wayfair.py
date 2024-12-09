@@ -1,0 +1,131 @@
+import json
+from pathlib import Path
+from typing import Any
+
+from bs4 import BeautifulSoup
+from loguru import logger
+
+CUR_DIR = Path(__file__).parent
+
+html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-51-54.html"
+output_path = CUR_DIR / "wayfair-result.json"
+
+
+def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
+    obj = json_obj
+    for key in path:
+        if obj is None:
+            break
+        obj = obj.get(key)
+    return obj
+
+
+def parse(html_path: Path, output_path: Path):
+    result: dict[str, Any] = {}
+    result["success"] = True
+
+    with html_path.open("r", encoding="utf-8") as file:
+        page_elem = BeautifulSoup(file.read(), "html.parser")
+        content_elem = page_elem.select_one("div[id='sf-ui-browse::application']")
+
+        data_json = json.loads(page_elem.select("script")[-4].text.splitlines()[4].strip()[29:-1])
+        product_data = get_from_json(data_json, ["application", "props", "productData"])
+
+        # Product url
+        result["product_url"] = page_elem.select_one("link[rel=canonical]").attrs["href"]
+
+        # Result count
+        result["result_count"] = 1
+
+        # Name
+        detail: dict[str, Any] = {}
+        detail["name"] = get_from_json(product_data, ["overview", "productCard", "productName"])
+
+        ## Main Image
+        detail["main_image"] = (
+            content_elem.select_one("div.ProductDetailSingleMediaViewer")
+            .select_one("img")
+            .attrs["src"]
+        )
+
+        ## Images
+        list_elem = content_elem.select_one("ul.HotDealsThumbnailCarousel-container")
+        item_elem_list = list_elem.select("li")
+        images: list[str] = []
+        for item_elem in item_elem_list:
+            pass
+        detail["images"] = images
+
+        # Price
+        price = get_from_json(product_data, ["price"])
+        detail["price"] = get_from_json(price, ["customerPrice", "quantityPrice", "value"])
+
+        # List Price
+        detail["list_price"] = get_from_json(price, ["listPrice", "quantityPrice", "value"])
+
+        # Currency
+        detail["currency"] = get_from_json(price, ["customerPrice", "quantityPrice", "currency"])
+
+        # Description
+        detail["description"] = None
+
+        # SKU ID
+        detail["sku_id"] = get_from_json(product_data, ["sku"])
+
+        # Brand
+        detail["brand"] = get_from_json(product_data, ["overview", "productCard", "manufacturer"])
+
+        # Rating
+        detail["rating"] = get_from_json(product_data, ["reviews", "reviewRating"])
+
+        # Total ratings
+        detail["total_ratings"] = get_from_json(product_data, ["reviews", "reviewCount"])
+
+        # Total reviews
+        detail["total_reviews"] = None
+
+        # Reviews
+        detail["reviews"] = []
+
+        # Retailer Badge
+        detail["retailer_badge"] = None
+
+        # #Variant
+        detail["variant"] = {}
+
+        ## Variants
+        detail["variants"] = []
+
+        # Product overview
+        detail["product_overview"] = get_from_json(product_data, ["overview"])
+
+        # Delivery Zipcode
+        detail["delivery_postal_code"] = get_from_json(product_data, ["delivery", "postal_code"])
+        detail["delivery_postal_code_city"] = get_from_json(product_data, ["delivery", "postal_code_city"])
+
+        # Shipping Info
+        detail["shipping_info"] = None
+        
+        # Features
+        detail["features"] = None
+
+        ## at-a-glance
+        detail["at-a-glance"] = None
+
+        result["detail"] = detail
+
+        # Remaining credits
+        result["remaining_credits"] = None
+
+    with output_path.open("w", encoding="utf-8") as file:
+        json.dump(result, file, indent=2, ensure_ascii=False)
+
+    logger.info(f"saved to `{output_path}`")
+
+
+def main():
+    parse(html_path, output_path)
+
+
+if __name__ == "__main__":
+    main()

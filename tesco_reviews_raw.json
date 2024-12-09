@@ -1,0 +1,248 @@
+[{
+    "data": {
+        "reviews": {
+            "info": {
+                "offset": 10,
+                "total": 120,
+                "page": 2,
+                "count": 10,
+                "__typename": "ListInfoType"
+            },
+            "entries": [{
+                "rating": {
+                    "value": 5,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "Cath",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "helps with falling asleep",
+                "text": "I needed to get used to taste but now I can't imagine my nighttime routine without it. I didn't think it would work but since I started drinking it every evening I don't wake up through the night and wake up well rested. I also realized that I started to fall asleep quicker after getting into the bed.",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-10-18T22:46:32.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:aa8e7e4b-e7cd-48b4-972b-4ac67f178182",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 3,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "HMaz",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "Wasn't overly keen on the taste",
+                "text": "I often have trouble drifting off to sleep at night so washed to try these herbal teas as a natural way to help.  They have quite a strong smell and flavour to them, I wasn't overly keen on the taste but they did seem to help me sleep after drinking them.",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-10-06T08:52:07.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:bb79829f-d7ef-4a66-9f17-8879f93c1855",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 2,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "Laurenleigh14",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "Couldn't get past the taste",
+                "text": "I have been struggling to sleep at night so was very excited to try the pukka night time. I use other pukka tea's so was excited to find my new holy grail. Unfortunately the taste is terrible, it tasted like perfume. I held my nose and tried a few cups to give it a fair review. I did sleep around an hour longer than usual but honestly an hour wasn't worth the taste, it made me heave. I wish it could have had more fruity flavours.",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-10-03T16:05:42.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:1be0752b-c74b-40d5-9057-cff8f2b37f32",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 5,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "SarahD",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "A lovely bedtime tea",
+                "text": "I love Pukka teas, and Pukka Night Time did not disappoint me.  It's soothing, relaxing and perfect for winding down before bed.  It's become a favourite in our house and is part of our bedtime routine.",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-10-01T22:04:26.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:953606d4-5e31-41b1-9f23-e1cc89c185b0",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 4,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "Sazzabelle",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "Great to settle down with.",
+                "text": "I actually really liked these and tried having them before bed to settle down with, which went down perfectly. The taste is just enough to not be overwhelming, however if any fancied them stranger then I'd advise using two tea bags.\n\nWould I buy these again.. yes!",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-10-01T00:01:02.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:fb6d888d-1f51-4d9b-8ba6-7a8efa1a9001",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 5,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "Vicki85",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "Lovely taste with calming effect",
+                "text": "I enjoy this tea, I like to brew mine for about 5 minutes and then take it up to bed. The flavour is very subtle but the aroma is lovely. Certainly has a calming effect which in turn helps me to drift off for a restful sleep.",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-09-27T13:30:52.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:594e62b4-638b-4fb2-82a4-f49bbd7d5b23",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 5,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "FMSRLY",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "Perfect end to a busy day",
+                "text": "I am a huge fan of Pukka products and this one did not didappoint.  Between, work, college and the gym, by the time i start to get prepared for sleep it takes me so long to unwind.  I often find myself with difficulties relaxing enough to fall asleep and stay asleep.  I have been using the Pukka Night Time for a few weeks and it really has made such a difference.  Valerian is great for reducing anxiety and is not overpowering at all.  This is a lovely soothing night time drink with smooth floral notes.  I have a cup about an hour before bed, not only do i slip of to sleep feeling very relaxed I also stay asleep. This is a lifesaver for me and cannot recommend highly enough.",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-09-22T14:42:05.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:fea2c499-4069-4aef-926a-859acf655ca2",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 4,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "Bagpuss1966",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "Ok but not my cup of tea!",
+                "text": "I wanted to try this as I struggle to get to sleep. You need to brew this tea a long time to get the flavour. To my.mind it's a little hay like in flavour And not sweet enough for me. It did help me relax and drift off to sleep a little easier but I don't think it'll be a regular addition to my bedtime routine",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-09-22T11:32:46.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:19bf9077-fa83-4664-8c4a-30f99aa34d55",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 5,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "Faz84",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "Love it",
+                "text": "I got this a few weeks ago and started using it at night I've just ran out but will be getting some more definitely, the taste was nice and not to strong and I definitely felt more relaxed and had a better sleep. Love them",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-09-20T18:57:43.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:27869753-1acb-481a-9751-28442fe4f7db",
+                "__typename": "ReviewType"
+            }, {
+                "rating": {
+                    "value": 5,
+                    "range": 5,
+                    "__typename": "RatingType"
+                },
+                "author": {
+                    "nickname": "theupbeatgirl",
+                    "authoredByMe": false,
+                    "__typename": "ReviewAuthorType"
+                },
+                "status": "Approved",
+                "summary": "Relaxing night time cuppa",
+                "text": "This tea is by far the best for helping to calm my mind and body before I go to bed each night.  It really helps ease my anxiety and I fall to sleep in no time.  It has a delicious taste and calming aroma. I would recommend this",
+                "syndicated": true,
+                "syndicationSource": {
+                    "name": "Pukka",
+                    "__typename": "SyndicationSourceType"
+                },
+                "submissionDateTime": "2023-09-18T09:50:27.000Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:4c1c4ff7-8924-43d1-adf8-dad91da04788",
+                "__typename": "ReviewType"
+            }],
+            "product": {
+                "tpnb": "64122645",
+                "tpnc": null,
+                "__typename": "ReviewProductType"
+            },
+            "stats": {
+                "noOfReviews": 120,
+                "overallRatingRange": 5,
+                "overallRating": 4.5,
+                "__typename": "ReviewStatsType"
+            },
+            "errors": [],
+            "__typename": "ReviewsType"
+        }
+    },
+    "status": 200
+}]

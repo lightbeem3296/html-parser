@@ -1,0 +1,65 @@
+{
+    "success": true,
+    "product_url": "https://www.wayfair.com/furniture/pdp/canora-grey-shannai-945-modular-sofa-w100660397.html?piid=205675949",
+    "result_count": 1,
+    "detail": {
+        "name": "Shannai 94.5'' Modular Sofa",
+        "main_image": "https://assets.wfcdn.com/im/53725700/resize-h300-w300%5Ecompr-r85/2566/256645153/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+        "images": [
+            "https://assets.wfcdn.com/im/53725700/resize-h300-w300%5Ecompr-r85/2566/256645153/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+            "https://assets.wfcdn.com/im/57625213/resize-h300-w300%5Ecompr-r85/2566/256645152/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+            "https://assets.wfcdn.com/im/23422381/resize-h300-w300%5Ecompr-r85/2572/257271062/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+            "https://assets.wfcdn.com/im/69174874/resize-h300-w300%5Ecompr-r85/2566/256645153/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+            "https://assets.wfcdn.com/im/49885620/resize-h300-w300%5Ecompr-r85/2566/256645153/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+            "https://assets.wfcdn.com/im/80525787/resize-h300-w300%5Ecompr-r85/2566/256645152/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+            "https://assets.wfcdn.com/im/38534707/resize-h300-w300%5Ecompr-r85/2566/256645152/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+            "https://assets.wfcdn.com/im/99478193/resize-h300-w300%5Ecompr-r85/2572/257271062/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg",
+            "https://assets.wfcdn.com/im/19582301/resize-h300-w300%5Ecompr-r85/2572/257271062/Shannai+94.5%27%27+Modular+Sofa%2C+Beige+100%25+Polyester.jpg"
+        ],
+        "price": 1349.99,
+        "list_price": null,
+        "currency": "USD",
+        "description": "You'll love the Canora Grey Shannai 94.5'' Modular Sofa at Wayfair - Great Deals on all products with Free Shipping on most stuff, even the big stuff.",
+        "sku_id": "w100660397",
+        "brand": "Canora Grey",
+        "rating": 4.1,
+        "total_ratings": null,
+        "total_reviews": null,
+        "reviews": [],
+        "retailer_badge": null,
+        "variant": {
+            "type": "Body Fabric",
+            "value": "Beige 100% Polyester"
+        },
+        "variants": [
+            {
+                "type": "Body Fabric",
+                "value": "Beige 100% Polyester",
+                "image_url": "https://assets.wfcdn.com/im/39669368/resize-h49-w49%5Ecompr-r50/2566/256645153/Beige+100%25+Polyester.jpg"
+            },
+            {
+                "type": "Body Fabric",
+                "value": "Gray 100% Polyester",
+                "image_url": "https://assets.wfcdn.com/im/05616629/resize-h49-w49%5Ecompr-r50/2566/256645156/Gray+100%25+Polyester.jpg"
+            },
+            {
+                "type": "Body Fabric",
+                "value": "Green 100% Polyester",
+                "image_url": "https://assets.wfcdn.com/im/16446026/resize-h49-w49%5Ecompr-r50/2566/256645254/Green+100%25+Polyester.jpg"
+            }
+        ],
+        "product_overview": null,
+        "delivery_zipcode": null,
+        "shipping_info": null,
+        "features": [
+            "This modular sofa could be rearranged in various ways based on your like"
+        ],
+        "at_a_glance": [
+            "Seat Height - Floor to Seat: 18 ''",
+            "Seat Depth - Front to Back: 49 ''",
+            "Accent Pillow Included",
+            "Assembly Required"
+        ]
+    },
+    "remaining_credits": 1979465
+}

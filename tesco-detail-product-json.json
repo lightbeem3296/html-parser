@@ -1,0 +1,554 @@
+{
+    "__typename": "ProductType",
+    "id": "256093024",
+    "baseProductId": "53441347",
+    "isRestrictedOrderAmendment": null,
+    "gtin": "05000208069897",
+    "tpnb": "53441347",
+    "tpnc": "256093024",
+    "title": "Tetley 240 Tea Bags 750G",
+    "description": [
+        "Black Tea",
+        "Find all your favourites - plus our newest teas at tetley.shop",
+        "For the Love of the Planet",
+        "Creating the perfect cuppa should also be kind to the planet. So we take care at every stage from crop to cup.",
+        "Our factory uses 100% green electricity and sends zero waste-to-landfill.",
+        "For the Love of People",
+        "Not only does every Tetley cuppa taste good - we make sure it does good too. That's why we source our leaves from Rainforest Alliance Certified tea gardens, and why we're working hard with the Ethical Tea Partnership to make life better for the farmers, families and communities that help make our tea.",
+        "Find out more at ra.org"
+    ],
+    "brandName": "TETLEY",
+    "isInFavourites": null,
+    "defaultImageUrl": "https:\u002F\u002Fdigitalcontent.api.tesco.com\u002Fv2\u002Fmedia\u002Fghs\u002Fa2b94e46-3352-4f23-aea7-24dc78a8d8ae\u002F835b9940-c716-4a4b-8785-bf27b64b7f61_871628064.jpeg?h=225&w=225",
+    "superDepartmentName": "Drinks",
+    "superDepartmentId": "b;RHJpbmtz",
+    "departmentName": "Tea",
+    "departmentId": "b;RHJpbmtzJTdDVGVh",
+    "aisleName": "Everyday Tea Bags",
+    "aisleId": "b;RHJpbmtzJTdDVGVhJTdDRXZlcnlkYXklMjBUZWElMjBCYWdz",
+    "shelfName": "Everyday Tea Bags",
+    "displayType": "Quantity",
+    "shelfId": "b;RHJpbmtzJTdDVGVhJTdDRXZlcnlkYXklMjBUZWElMjBCYWdzJTdDRXZlcnlkYXklMjBUZWElMjBCYWdz",
+    "averageWeight": null,
+    "bulkBuyLimit": 25,
+    "bulkBuyLimitGroupId": "G00000027",
+    "bulkBuyLimitMessage": "You are able to buy a maximum of 25 of this item",
+    "groupBulkBuyLimit": 0,
+    "isForSale": true,
+    "isNew": false,
+    "depositAmount": null,
+    "icons": [
+        {
+            "__ref": "IconsInfoType:Rainforest Alliance"
+        }
+    ],
+    "status": "AvailableForSale",
+    "productType": "SingleProduct",
+    "charges": [],
+    "seller": null,
+    "images": {
+        "__typename": "ProductImagesType",
+        "display": [
+            {
+                "__typename": "ProductAlternativeImageType",
+                "default": {
+                    "__typename": "ProductImageType",
+                    "url": "https:\u002F\u002Fdigitalcontent.api.tesco.com\u002Fv2\u002Fmedia\u002Fghs\u002Fa2b94e46-3352-4f23-aea7-24dc78a8d8ae\u002F835b9940-c716-4a4b-8785-bf27b64b7f61_871628064.jpeg?h=225&w=225",
+                    "originalUrl": "https:\u002F\u002Fdigitalcontent.api.tesco.com\u002Fv2\u002Fmedia\u002Fghs\u002Fa2b94e46-3352-4f23-aea7-24dc78a8d8ae\u002F835b9940-c716-4a4b-8785-bf27b64b7f61_871628064.jpeg?h=225&w=225"
+                },
+                "zoom": {
+                    "__typename": "ProductImageType",
+                    "url": "https:\u002F\u002Fdigitalcontent.api.tesco.com\u002Fv2\u002Fmedia\u002Fghs\u002Fa2b94e46-3352-4f23-aea7-24dc78a8d8ae\u002F835b9940-c716-4a4b-8785-bf27b64b7f61_871628064.jpeg?h=540&w=540"
+                }
+            }
+        ]
+    },
+    "foodIcons": [],
+    "shelfLife": null,
+    "restrictions": [],
+    "distributorAddress": null,
+    "manufacturerAddress": {
+        "__typename": "AddressType",
+        "addressLine1": "United Kingdom:",
+        "addressLine2": "Tata Consumer Products GB Limited,",
+        "addressLine3": "Freepost HA4175,",
+        "addressLine4": "Greenford,",
+        "addressLine5": "UB6 0BR.",
+        "addressLine6": "Republic of Ireland:",
+        "addressLine7": "Tata Consumer Products GB Limited,",
+        "addressLine8": "Freepost Dept AA49,",
+        "addressLine9": "PO Box 4214,",
+        "addressLine10": "Dublin 2.",
+        "addressLine11": "Manufactured by:",
+        "addressLine12": "Tata Consumer Products GB Limited,"
+    },
+    "importerAddress": null,
+    "returnTo": {
+        "__typename": "AddressType",
+        "addressLine1": "Tetley.co.uk",
+        "addressLine2": "Got a question brewing or a problem to share?",
+        "addressLine3": "We're all ears, so drop us a line.",
+        "addressLine4": "United Kingdom:",
+        "addressLine5": "Tata Consumer Products GB Limited,",
+        "addressLine6": "Freepost HA4175,",
+        "addressLine7": "Greenford,",
+        "addressLine8": "UB6 0BR.",
+        "addressLine9": "Helpine 0800 387227",
+        "addressLine10": "Republic of Ireland:",
+        "addressLine11": "Tata Consumer Products GB Limited,",
+        "addressLine12": "Freepost Dept AA49,"
+    },
+    "maxWeight": null,
+    "minWeight": null,
+    "catchWeightList": null,
+    "multiPackDetails": null,
+    "details": {
+        "__typename": "ProductDetailsType",
+        "energyEfficiency": {
+            "__typename": "EnergyEfficiencyType",
+            "class": null,
+            "energyClassUrl": null,
+            "productInfoDoc": null
+        },
+        "ingredients": [
+            "Black Tea*",
+            "*Rainforest Alliance Certified"
+        ],
+        "legalLabelling": [],
+        "packSize": [
+            {
+                "__typename": "PackSizeType",
+                "value": "750",
+                "units": "G"
+            }
+        ],
+        "allergens": null,
+        "marketing": [
+            "For the Love of Taste",
+            "Quality taste has been at the heart of Tetley since 1837 - and it's all those years of expertise that make our tea so full-flavoured and refreshing. Only the best leaves make the grade, and our tea tasters try every blend at least 7 times before it passes the Tetley quality test. Dream job!"
+        ],
+        "storage": [
+            "Store in a cool, dry place"
+        ],
+        "nutrition": [
+            {
+                "__typename": "NutritionalInfoItemType",
+                "name": "Typical Values",
+                "value1": "Per 100ml Infusion",
+                "value2": null,
+                "value3": null,
+                "value4": null
+            },
+            {
+                "__typename": "NutritionalInfoItemType",
+                "name": "Energy",
+                "value1": "4kJ 1kcal",
+                "value2": null,
+                "value3": null,
+                "value4": null
+            },
+            {
+                "__typename": "NutritionalInfoItemType",
+                "name": "Fat",
+                "value1": "0g",
+                "value2": null,
+                "value3": null,
+                "value4": null
+            },
+            {
+                "__typename": "NutritionalInfoItemType",
+                "name": "of which saturates",
+                "value1": "0g",
+                "value2": null,
+                "value3": null,
+                "value4": null
+            },
+            {
+                "__typename": "NutritionalInfoItemType",
+                "name": "Carbohydrate",
+                "value1": "0.3g",
+                "value2": null,
+                "value3": null,
+                "value4": null
+            },
+            {
+                "__typename": "NutritionalInfoItemType",
+                "name": "of which sugars",
+                "value1": "0g",
+                "value2": null,
+                "value3": null,
+                "value4": null
+            },
+            {
+                "__typename": "NutritionalInfoItemType",
+                "name": "Protein",
+                "value1": "0g",
+                "value2": null,
+                "value3": null,
+                "value4": null
+            },
+            {
+                "__typename": "NutritionalInfoItemType",
+                "name": "Salt",
+                "value1": "0g",
+                "value2": null,
+                "value3": null,
+                "value4": null
+            }
+        ],
+        "specifications": [],
+        "otherNutritionInformation": null,
+        "hazardInfo": null,
+        "guidelineDailyAmount": {
+            "__typename": "GuidelineDailyAmountType",
+            "title": null,
+            "dailyAmounts": []
+        },
+        "numberOfUses": "Average Contents 240 Tea Bags",
+        "preparationAndUsage": [
+            "When it's time for a cuppa, the average Brit leaves the bag in for 1 minute, dunks 3 times and adds a splash of milk. Tetley's tea blenders always boil fresh water and brew for 2-3 minutes before adding milk.",
+            "But your perfect brew? That's up to you..."
+        ],
+        "freezingInstructions": null,
+        "manufacturerMarketing": null,
+        "productMarketing": [
+            "For the Love of Taste",
+            "Quality taste has been at the heart of Tetley since 1837 - and it's all those years of expertise that make our tea so full-flavoured and refreshing. Only the best leaves make the grade, and our tea tasters try every blend at least 7 times before it passes the Tetley quality test. Dream job!"
+        ],
+        "brandMarketing": null,
+        "otherInformation": null,
+        "additives": null,
+        "warnings": null,
+        "netContents": "750g ℮",
+        "drainedWeight": null,
+        "safetyWarning": null,
+        "lowerAgeLimit": null,
+        "upperAgeLimit": null,
+        "healthmark": null,
+        "recyclingInfo": null,
+        "nappies": null,
+        "alcohol": null,
+        "cookingInstructions": {
+            "__typename": "CookingInstructionsType",
+            "oven": {
+                "__typename": "OvenCookingInstructionType",
+                "chilled": {
+                    "__typename": "OvenCookingInstructionDetailType",
+                    "time": null,
+                    "instructions": [],
+                    "temperature": null
+                },
+                "frozen": {
+                    "__typename": "OvenCookingInstructionDetailType",
+                    "time": null,
+                    "instructions": [],
+                    "temperature": null
+                }
+            },
+            "microwave": {
+                "__typename": "MicrowaveCookingInstructionType",
+                "chilled": {
+                    "__typename": "MicrowaveCookingInstructionDetailType",
+                    "detail": null,
+                    "instructions": []
+                },
+                "frozen": {
+                    "__typename": "MicrowaveCookingInstructionDetailType",
+                    "detail": null,
+                    "instructions": []
+                }
+            },
+            "cookingMethods": [],
+            "otherInstructions": [],
+            "cookingGuidelines": [],
+            "cookingPrecautions": []
+        },
+        "originInformation": [],
+        "dosage": null,
+        "preparationGuidelines": null,
+        "directions": null,
+        "features": [
+            "Delicious & refreshing",
+            "Full on Taste, Light on Waste",
+            "Plant-Based Tea Bags",
+            "Gaffer Approved"
+        ],
+        "healthClaims": null,
+        "boxContents": null,
+        "nutritionalClaims": null,
+        "components": [
+            {
+                "__typename": "AdditionalInfo",
+                "isLowEverydayPricing": false,
+                "isLowPricePromise": false
+            },
+            {
+                "__typename": "CompetitorsInfo",
+                "competitors": [
+                    {
+                        "__typename": "Competitor",
+                        "id": "ALDI",
+                        "priceMatch": {
+                            "__typename": "PriceMatch",
+                            "isMatching": true
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "price": {
+        "__typename": "PriceType",
+        "actual": 4.99,
+        "unitPrice": 0.66,
+        "unitOfMeasure": "100g"
+    },
+    "promotions": [],
+    "reviews({\"count\":10,\"offset\":0})": {
+        "__typename": "ReviewsType",
+        "info": {
+            "__typename": "ListInfoType",
+            "offset": 0,
+            "total": 17,
+            "page": 1,
+            "count": 10
+        },
+        "entries": [
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 3,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": "Okay Everyday Brew, but…",
+                "text": "Can’t complain, Although the taste is a little weak for my liking. Stockwell brand is a lot cheaper and makes a stronger more flavoursome brew. Miles better if you ask me but wasn’t in stock at the time of purchase so had to get the famous stuff. ",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2023-12-15T14:56:29.159Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:c36c2bd2-b75d-4678-abb9-3eb9831ce714"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 2,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": "Quality deteriorated, disappointing.",
+                "text": "The quality is very poor, more like dust than leaves.  I have enjoyed Tetley for over 30 years, but so disappointed past 4-5 months.  Please check quality control.",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2023-09-08T15:37:08.063Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:978b222d-9094-48eb-ac18-eda97a24c952"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 5,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": "Tetley is King !",
+                "text": "I am 75% Tea and 25% Man.\nCan't Live without a Cuppa.\nTetley is King. \n",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2022-11-01T09:42:01.427Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:e59e8b07-c04e-420a-ae41-27913721f395"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 1,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": "Gone down badly in quality",
+                "text": "I always used to like this brand of tea. However, having recently bought a 240 packet, I find its quality has changed for the worse, in that it has a very metallic taste. It's as if the whole product has been switched to something inferior!\n\nI'm now finished with this brand. Unfortunately, I now have here a big bag of Tetley tea bags that is destined for the bin.",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2022-08-17T19:37:30.154Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:410a8844-6d7c-4ecb-90ec-0a1dc630f403"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 5,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": null,
+                "text": "value for money ",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2021-12-11T11:47:28.316Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:316d5d30-8839-4464-a348-19753e661f81"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 5,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": null,
+                "text": "I love tetley tea!!!",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2021-10-15T15:47:57.335Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:c88ed4ef-23d7-4d46-802a-391dd4384338"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 1,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": "No",
+                "text": "Grey tea, just no",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2021-04-07T20:15:37.693Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:e3f6971b-fa87-4ae5-81dd-4bbcd3ae1c76"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 2,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": "Far too Dusty, even if it tastes good. ",
+                "text": "2 Stars is \"I don't like it\", which is not really true. I have used this brand of tea for years and years, and it has a good taste. \nWhat I do not like is that the most recent batches we have had are very dusty (or the holes in the bags are bigger). \nAt the end of a cup, I have to try to remember not to drain the last mouthful. If I do, I get the fine dusty particles in my throat. \nFor convenience we transfer the bags from the soft packs to a small caddy. By the time we get to the bottom, there is always a significant amount of very fine tea dust, that never used to escape the bags.  \nSo, this week I will be seeking a less dusty alternative. ",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2021-03-18T16:40:19.093Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:0a755503-7bb2-4d63-a67e-c661740cb98a"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 4,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": "I like it.",
+                "text": "I've give all the other brands a try but I always come back to Tetley. There's not a big difference between original and decaf which for me means I can swap to decaf without really noticing nearer bed time.",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2020-09-10T20:27:12.405Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:ac3e9662-28b2-4858-b4e4-0aebfdc89e6a"
+            },
+            {
+                "__typename": "ReviewType",
+                "rating": {
+                    "__typename": "RatingType",
+                    "value": 2,
+                    "range": 5
+                },
+                "author": {
+                    "__typename": "ReviewAuthorType",
+                    "nickname": null,
+                    "authoredByMe": false
+                },
+                "status": "Approved",
+                "summary": "The tea tastes fine but.............",
+                "text": "I have used these tea bags (and other known brands for years)\nRecently I have become aware of the plastic which is in the tea bag itself. Tetley , as a famous brand name you should be changing this situation as these bags will be around long after most of us.I will no longer purchase Tetley teabags  and will look for a more ecologically sound alternative.",
+                "syndicated": false,
+                "syndicationSource": {
+                    "__typename": "SyndicationSourceType",
+                    "name": null
+                },
+                "submissionDateTime": "2020-09-06T11:39:30.029Z",
+                "reviewId": "trn:tesco:ugc:rnr:uuid:3862d8cb-851e-4441-8fb3-168a85b5fa66"
+            }
+        ],
+        "stats": {
+            "__typename": "ReviewStatsType",
+            "noOfReviews": 17,
+            "overallRating": 3.3
+        }
+    }
+}

@@ -50,7 +50,8 @@ def parse_mercado_html(html_content: str) -> list[dict[str, Any]]:
         price_elem = card_elem.select_one("div.poly-price__current")
         currency = price_elem.select_one("span.andes-money-amount__currency-symbol").text
         price_fraction_str = price_elem.select_one("span.andes-money-amount__fraction").text
-        price_cents_str = price_elem.select_one("span.andes-money-amount__cents").text
+        price_cents_elem = price_elem.select_one("span.andes-money-amount__cents")
+        price_cents_str = "00" if price_cents_elem is None else price_cents_elem.text
         price = float(f"{price_fraction_str}.{price_cents_str}")
 
         listing_price = None
@@ -58,7 +59,8 @@ def parse_mercado_html(html_content: str) -> list[dict[str, Any]]:
         if price_elem is not None:
             currency = price_elem.select_one("span.andes-money-amount__currency-symbol").text
             price_fraction_str = price_elem.select_one("span.andes-money-amount__fraction").text
-            price_cents_str = price_elem.select_one("span.andes-money-amount__cents").text
+            price_cents_elem = price_elem.select_one("span.andes-money-amount__cents")
+            price_cents_str = "00" if price_cents_elem is None else price_cents_elem.text
             listing_price = float(f"{price_fraction_str}.{price_cents_str}")
 
         url = card_elem.select_one("a").attrs["href"]

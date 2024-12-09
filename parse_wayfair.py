@@ -16,6 +16,7 @@ html_path = CUR_DIR / "wayfair_detail_one.html"
 html_path = CUR_DIR / "wayfair-variants.html"
 html_path = CUR_DIR / "wayfair-variation.html"
 html_path = CUR_DIR / "wayfair_detail_two.html"
+html_path = CUR_DIR / "wayfair_detail_2.html"
 
 output_path = CUR_DIR / "wayfair-result.json"
 
@@ -64,7 +65,8 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
     # Name
     # ================================
     detail: dict[str, Any] = {}
-    detail["name"] = content_elem.select_one("a.HotDealsProductTitle").text.strip()
+    name_str = content_elem.select_one("a.HotDealsProductTitle").text.strip()
+    detail["name"]  = re.sub(r'\s{2,}', ' ', name_str)
 
     # ================================
     # Main Image
@@ -180,12 +182,11 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
     # ================================
     # Variants
     # ================================
-    variants = {}
+    variants = []
     categories = get_from_json(product_data, ["options", "standardOptions"])
     if categories is not None:
         for category in categories:
             type_name = get_from_json(category, ["category_name"])
-            variants[type_name] = []
 
             options = get_from_json(category, ["options"])
             for option in options:
@@ -201,7 +202,7 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
 
                 thumbnail_id = str(get_from_json(option, ["thumbnail_id"]))
                 image_url = re.sub(r"/\d+/\d+/", f"/{thumbnail_id[:4]}/{thumbnail_id}/", main_image)
-                variants[type_name].append({
+                variants.append({
                     "type": type_name,
                     "value": option_value,
                     "image_url": image_url,
@@ -211,7 +212,7 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
     # ================================
     # Product overview
     # ================================
-    detail["product_overview"] = get_from_json(product_data, ["overview"])
+    # detail["product_overview"] = get_from_json(product_data, ["overview"])
 
     # ================================
     # Delivery Zipcode

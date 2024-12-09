@@ -15,6 +15,7 @@ html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-56-31.html"
 html_path = CUR_DIR / "wayfair_detail_one.html"
 html_path = CUR_DIR / "wayfair_detail_two.html"
 html_path = CUR_DIR / "wayfair-variation.html"
+html_path = CUR_DIR / "wayfair-variants.html"
 
 output_path = CUR_DIR / "wayfair-result.json"
 
@@ -64,7 +65,8 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
     # ================================
     # Main Image
     # ================================
-    detail["main_image"] = content_elem.select_one("div.ProductDetailSingleMediaViewer").select_one("img").attrs["src"]
+    main_image = content_elem.select_one("div.ProductDetailSingleMediaViewer").select_one("img").attrs["src"]
+    detail["main_image"] = main_image
 
     # ================================
     # Images
@@ -168,12 +170,38 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
     # ================================
     # Variant
     # ================================
-    detail["variant"] = {}
+    selected_options = get_from_json(product_data, ["options", "selectedOptions"])
+    detail["variant"] = []
 
     # ================================
     # Variants
     # ================================
-    detail["variants"] = []
+    variants = {}
+    categories = get_from_json(product_data, ["options", "standardOptions"])
+    for category in categories:
+        type_name = get_from_json(category, ["category_name"])
+        variants[type_name] = []
+
+        options = get_from_json(category, ["options"])
+        for option in options:
+            option_value = get_from_json(option, ["name"])
+            option_id = get_from_json(option, ["option_id"])
+            if option_id in selected_options:
+                detail["variant"].append(
+                    {
+                        "type":type_name,
+                        "value":option_value,
+                    }
+                )
+
+            thumbnail_id = str(get_from_json(option, ["thumbnail_id"]))
+            image_url = re.sub(r"/\d+/\d+/", f"/{thumbnail_id[:4]}/{thumbnail_id}/", main_image)
+            variants[type_name].append({
+                "type": type_name,
+                "value": option_value,
+                "image_url": image_url,
+            })
+    detail["variants"] = variants
 
     # ================================
     # Product overview

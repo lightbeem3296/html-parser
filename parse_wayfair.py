@@ -28,191 +28,197 @@ def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
     return obj
 
 
-def parse(html_path: Path, output_path: Path):
-    result: dict[str, Any] = {}
-    result["success"] = True
+def parse_wayfair_html(html_content: str) -> dict[str, Any]:
+    """Parses wayfair product html content and returns parsed product detail as json."""
 
-    with html_path.open("r", encoding="utf-8") as file:
-        page_elem = BeautifulSoup(file.read(), "html.parser")
-        content_elem = page_elem.select_one("div[id='sf-ui-browse::application']")
+    dict_detail: dict[str, Any] = {}
+    dict_detail["success"] = True
 
-        data_json = None
-        try:
-            data_json = json.loads(page_elem.select("script")[-4].text.splitlines()[4].strip()[29:-1])
-        except:  # noqa: E722
-            pass
-        product_data = get_from_json(data_json, ["application", "props", "productData"])
-        price_data = get_from_json(product_data, ["price"])
+    page_elem = BeautifulSoup(html_content, "html.parser")
+    content_elem = page_elem.select_one("div[id='sf-ui-browse::application']")
 
-        # ================================
-        # Product url
-        # ================================
-        result["product_url"] = page_elem.select_one("link[rel=canonical]").attrs["href"]
+    data_json = None
+    try:
+        data_json = json.loads(page_elem.select("script")[-4].text.splitlines()[4].strip()[29:-1])
+    except:  # noqa: E722
+        pass
+    product_data = get_from_json(data_json, ["application", "props", "productData"])
+    price_data = get_from_json(product_data, ["price"])
 
-        # ================================
-        # Result count
-        # ================================
-        result["result_count"] = 1
+    # ================================
+    # Product url
+    # ================================
+    dict_detail["product_url"] = page_elem.select_one("link[rel=canonical]").attrs["href"]
 
-        # ================================
-        # Name
-        # ================================
-        detail: dict[str, Any] = {}
-        detail["name"] = content_elem.select_one("a.HotDealsProductTitle").text.strip()
+    # ================================
+    # Result count
+    # ================================
+    dict_detail["result_count"] = 1
 
-        # ================================
-        # Main Image
-        # ================================
-        detail["main_image"] = content_elem.select_one("div.ProductDetailSingleMediaViewer").select_one("img").attrs["src"]
+    # ================================
+    # Name
+    # ================================
+    detail: dict[str, Any] = {}
+    detail["name"] = content_elem.select_one("a.HotDealsProductTitle").text.strip()
 
-        # ================================
-        # Images
-        # ================================
-        list_elem = content_elem.select_one("ul.HotDealsThumbnailCarousel-container")
-        item_elem_list = list_elem.select("li")
-        images: list[str] = []
-        for item_elem in item_elem_list:
-            image_link = item_elem.select_one("img").attrs["src"]
-            if image_link.startswith("data:image"):
-                continue
-            image_link = image_link.replace("timg-h56-w56%5Ecompr-r70", "resize-h1600-w1600%5Ecompr-r85")
-            images.append(image_link)
-        detail["images"] = images
+    # ================================
+    # Main Image
+    # ================================
+    detail["main_image"] = content_elem.select_one("div.ProductDetailSingleMediaViewer").select_one("img").attrs["src"]
 
-        # ================================
-        # Price
-        # ================================
-        price = get_from_json(price_data, ["customerPrice", "quantityPrice", "value"])
-        if price is None:
-            price_elem = content_elem.select_one("div.BasePriceBlock")
-            if price_elem is not None:
-                price_str = price_elem.text
-                match = re.search(r"[-+]?\d{1,3}(?:,\d{3})*(?:\.\d+)?", price_str)
-                if match:
-                    clean_str = match.group(0).replace(',', '')
-                    price = float(clean_str)
-                else:
-                    raise ValueError(f"Invalid input: {price_str}")
-        detail["price"] = price
+    # ================================
+    # Images
+    # ================================
+    list_elem = content_elem.select_one("ul.HotDealsThumbnailCarousel-container")
+    item_elem_list = list_elem.select("li")
+    images: list[str] = []
+    for item_elem in item_elem_list:
+        image_link = item_elem.select_one("img").attrs["src"]
+        if image_link.startswith("data:image"):
+            continue
+        image_link = image_link.replace("timg-h56-w56%5Ecompr-r70", "resize-h1600-w1600%5Ecompr-r85")
+        images.append(image_link)
+    detail["images"] = images
 
-        # ================================
-        # List Price
-        # ================================
-        list_price = None
-        price_elem = content_elem.select_one("div.BasePriceBlock--list")
+    # ================================
+    # Price
+    # ================================
+    price = get_from_json(price_data, ["customerPrice", "quantityPrice", "value"])
+    if price is None:
+        price_elem = content_elem.select_one("div.BasePriceBlock")
         if price_elem is not None:
-            match = re.search(r"[-+]?\d{1,3}(?:,\d{3})*(?:\.\d+)?", price_elem.text)
+            price_str = price_elem.text
+            match = re.search(r"[-+]?\d{1,3}(?:,\d{3})*(?:\.\d+)?", price_str)
             if match:
                 clean_str = match.group(0).replace(',', '')
-                list_price = float(clean_str)
+                price = float(clean_str)
             else:
                 raise ValueError(f"Invalid input: {price_str}")
-        if list_price is None:
-            list_price = get_from_json(price_data, ["listPrice", "quantityPrice", "value"])
-        detail["list_price"] = list_price
+    detail["price"] = price
 
-        # ================================
-        # Currency
-        # ================================
-        currency = get_from_json(price_data, ["customerPrice", "quantityPrice", "currency"])
-        if currency is None:
-            price_str = content_elem.select_one("div.BasePriceBlock").text
-            currency = price_str[:1]
-        detail["currency"] = currency
+    # ================================
+    # List Price
+    # ================================
+    list_price = None
+    price_elem = content_elem.select_one("div.BasePriceBlock--list")
+    if price_elem is not None:
+        match = re.search(r"[-+]?\d{1,3}(?:,\d{3})*(?:\.\d+)?", price_elem.text)
+        if match:
+            clean_str = match.group(0).replace(',', '')
+            list_price = float(clean_str)
+        else:
+            raise ValueError(f"Invalid input: {price_str}")
+    if list_price is None:
+        list_price = get_from_json(price_data, ["listPrice", "quantityPrice", "value"])
+    detail["list_price"] = list_price
 
-        # ================================
-        # Description
-        # ================================
-        detail["description"] = None
+    # ================================
+    # Currency
+    # ================================
+    currency = get_from_json(price_data, ["customerPrice", "quantityPrice", "currency"])
+    if currency is None:
+        price_str = content_elem.select_one("div.BasePriceBlock").text
+        currency = price_str[:1]
+    detail["currency"] = currency
 
-        # ================================
-        # SKU ID
-        # ================================
-        detail["sku_id"] = content_elem.select_one("form.HotDealsCallToActionForm").select_one("input[name=sku]").attrs["value"]
+    # ================================
+    # Description
+    # ================================
+    detail["description"] = None
 
-        # ================================
-        # Brand
-        # ================================
-        brand_str = content_elem.select_one("p.HotDealsProductTitle-manufacturerName").text
-        detail["brand"] = brand_str.replace("By", "").strip()
+    # ================================
+    # SKU ID
+    # ================================
+    detail["sku_id"] = content_elem.select_one("form.HotDealsCallToActionForm").select_one("input[name=sku]").attrs["value"]
 
-        # ================================
-        # Rating
-        # ================================
-        rating_str_list = content_elem.select_one("button[data-hb-id=ReviewStars]>p").contents
-        detail["rating"] = float(rating_str_list[0].split()[1].strip())
+    # ================================
+    # Brand
+    # ================================
+    brand_str = content_elem.select_one("p.HotDealsProductTitle-manufacturerName").text
+    detail["brand"] = brand_str.replace("By", "").strip()
 
-        # ================================
-        # Total ratings
-        # ================================
-        detail["total_ratings"] = int(rating_str_list[2].split()[0].strip())
+    # ================================
+    # Rating
+    # ================================
+    rating_str_list = content_elem.select_one("button[data-hb-id=ReviewStars]>p").contents
+    detail["rating"] = float(rating_str_list[0].split()[1].strip())
 
-        # ================================
-        # Total reviews
-        # ================================
-        detail["total_reviews"] = None
+    # ================================
+    # Total ratings
+    # ================================
+    detail["total_ratings"] = int(rating_str_list[2].split()[0].strip())
 
-        # ================================
-        # Reviews
-        # ================================
-        detail["reviews"] = []
+    # ================================
+    # Total reviews
+    # ================================
+    detail["total_reviews"] = None
 
-        # ================================
-        # Retailer Badge
-        # ================================
-        detail["retailer_badge"] = None
+    # ================================
+    # Reviews
+    # ================================
+    detail["reviews"] = []
 
-        # ================================
-        # Variant
-        # ================================
-        detail["variant"] = {}
+    # ================================
+    # Retailer Badge
+    # ================================
+    detail["retailer_badge"] = None
 
-        # ================================
-        # Variants
-        # ================================
-        detail["variants"] = []
+    # ================================
+    # Variant
+    # ================================
+    detail["variant"] = {}
 
-        # ================================
-        # Product overview
-        # ================================
-        detail["product_overview"] = get_from_json(product_data, ["overview"])
+    # ================================
+    # Variants
+    # ================================
+    detail["variants"] = []
 
-        # ================================
-        # Delivery Zipcode
-        # ================================
-        detail["delivery_postal_code"] = get_from_json(product_data, ["delivery", "postal_code"])
-        detail["delivery_postal_code_city"] = get_from_json(product_data, ["delivery", "postal_code_city"])
+    # ================================
+    # Product overview
+    # ================================
+    detail["product_overview"] = get_from_json(product_data, ["overview"])
 
-        # ================================
-        # Shipping Info
-        # ================================
-        detail["shipping_info"] = None
-        
-        # ================================
-        # Features
-        # ================================
-        detail["features"] = None
+    # ================================
+    # Delivery Zipcode
+    # ================================
+    detail["delivery_postal_code"] = get_from_json(product_data, ["delivery", "postal_code"])
+    detail["delivery_postal_code_city"] = get_from_json(product_data, ["delivery", "postal_code_city"])
 
-        # ================================
-        # at-a-glance
-        # ================================
-        detail["at-a-glance"] = None
+    # ================================
+    # Shipping Info
+    # ================================
+    detail["shipping_info"] = None
+    
+    # ================================
+    # Features
+    # ================================
+    detail["features"] = None
 
-        result["detail"] = detail
+    # ================================
+    # at-a-glance
+    # ================================
+    detail["at-a-glance"] = None
 
-        # ================================
-        # Remaining credits
-        # ================================
-        result["remaining_credits"] = None
+    dict_detail["detail"] = detail
 
-    with output_path.open("w", encoding="utf-8") as file:
-        json.dump(result, file, indent=2, ensure_ascii=False)
+    # ================================
+    # Remaining credits
+    # ================================
+    dict_detail["remaining_credits"] = None
 
-    logger.info(f"saved to `{output_path}`")
+    return dict_detail
 
 
 def main():
-    parse(html_path, output_path)
+    with html_path.open("r", encoding="utf-8") as html_file:
+        html_content = html_file.read()
+
+        product_detail = parse_wayfair_html(html_content)
+
+        with output_path.open("w", encoding="utf-8") as file:
+            json.dump(product_detail, file, indent=2, ensure_ascii=False)
+
+        logger.info(f"saved to `{output_path}`")
 
 
 if __name__ == "__main__":

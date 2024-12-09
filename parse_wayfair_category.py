@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -32,17 +33,22 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
     try:
         script = page_elem.select("script")[-2]
         script_str = script.text
-        script_str = script_str.split('window["WEBPACK_ENTRY_DATA"]')[-1].strip(
-            "=; \t\r\n"
-        )
+        script_str = script_str.split('window["WEBPACK_ENTRY_DATA"]')[-1].strip("=; \t\r\n")
         script_str = script_str[:-1].strip("; \t\r\n")
         data_json = json.loads(script_str)
     except:  # noqa: E722
         logger.warning("failed json loading. progress with html content only")
 
+    image_elem = page_elem.select_one("img[data-hb-id='FluidImage']")
     product_data_list = get_from_json(data_json, ["application", "props", "browse", "browse_grid_objects"])
     for product_data in product_data_list:
         image_url = None
+        ireid = get_from_json(product_data, ["image_data", "ireid"])
+        if ireid is not None:
+            ireid = str(ireid)
+            image_url = re.sub(r"/\d+/\d+/", f"/{ireid[:4]}/{ireid}/", image_elem.attrs["src"])
+            image_url = re.sub(r'resize-h\d+(?:-w\d+)?', 'resize-h800-w800', image_url)
+
         pricing_data = get_from_json(product_data, ["raw_pricing_data", "pricing"])
         list_results.append(
             {

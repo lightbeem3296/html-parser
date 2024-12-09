@@ -8,10 +8,14 @@ from loguru import logger
 
 CUR_DIR = Path(__file__).parent
 
-html_path = CUR_DIR / "wayfair-variation.html"
-html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-17.html"
-html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-05.html"
 html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-51-54.html"
+html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-05.html"
+html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-17.html"
+html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-56-31.html"
+html_path = CUR_DIR / "wayfair_detail_one.html"
+html_path = CUR_DIR / "wayfair_detail_two.html"
+html_path = CUR_DIR / "wayfair-variation.html"
+
 output_path = CUR_DIR / "wayfair-result.json"
 
 

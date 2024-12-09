@@ -8,6 +8,7 @@ from loguru import logger
 CUR_DIR = Path(__file__).parent
 
 html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-51-54.html"
+# html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-05.html"
 output_path = CUR_DIR / "wayfair-result.json"
 
 
@@ -30,6 +31,7 @@ def parse(html_path: Path, output_path: Path):
 
         data_json = json.loads(page_elem.select("script")[-4].text.splitlines()[4].strip()[29:-1])
         product_data = get_from_json(data_json, ["application", "props", "productData"])
+        price_data = get_from_json(product_data, ["price"])
 
         # Product url
         result["product_url"] = page_elem.select_one("link[rel=canonical]").attrs["href"]
@@ -39,14 +41,10 @@ def parse(html_path: Path, output_path: Path):
 
         # Name
         detail: dict[str, Any] = {}
-        detail["name"] = get_from_json(product_data, ["overview", "productCard", "productName"])
+        detail["name"] = content_elem.select_one("a.HotDealsProductTitle").text.strip()
 
-        ## Main Image
-        detail["main_image"] = (
-            content_elem.select_one("div.ProductDetailSingleMediaViewer")
-            .select_one("img")
-            .attrs["src"]
-        )
+        # Main Image
+        detail["main_image"] = content_elem.select_one("div.ProductDetailSingleMediaViewer").select_one("img").attrs["src"]
 
         ## Images
         list_elem = content_elem.select_one("ul.HotDealsThumbnailCarousel-container")
@@ -57,29 +55,44 @@ def parse(html_path: Path, output_path: Path):
         detail["images"] = images
 
         # Price
-        price = get_from_json(product_data, ["price"])
-        detail["price"] = get_from_json(price, ["customerPrice", "quantityPrice", "value"])
+        price = get_from_json(price_data, ["customerPrice", "quantityPrice", "value"])
+        if price is None:
+            price_str = content_elem.select_one("div.BasePriceBlock").text
+            price = float(price_str[1:])
+        detail["price"] = price
 
         # List Price
-        detail["list_price"] = get_from_json(price, ["listPrice", "quantityPrice", "value"])
+        list_price = None
+        price_elem = content_elem.select_one("div.BasePriceBlock--list")
+        if price_elem is not None:
+            list_price = float(price_str[1:])
+        if list_price is None:
+            list_price = get_from_json(price_data, ["listPrice", "quantityPrice", "value"])
+        detail["list_price"] = list_price
 
         # Currency
-        detail["currency"] = get_from_json(price, ["customerPrice", "quantityPrice", "currency"])
+        currency = get_from_json(price_data, ["customerPrice", "quantityPrice", "currency"])
+        if currency is None:
+            price_str = content_elem.select_one("div.BasePriceBlock").text
+            currency = price_str[:1]
+        detail["currency"] = currency
 
         # Description
         detail["description"] = None
 
         # SKU ID
-        detail["sku_id"] = get_from_json(product_data, ["sku"])
+        detail["sku_id"] = content_elem.select_one("form.HotDealsCallToActionForm").select_one("input[name=sku]").attrs["value"]
 
         # Brand
-        detail["brand"] = get_from_json(product_data, ["overview", "productCard", "manufacturer"])
+        brand_str = content_elem.select_one("p.HotDealsProductTitle-manufacturerName").text
+        detail["brand"] = brand_str.replace("By", "").strip()
 
         # Rating
-        detail["rating"] = get_from_json(product_data, ["reviews", "reviewRating"])
+        rating_str_list = content_elem.select_one("button[data-hb-id=ReviewStars]>p").contents
+        detail["rating"] = float(rating_str_list[0].split()[1].strip())
 
         # Total ratings
-        detail["total_ratings"] = get_from_json(product_data, ["reviews", "reviewCount"])
+        detail["total_ratings"] = int(rating_str_list[2].split()[0].strip())
 
         # Total reviews
         detail["total_reviews"] = None

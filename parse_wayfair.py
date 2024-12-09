@@ -1,3 +1,4 @@
+import re
 import json
 from pathlib import Path
 from typing import Any
@@ -8,7 +9,9 @@ from loguru import logger
 CUR_DIR = Path(__file__).parent
 
 html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-51-54.html"
-# html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-05.html"
+html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-05.html"
+html_path = CUR_DIR / "wayfair_detail_2024-12-08_12-53-17.html"
+html_path = CUR_DIR / "wayfair-variation.html"
 output_path = CUR_DIR / "wayfair-result.json"
 
 
@@ -29,7 +32,11 @@ def parse(html_path: Path, output_path: Path):
         page_elem = BeautifulSoup(file.read(), "html.parser")
         content_elem = page_elem.select_one("div[id='sf-ui-browse::application']")
 
-        data_json = json.loads(page_elem.select("script")[-4].text.splitlines()[4].strip()[29:-1])
+        data_json = None
+        try:
+            data_json = json.loads(page_elem.select("script")[-4].text.splitlines()[4].strip()[29:-1])
+        except:  # noqa: E722
+            pass
         product_data = get_from_json(data_json, ["application", "props", "productData"])
         price_data = get_from_json(product_data, ["price"])
 
@@ -46,26 +53,42 @@ def parse(html_path: Path, output_path: Path):
         # Main Image
         detail["main_image"] = content_elem.select_one("div.ProductDetailSingleMediaViewer").select_one("img").attrs["src"]
 
-        ## Images
+        # Images
         list_elem = content_elem.select_one("ul.HotDealsThumbnailCarousel-container")
         item_elem_list = list_elem.select("li")
         images: list[str] = []
         for item_elem in item_elem_list:
-            pass
+            image_link = item_elem.select_one("img").attrs["src"]
+            if image_link.startswith("data:image"):
+                continue
+            image_link = image_link.replace("timg-h56-w56%5Ecompr-r70", "resize-h1600-w1600%5Ecompr-r85")
+            images.append(image_link)
         detail["images"] = images
 
         # Price
         price = get_from_json(price_data, ["customerPrice", "quantityPrice", "value"])
         if price is None:
-            price_str = content_elem.select_one("div.BasePriceBlock").text
-            price = float(price_str[1:])
+            price_elem = content_elem.select_one("div.BasePriceBlock")
+            if price_elem is not None:
+                price_str = price_elem.text
+                match = re.search(r"[-+]?\d{1,3}(?:,\d{3})*(?:\.\d+)?", price_str)
+                if match:
+                    clean_str = match.group(0).replace(',', '')
+                    price = float(clean_str)
+                else:
+                    raise ValueError(f"Invalid input: {price_str}")
         detail["price"] = price
 
         # List Price
         list_price = None
         price_elem = content_elem.select_one("div.BasePriceBlock--list")
         if price_elem is not None:
-            list_price = float(price_str[1:])
+            match = re.search(r"[-+]?\d{1,3}(?:,\d{3})*(?:\.\d+)?", price_elem.text)
+            if match:
+                clean_str = match.group(0).replace(',', '')
+                list_price = float(clean_str)
+            else:
+                raise ValueError(f"Invalid input: {price_str}")
         if list_price is None:
             list_price = get_from_json(price_data, ["listPrice", "quantityPrice", "value"])
         detail["list_price"] = list_price
@@ -103,7 +126,7 @@ def parse(html_path: Path, output_path: Path):
         # Retailer Badge
         detail["retailer_badge"] = None
 
-        # #Variant
+        ## Variant
         detail["variant"] = {}
 
         ## Variants

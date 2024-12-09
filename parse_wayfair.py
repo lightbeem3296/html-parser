@@ -73,11 +73,13 @@ def parse_wayfair_html(html_content: str) -> dict[str, Any]:
     item_elem_list = list_elem.select("li")
     images: list[str] = []
     for item_elem in item_elem_list:
-        image_link = item_elem.select_one("img").attrs["src"]
-        if image_link.startswith("data:image"):
+        img_url = item_elem.select_one("img").attrs["src"]
+        if img_url.startswith("data:image"):
             continue
-        image_link = image_link.replace("timg-h56-w56%5Ecompr-r70", "resize-h1600-w1600%5Ecompr-r85")
-        images.append(image_link)
+        img_url = re.sub(r'timg-h\d+(?:-w\d+)?', 'resize-h800-w800', img_url)
+        img_url = re.sub(r'resize-h\d+(?:-w\d+)?', 'resize-h800-w800', img_url)
+        img_url = re.sub(r'compr-r\d+', 'compr-r85', img_url)
+        images.append(img_url)
     detail["images"] = images
 
     # ================================

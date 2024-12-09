@@ -36,11 +36,11 @@ def parse_tesco_json(input_path: Path, output_path: Path) -> None:
                     "rating_value": entry["rating"]["value"],
                     "rating_range": entry["rating"]["range"],
                     "author_name": entry["author"]["nickname"],
-                    "authored_by_me": entry["author"]["authoredByMe"],
+                    "is_authored_by_me": entry["author"]["authoredByMe"],
                     "status": entry["status"],
                     "summary": entry["summary"],
                     "text": entry["text"],
-                    "syndicated": entry["syndicated"],
+                    "is_syndicated": entry["syndicated"],
                     "syndication_soure_name": entry["syndicationSource"]["name"],
                 }
             )

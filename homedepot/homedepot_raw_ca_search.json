@@ -1,0 +1,2625 @@
+{
+    "facets": [
+        {
+            "code": "manufacturerName",
+            "facetValues": [
+                {
+                    "code": "mc9",
+                    "count": 323,
+                    "disabled": false,
+                    "filterKey": "mc9",
+                    "name": "Klein Tools",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Brand Name"
+        },
+        {
+            "code": "stock",
+            "facetValues": [
+                {
+                    "code": "43j",
+                    "count": 182,
+                    "disabled": false,
+                    "filterKey": "43j",
+                    "name": "In Stock Today at",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "1jx3",
+                    "count": 0,
+                    "disabled": false,
+                    "filterKey": "1jx3",
+                    "name": "Hide Unavailable Products",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Stock"
+        },
+        {
+            "code": "price",
+            "facetValues": [
+                {
+                    "code": "or",
+                    "count": 192,
+                    "disabled": false,
+                    "filterKey": "or",
+                    "name": "$0 - $49",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "fxx",
+                    "count": 96,
+                    "disabled": false,
+                    "filterKey": "fxx",
+                    "name": "$50 - $99",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "7yy",
+                    "count": 31,
+                    "disabled": false,
+                    "filterKey": "7yy",
+                    "name": "$100 - $199",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "8mj",
+                    "count": 3,
+                    "disabled": false,
+                    "filterKey": "8mj",
+                    "name": "$200 - $399",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "qgn",
+                    "count": 1,
+                    "disabled": false,
+                    "filterKey": "qgn",
+                    "name": "$1,000 - $1,499",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Price"
+        },
+        {
+            "code": "smarttechnology",
+            "facetValues": [
+                {
+                    "code": "x76",
+                    "count": 35,
+                    "disabled": false,
+                    "filterKey": "x76",
+                    "name": "No",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Smart Technology"
+        },
+        {
+            "code": "deliverySpeed",
+            "facetValues": [
+                {
+                    "code": "26ih",
+                    "count": 179,
+                    "disabled": false,
+                    "filterKey": "26ih",
+                    "name": "FREE Store Pick-Up",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "26if",
+                    "count": 168,
+                    "disabled": false,
+                    "filterKey": "26if",
+                    "name": "Delivery Today/Tomorrow",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "26ie",
+                    "count": 111,
+                    "disabled": false,
+                    "filterKey": "26ie",
+                    "name": "FREE Delivery",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "26ig",
+                    "count": 53,
+                    "disabled": false,
+                    "filterKey": "26ig",
+                    "name": "FREE Ship to Store",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Delivery & Pick-Up"
+        },
+        {
+            "code": "reviewAvgRating",
+            "facetValues": [
+                {
+                    "code": "jeg",
+                    "count": 9,
+                    "disabled": false,
+                    "filterKey": "jeg",
+                    "name": "5 stars",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "35n",
+                    "count": 294,
+                    "disabled": false,
+                    "filterKey": "35n",
+                    "name": "4 stars & up",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "ei8",
+                    "count": 313,
+                    "disabled": false,
+                    "filterKey": "ei8",
+                    "name": "3 stars & up",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "8xn",
+                    "count": 7,
+                    "disabled": false,
+                    "filterKey": "8xn",
+                    "name": "Not yet rated",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "9qk",
+                    "count": 316,
+                    "disabled": false,
+                    "filterKey": "9qk",
+                    "name": "All rated products",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Rating"
+        },
+        {
+            "code": "categoryPathHierarchy",
+            "facetValues": [
+                {
+                    "code": "1/hd-classes/l1-building-materials",
+                    "count": 244,
+                    "disabled": false,
+                    "filterKey": "rf0",
+                    "name": "Building Materials",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "1/hd-classes/l1-tools",
+                    "count": 67,
+                    "disabled": false,
+                    "filterKey": "ie8",
+                    "name": "Tools",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "1/hd-classes/l1-lighting",
+                    "count": 3,
+                    "disabled": false,
+                    "filterKey": "hek",
+                    "name": "Lighting & Ceiling Fans",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Category"
+        },
+        {
+            "code": "dynamicTag",
+            "facetValues": [
+                {
+                    "code": "3ohp",
+                    "count": 7,
+                    "disabled": false,
+                    "filterKey": "3ohp",
+                    "name": "Best Seller",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Best Seller"
+        },
+        {
+            "code": "badge",
+            "facetValues": [
+                {
+                    "code": "xmv",
+                    "count": 2,
+                    "disabled": false,
+                    "filterKey": "xmv",
+                    "name": "Clearance",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "j2z",
+                    "count": 2,
+                    "disabled": false,
+                    "filterKey": "j2z",
+                    "name": "Savings",
+                    "selected": false,
+                    "url": ""
+                },
+                {
+                    "code": "qs7",
+                    "count": 2,
+                    "disabled": false,
+                    "filterKey": "qs7",
+                    "name": "Special Buy",
+                    "selected": false,
+                    "url": ""
+                }
+            ],
+            "name": "Special Offers"
+        }
+    ],
+    "metadata": [
+        {
+            "key": "categoryHierarchy",
+            "value": "l1-building-materials===Building Materials||l2-electrical===Electrical||l3-electricaltoolsacc===Electrical Tools & Accessories"
+        },
+        {
+            "key": "concierge",
+            "value": "sc5en"
+        },
+        {
+            "key": "canaveral",
+            "value": "t0_v0"
+        }
+    ],
+    "featureToggles": {},
+    "products": [
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001565912",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001565912.jpg",
+            "modelNumber": "ET16",
+            "name": "Borescope Camera for Android Devices",
+            "pricing": {
+                "productId": "1001565912",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 53.52,
+                    "formattedValue": "$53.52",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "X"
+            },
+            "productRating": {
+                "averageRating": 2.8577001094818115,
+                "totalReviews": 471
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 83,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-borescope-camera-for-android-devices/1001565912",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001676767",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001676767.jpg",
+            "modelNumber": "31872",
+            "name": "Hole Saw Kit, Carbide Hole Cutter, 4-Piece",
+            "pricing": {
+                "productId": "1001676767",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 109.99,
+                    "formattedValue": "$109.99",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "OA"
+            },
+            "productRating": {
+                "averageRating": 4.6666998863220215,
+                "totalReviews": 81
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "O",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 19,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-hole-saw-kit-carbide-hole-cutter-4-piece/1001676767",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001676765",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001676765.jpg",
+            "modelNumber": "554161014",
+            "name": "Tool Bag, Tradesman Pro Tool Tote, 40 Pockets, 10-Inch",
+            "pricing": {
+                "productId": "1001676765",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 112.77,
+                    "formattedValue": "$112.77",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "OA"
+            },
+            "productRating": {
+                "averageRating": 4.731900215148926,
+                "totalReviews": 138
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "O",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 27,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-tool-bag-tradesman-pro-tool-tote-40-pockets-10-inch/1001676765",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001750936",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001750936.jpg",
+            "modelNumber": "MM420",
+            "name": "Digital Multimeter, TRMS Auto-Ranging, 600V, Temp",
+            "pricing": {
+                "productId": "1001750936",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 87.98,
+                    "formattedValue": "$87.98",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.741099834442139,
+                "totalReviews": 112
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 11,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-digital-multimeter-trms-auto-ranging-600v-temp/1001750936",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000769358",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000769358.jpg",
+            "modelNumber": "69411",
+            "name": "Circuit Breaker Finder Accessory Kit",
+            "pricing": {
+                "productId": "1000769358",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 26.22,
+                    "formattedValue": "$26.22",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.645599842071533,
+                "totalReviews": 333
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-circuit-breaker-finder-accessory-kit/1000769358",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001676764",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001676764.jpg",
+            "modelNumber": "85078",
+            "name": "Assorted Screwdriver Set with Cushion Grip Handles (8-Piece)",
+            "pricing": {
+                "productId": "1001676764",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 99.99,
+                    "formattedValue": "$99.99",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "OA"
+            },
+            "productRating": {
+                "averageRating": 4.838200092315674,
+                "totalReviews": 136
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "O",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 30,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-assorted-screwdriver-set-with-cushion-grip-handles-8-piece-/1001676764",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001565911",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001640544_alt_rt250_c.jpg",
+            "modelNumber": "RT250",
+            "name": "GFCI Receptacle Tester with LCD",
+            "pricing": {
+                "productId": "1001565911",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 33.58,
+                    "formattedValue": "$33.58",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.750899791717529,
+                "totalReviews": 574
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 33,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 4,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-gfci-receptacle-tester-with-lcd/1001565911",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001676774",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001676774.jpg",
+            "modelNumber": "55482",
+            "name": "Tradesman Pro Tool Station Tool Bag Backpack, 21 Pockets, 17.25-Inch",
+            "pricing": {
+                "productId": "1001676774",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 133.99,
+                    "formattedValue": "$133.99",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "OA"
+            },
+            "productRating": {
+                "averageRating": 4.75,
+                "totalReviews": 64
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "O",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 35,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-tradesman-pro-tool-station-tool-bag-backpack-21-pockets-17-25-inch/1001676774",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001565909",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001565909.jpg",
+            "modelNumber": "K12065CRSEN",
+            "name": "Klein-Kurve Heavy-Duty Wire Stripper Crimper 8-20 AWG",
+            "pricing": {
+                "productId": "1001565909",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 49.97,
+                    "formattedValue": "$49.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.478600025177002,
+                "totalReviews": 280
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 2,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 3,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-klein-kurve-heavy-duty-wire-stripper-crimper-8-20-awg/1001565909",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001592867",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001592867.jpg",
+            "modelNumber": "K11095SEN",
+            "name": "Klein-Kurve 8-20 AWG Wire Stripper/Cutter",
+            "pricing": {
+                "productId": "1001592867",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 34.58,
+                    "formattedValue": "$34.58",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.540999889373779,
+                "totalReviews": 329
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 8,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-klein-kurve-8-20-awg-wire-stripper-cutter/1001592867",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000664600",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000664600.jpg",
+            "modelNumber": "J2000-9NESEN",
+            "name": "Journeyman 2000 Series 9-1/2-inch High-Leverage Side-Cutting Pliers",
+            "pricing": {
+                "productId": "1000664600",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 67.98,
+                    "formattedValue": "$67.98",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.814000129699707,
+                "totalReviews": 301
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 4,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-journeyman-2000-series-9-1-2-inch-high-leverage-side-cutting-pliers/1000664600",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001616543",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001616543.jpg",
+            "modelNumber": "32307",
+            "name": "27-in-1 Multi-Bit Tamperproof Screwdriver",
+            "pricing": {
+                "productId": "1001616543",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 36.97,
+                    "formattedValue": "$36.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.546999931335449,
+                "totalReviews": 181
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 9,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-27-in-1-multi-bit-tamperproof-screwdriver/1001616543",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000751528",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000751528.jpg",
+            "modelNumber": "CL600",
+            "name": "600A AC Clamp Meter",
+            "pricing": {
+                "productId": "1000751528",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 112.0,
+                    "formattedValue": "$112.00",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.436200141906738,
+                "totalReviews": 94
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 49,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-600a-ac-clamp-meter/1000751528",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000664013",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000664013.jpg",
+            "modelNumber": "11063",
+            "name": "Katapult Wire Stripper 8-22 AWG",
+            "pricing": {
+                "productId": "1000664013",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 44.97,
+                    "formattedValue": "$44.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.714300155639648,
+                "totalReviews": 427
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-katapult-wire-stripper-8-22-awg/1000664013",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001727306",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001727306.jpg",
+            "modelNumber": "50611",
+            "name": "Magnetic Wire Puller",
+            "pricing": {
+                "productId": "1001727306",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 102.0,
+                    "formattedValue": "$102.00",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.3069000244140625,
+                "totalReviews": 101
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 7,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-magnetic-wire-puller/1001727306",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001159528",
+            "fulfillmentOptions": {
+                "addToCart": false,
+                "bopisAddToCart": false,
+                "shippingMessage": "not_available_for_delivery",
+                "storeMessage": "sold_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001159528.jpg",
+            "modelNumber": "55475",
+            "name": "Tradesman Pro 17.5-inch Tool Gear Back Pack",
+            "pricing": {
+                "productId": "1001159528",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "productStatus": "LC"
+            },
+            "productRating": {
+                "averageRating": 4.6153998374938965,
+                "totalReviews": 91
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "S",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 3,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-tradesman-pro-17-5-inch-tool-gear-back-pack/1001159528",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000769325",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000769325.jpg",
+            "modelNumber": "80014",
+            "name": "14-Piece Electrician Tool Set",
+            "pricing": {
+                "productId": "1000769325",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 357.67,
+                    "formattedValue": "$357.67",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "OA"
+            },
+            "productRating": {
+                "averageRating": 4.90910005569458,
+                "totalReviews": 11
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "O",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 23,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-14-piece-electrician-tool-set/1000769325",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001676798",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001676798.jpg",
+            "modelNumber": "85076INSR",
+            "name": "Screwdriver Set, 1000V Insulated, 6-Piece",
+            "pricing": {
+                "productId": "1001676798",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 62.97,
+                    "formattedValue": "$62.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.645199775695801,
+                "totalReviews": 93
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 8,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-screwdriver-set-1000v-insulated-6-piece/1001676798",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000421423",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000421423.jpg",
+            "modelNumber": "1005SEN",
+            "name": "Crimping and Cutting Tool for Connectors",
+            "pricing": {
+                "productId": "1000421423",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 44.97,
+                    "formattedValue": "$44.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.7947001457214355,
+                "totalReviews": 190
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 8,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-crimping-and-cutting-tool-for-connectors/1000421423",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001616544",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001616544.jpg",
+            "modelNumber": "32308",
+            "name": "8-in-1 Multi-Bit Adjustable Length Stubby Screwdriver",
+            "pricing": {
+                "productId": "1001616544",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 21.98,
+                    "formattedValue": "$21.98",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.751100063323975,
+                "totalReviews": 221
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 10,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-8-in-1-multi-bit-adjustable-length-stubby-screwdriver/1001616544",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000664109",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000664109.jpg",
+            "modelNumber": "D213-9NE",
+            "name": "9 inch High Leverage Side-Cutters New England",
+            "pricing": {
+                "productId": "1000664109",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 51.45,
+                    "formattedValue": "$51.45",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.8333001136779785,
+                "totalReviews": 144
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 46,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-9-inch-high-leverage-side-cutters-new-england/1000664109",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001631407",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001631407.jpg",
+            "modelNumber": "60150",
+            "name": "Safety Helmet, Vented-Class C, with Rechargeable Headlamp, White",
+            "pricing": {
+                "productId": "1001631407",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 100.0,
+                    "formattedValue": "$100.00",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "OA"
+            },
+            "productRating": {
+                "averageRating": 4.57889986038208,
+                "totalReviews": 19
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "O",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 9,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-safety-helmet-vented-class-c-with-rechargeable-headlamp-white/1001631407",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001640026",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001640026.jpg",
+            "modelNumber": "IR5",
+            "name": "Dual Laser Infrared Thermometer",
+            "pricing": {
+                "productId": "1001640026",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 83.97,
+                    "formattedValue": "$83.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.240099906921387,
+                "totalReviews": 279
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 23,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-dual-laser-infrared-thermometer/1001640026",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001819162",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001819162.jpg",
+            "modelNumber": "935DAGL",
+            "name": "Digital Level with Programmable Angles",
+            "pricing": {
+                "productId": "1001819162",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 105.97,
+                    "formattedValue": "$105.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.596199989318848,
+                "totalReviews": 52
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-digital-level-with-programmable-angles/1001819162",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001644342",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001644342.jpg",
+            "modelNumber": "56403",
+            "name": "Rechargeable Personal Work Light",
+            "pricing": {
+                "productId": "1001644342",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 69.95,
+                    "formattedValue": "$69.95",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.798999786376953,
+                "totalReviews": 199
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 4,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-rechargeable-personal-work-light/1001644342",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000421428",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "free_ship_to_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000421428.jpg",
+            "modelNumber": "85076SEN",
+            "name": "Screwdriver 7-Piece Cushion Grip",
+            "pricing": {
+                "productId": "1000421428",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 89.25,
+                    "formattedValue": "$89.25",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "X"
+            },
+            "productRating": {
+                "averageRating": 4.834199905395508,
+                "totalReviews": 193
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 16,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-screwdriver-7-piece-cushion-grip/1000421428",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001797428",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001797428.jpg",
+            "modelNumber": "50254",
+            "name": "25 ft. Multi-Flex Glow Fish Rod Set",
+            "pricing": {
+                "productId": "1001797428",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 108.0,
+                    "formattedValue": "$108.00",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.4415998458862305,
+                "totalReviews": 77
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 4,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-25-ft-multi-flex-glow-fish-rod-set/1001797428",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001048007",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001048007.jpg",
+            "modelNumber": "32581",
+            "name": "Multi-Bit Electronics Screwdriver, 4-in-1, Phillips, Slotted Bits",
+            "pricing": {
+                "productId": "1001048007",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 16.88,
+                    "formattedValue": "$16.88",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.541399955749512,
+                "totalReviews": 447
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 26,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 7,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-multi-bit-electronics-screwdriver-4-in-1-phillips-slotted-bits/1001048007",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000679666",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000679666.jpg",
+            "modelNumber": "602-7DD",
+            "name": "5/16-inch Keystone-Tip Flat Head Demolition Driver with 6-inch Round Shank",
+            "pricing": {
+                "productId": "1000679666",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 30.45,
+                    "formattedValue": "$30.45",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.703700065612793,
+                "totalReviews": 54
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 25,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 35,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-5-16-inch-keystone-tip-flat-head-demolition-driver-with-6-inch-round-shank/1000679666",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001545933",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001545933.jpg",
+            "modelNumber": "CL220",
+            "name": "Digital Clamp Meter, AC Auto-Ranging 400Amp with Temp",
+            "pricing": {
+                "productId": "1001545933",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 89.25,
+                    "formattedValue": "$89.25",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.638199806213379,
+                "totalReviews": 152
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "S",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 2,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-digital-clamp-meter-ac-auto-ranging-400amp-with-temp/1001545933",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001110536",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001110536.jpg",
+            "modelNumber": "44218",
+            "name": "2.5-inch Cable Skinning Utility Knife with Replaceable Blade",
+            "pricing": {
+                "productId": "1001110536",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 29.57,
+                    "formattedValue": "$29.57",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 0.0,
+                "totalReviews": 0
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 13,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-2-5-inch-cable-skinning-utility-knife-with-replaceable-blade/1001110536",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false,
+            "tags": [
+                {
+                    "tagId": "best_seller",
+                    "tagLabel": "Best Seller",
+                    "bgColour": "#286FAD",
+                    "fontColour": "#FFFFFF"
+                }
+            ]
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1000421414",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1000421414.jpg",
+            "modelNumber": "D200048SEN",
+            "name": "8-inch 2000 Series High Leverage Diagonal Cutting Pliers",
+            "pricing": {
+                "productId": "1000421414",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 52.47,
+                    "formattedValue": "$52.47",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.713500022888184,
+                "totalReviews": 185
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 24,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 4,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-8-inch-2000-series-high-leverage-diagonal-cutting-pliers/1000421414",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001676797",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001676797.jpg",
+            "modelNumber": "32327R",
+            "name": "27-in-1 Multi-Bit Precision Screwdriver with Tamperproof Bits",
+            "pricing": {
+                "productId": "1001676797",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 29.97,
+                    "formattedValue": "$29.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.739099979400635,
+                "totalReviews": 92
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 13,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-27-in-1-multi-bit-precision-screwdriver-with-tamperproof-bits/1001676797",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001644343",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001644343.jpg",
+            "modelNumber": "J63225NSEN",
+            "name": "Journeyman High Leverage Cable Cutter with Stripping",
+            "pricing": {
+                "productId": "1001644343",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 57.74,
+                    "formattedValue": "$57.74",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.614299774169922,
+                "totalReviews": 140
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-journeyman-high-leverage-cable-cutter-with-stripping/1001644343",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001344250",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001344250.jpg",
+            "modelNumber": "2005NSEN",
+            "name": "Forged Steel Wire Crimper, Cutter, Stripper",
+            "pricing": {
+                "productId": "1001344250",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 52.47,
+                    "formattedValue": "$52.47",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.794300079345703,
+                "totalReviews": 141
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 20,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 6,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-forged-steel-wire-crimper-cutter-stripper/1001344250",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001545936",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001545936.jpg",
+            "modelNumber": "NCVT-3PR",
+            "name": "Dual Range Non-Contact Voltage Tester with Flashlight, 12 - 1000V AC",
+            "pricing": {
+                "productId": "1001545936",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 40.94,
+                    "formattedValue": "$40.94",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.5381999015808105,
+                "totalReviews": 524
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 16,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 13,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-dual-range-non-contact-voltage-tester-with-flashlight-12-1000v-ac/1001545936",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001110535",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "message_zero_store_stock",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001110535.jpg",
+            "modelNumber": "55470",
+            "name": "9-inch Stand-Up Zipper Tool Bag (2-Pack)",
+            "pricing": {
+                "productId": "1001110535",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 22.97,
+                    "formattedValue": "$22.97",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LC"
+            },
+            "productRating": {
+                "averageRating": 4.694300174713135,
+                "totalReviews": 265
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 18,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "url": "/product/klein-tools-9-inch-stand-up-zipper-tool-bag-2-pack-/1001110535",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001545930",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": false,
+                "shippingMessage": "free_shipping",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false,
+                "expressDelivery": "scheduled_del"
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001545930.jpg",
+            "modelNumber": "63215SEN",
+            "name": "High-Leverage Compact Cable Cutter",
+            "pricing": {
+                "productId": "1001545930",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 33.58,
+                    "formattedValue": "$33.58",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "LA"
+            },
+            "productRating": {
+                "averageRating": 4.57420015335083,
+                "totalReviews": 155
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 22,
+                "stockLevelStatus": "inStock"
+            },
+            "storeStock": {
+                "stockLevel": 4,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-high-leverage-compact-cable-cutter/1001545930",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001644333",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001644333.jpg",
+            "modelNumber": "D2038",
+            "name": "Pliers, Needle Nose Side-Cutters, 8-Inch",
+            "pricing": {
+                "productId": "1001644333",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 47.24,
+                    "formattedValue": "$47.24",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.753600120544434,
+                "totalReviews": 69
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 5,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-pliers-needle-nose-side-cutters-8-inch/1001644333",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        },
+        {
+            "baseProduct": "",
+            "brand": "Klein Tools",
+            "code": "1001644328",
+            "fulfillmentOptions": {
+                "addToCart": true,
+                "bopisAddToCart": true,
+                "shippingMessage": "scheduled_del",
+                "storeMessage": "pick_up_at_store",
+                "storeSelectorOverlay": false
+            },
+            "hasMoreOptions": false,
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001644328.jpg",
+            "modelNumber": "3005CR",
+            "name": "Ratcheting Crimper, 10-22 AWG - Insulated Terminals",
+            "pricing": {
+                "productId": "1001644328",
+                "storeId": "7077",
+                "unitOfMeasureCode": "EA",
+                "displayPrice": {
+                    "currencyIso": "CAD",
+                    "value": 40.94,
+                    "formattedValue": "$40.94",
+                    "unitOfMeasureCode": "EA",
+                    "unitOfMeasure": "each"
+                },
+                "lpc": false,
+                "productStatus": "SA"
+            },
+            "productRating": {
+                "averageRating": 4.587500095367432,
+                "totalReviews": 320
+            },
+            "promotionMessages": {
+                "genericPlpMessage": "",
+                "stripeMessage": ""
+            },
+            "sellableIntent": "B",
+            "source": {
+                "or1": false
+            },
+            "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+            },
+            "storeStock": {
+                "stockLevel": 2,
+                "stockLevelStatus": "inStock"
+            },
+            "url": "/product/klein-tools-ratcheting-crimper-10-22-awg-insulated-terminals/1001644328",
+            "isDemotedLocally": false,
+            "isCustomizable": false,
+            "expandedSSKU": false,
+            "admsLiteEligible": false,
+            "isBundleAvailable": false
+        }
+    ],
+    "searchReport": {
+        "currentKeyword": "klein tools",
+        "currentQuery": "q=klein tools:relevance:",
+        "expectedFacetUrl": "",
+        "hasSSKU": false,
+        "indexablePage": false,
+        "keyword": "klein tools",
+        "pageSize": 40,
+        "pageTitle": "",
+        "startIndex": 2,
+        "status": "",
+        "sortBy": "relevance",
+        "totalProducts": 323,
+        "analytics": {
+            "hasDemotedProductsPage": false,
+            "numDemotedProductsPage": 0,
+            "hasDemotedProductsTotal": false,
+            "numDemotedProductsTotal": 0,
+            "attributionToken": "kwHwkgoMCOyb_LoGEPitzsMCEAEaJDY3OGJmZGU5LTAwMDAtMjViZS05YzU1LTE0YzE0ZWU1Y2RmOCoNdW5kZWZpbmVkNzQ2NTI0xcvzF46-nRXUsp0VwvCeFYGmhxijgJcit7eMLZjWty2OkckwkPeyMJruxjCb1rctqOWqLToOZGVmYXVsdF9zZWFyY2hIAWgBegJ1Zw",
+            "expandedQuery": false,
+            "pinnedResultCount": 0,
+            "routedQuery": false
+        }
+    },
+    "sorts": [
+        {
+            "code": "relevance",
+            "name": "Recommended",
+            "selected": true
+        },
+        {
+            "code": "price-asc",
+            "name": "Price - Low to High",
+            "selected": false
+        },
+        {
+            "code": "price-desc",
+            "name": "Price - High to Low",
+            "selected": false
+        },
+        {
+            "code": "reviewAvgRating",
+            "name": "Highest Rated",
+            "selected": false
+        }
+    ],
+    "visualNavigations": [
+        {
+            "categoryId": "",
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001565910.jpg",
+            "title": "Wire Cutters, Crimpers & Strippers",
+            "url": "https://www.homedepot.ca/search?q=klein%20tools&filter=1ds2"
+        },
+        {
+            "categoryId": "",
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001616542.jpg",
+            "title": "Screwdrivers & Nut Drivers",
+            "url": "https://www.homedepot.ca/search?q=klein%20tools&filter=t28"
+        },
+        {
+            "categoryId": "",
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001331554.jpg",
+            "title": "Electrical Testers",
+            "url": "https://www.homedepot.ca/search?q=klein%20tools&filter=5rd"
+        },
+        {
+            "categoryId": "",
+            "imageUrl": "https://images.homedepot.ca/productimages/p_1001727306.jpg",
+            "title": "Specialty Tools",
+            "url": "https://www.homedepot.ca/search?q=klein%20tools&filter=i2d"
+        }
+    ]
+}

@@ -44,7 +44,7 @@ def parse_homedepot_json(input_json: list[dict[str, Any]]) -> dict[str, Any]:
                 "id": get_from_json(product, ["code"]),
                 "name": get_from_json(product, ["name"]),
                 "model_no": get_from_json(product, ["modelNumber"]),
-                "url": f'https://www.homedepot.com{get_from_json(product, ["url"])}',
+                "url": f'https://www.homedepot.ca{get_from_json(product, ["url"])}',
                 "brand": get_from_json(product, ["brand"]),
                 "thumbnails": [
                     get_from_json(product, ["imageUrl"]),

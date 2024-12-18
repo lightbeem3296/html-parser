@@ -1,0 +1,389 @@
+{
+    "success": true,
+    "url": "https://www.amazon.com/Vitamix-Blender-Professional-Grade-Container-Black/dp/B008H4SLV6/",
+    "result_count": 1,
+    "detail": {
+        "name": "Vitamix 5200 Blender, Professional-Grade, Container, Self-Cleaning 64 oz, Black/Grey",
+        "brand": "Vitamix",
+        "url": "https://www.amazon.com/Vitamix-Blender-Professional-Grade-Container-Black/dp/B008H4SLV6/",
+        "asin": "B008H4SLV6",
+        "retailer_badge": "Amazon's Choice",
+        "deal_badge": null,
+        "listing_id": "B008H4SLV6",
+        "price": 495.97,
+        "price_reduced": null,
+        "price_per_unit": null,
+        "currency": "USD",
+        "currency_symbol": "$",
+        "buying_offers": [
+            {
+                "offer_type": "Buy new:",
+                "offer_description": "495.97 495.97FREE deliveryTuesday, December 24Ships from:Brandywine TechSold by:Brandywine Tech",
+                "price": 495.97,
+                "seller": "Brandywine Tech"
+            },
+            {
+                "offer_type": "Save with Used - Like New",
+                "offer_description": "449.00 449.00FREE deliveryWednesday, January 8Ships from:Deal4U Store(Next Day shipping available)Sold by:Deal4U Store(Next Day shipping available)",
+                "price": 449.0,
+                "seller": "Deal4U Store(Next Day shipping available)"
+            }
+        ],
+        "other_sellers": {
+            "text": "New & Used (7) from",
+            "link": "https://www.amazon.com/gp/offer-listing/B008H4SLV6/ref=dp_olp_ALL_mbc?ie=UTF8&condition=ALL"
+        },
+        "rating": 4.5,
+        "total_ratings": 7725,
+        "past_month_sales": "7K+ boughtin past month",
+        "is_prime": false,
+        "shipping_info": [
+            "FREE delivery Tuesday, December 24. Order within 4 hrs 15 mins. Details"
+        ],
+        "delivery_zipcode": "33197",
+        "addon_offers": [
+            {
+                "name": "3-Year Protection Plan",
+                "price": 60.99
+            },
+            {
+                "name": "4-Year Protection Plan",
+                "price": 78.99
+            },
+            {
+                "name": "Asurion Complete Protect: One plan covers all eligible past and future purchases (Renews Monthly Until Cancelled)",
+                "price": 16.99
+            }
+        ],
+        "pay_later_offers": [],
+        "max_quantity": 5,
+        "variant": {
+            "color": {
+                "name": "Black",
+                "asin": "B008H4SLV6",
+                "in_stock": true,
+                "url": "https://www.amazon.com/dp/B008H4SLV6"
+            }
+        },
+        "categories": [
+            {
+                "name": "Home & Kitchen",
+                "url": "https://www.amazon.com/home-garden-kitchen-furniture-bedding/b/ref=dp_bc_aui_C_1/133-3611583-2358337"
+            },
+            {
+                "name": "Kitchen & Dining",
+                "url": "https://www.amazon.com/kitchen-dining/b/ref=dp_bc_aui_C_2/133-3611583-2358337"
+            },
+            {
+                "name": "Small Appliances",
+                "url": "https://www.amazon.com/kitchen-small-appliances/b/ref=dp_bc_aui_C_3/133-3611583-2358337"
+            },
+            {
+                "name": "Blenders",
+                "url": "https://www.amazon.com/blenders/b/ref=dp_bc_aui_C_4/133-3611583-2358337"
+            },
+            {
+                "name": "Countertop Blenders",
+                "url": "https://www.amazon.com/Blenders-Small-Appliances-Kitchen/b/ref=dp_bc_aui_C_5/133-3611583-2358337"
+            }
+        ],
+        "main_image": "https://m.media-amazon.com/images/I/71LFQWt5nEL._AC_SL1500.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/61bSmfN-5dL._AC_SL1500.jpg",
+            "https://m.media-amazon.com/images/I/51RJiU2yBJL._AC_SL1500.jpg",
+            "https://m.media-amazon.com/images/I/51Kt+X5iqDL._AC_SL1500.jpg",
+            "https://m.media-amazon.com/images/I/41sim-afELL._AC_SL1500.jpg",
+            "https://m.media-amazon.com/images/I/41pwwoIMACL._AC_SL1500.jpg",
+            "https://m.media-amazon.com/images/I/31pCllcsKFL._AC_SL1500.jpg",
+            "https://m.media-amazon.com/images/I/71LFQWt5nEL._AC_SL1500.jpg"
+        ],
+        "labelled_images": [],
+        "overview": [
+            {
+                "name": "Brand",
+                "value": "Vitamix"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "SpecialFeature",
+                "value": ":Radialcoolingfanandthermalprotectionsystem"
+            },
+            {
+                "name": "Capacity",
+                "value": "64FluidOunces"
+            },
+            {
+                "name": "ProductDimensions",
+                "value": "8.75\"Dx7.25\"Wx20.5\"H"
+            },
+            {
+                "name": "Material",
+                "value": "BPA-freeEastmanTritancopolyester"
+            },
+            {
+                "name": "ItemWeight",
+                "value": "10.56Pounds"
+            }
+        ],
+        "features": [
+            "Variable Speed Control: Easily adjust speed to achieve a variety of textures. The dial can be rotated at any point during the blend, so you’re in complete control",
+            "Large Batches: The size and shape of the self-cleaning 64-ounce container is ideal for blending medium to large batches. Design Feature : Radial cooling fan and thermal protection system",
+            "Hot Soup: The blades in the Vitamix container reach speeds fast enough to create friction heat, bringing cold ingredients to steaming hot in about six minutes",
+            "Hardened Stainless-Steel Blades: Our aircraft-grade stainless steel blades are designed to handle the toughest ingredients, so from the first blend to the last, you get the same quality results",
+            "Self-Cleaning: With a drop of dish soap and warm water, your Vitamix machine can clean itself in 30 to 60 seconds",
+            "What's in the Box: Motor base, 64 oz. container, Getting started guide, Classic tamper",
+            "7- year full warranty. Electrical Ratings - 120 V, 50/60 Hz, 11.5 Amps"
+        ],
+        "details_table": [
+            {
+                "name": "Brand",
+                "value": "Vitamix"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Special Feature",
+                "value": ": Radial cooling fan and thermal protection system"
+            },
+            {
+                "name": "Capacity",
+                "value": "64 Fluid Ounces"
+            },
+            {
+                "name": "Product Dimensions",
+                "value": "8.75\"D x 7.25\"W x 20.5\"H"
+            },
+            {
+                "name": "Included Components",
+                "value": "Motor Base, Classic 64-ounce Container, Tamper, Getting Started Guide"
+            },
+            {
+                "name": "Style",
+                "value": "Blender"
+            },
+            {
+                "name": "Recommended Uses For Product",
+                "value": "Blending"
+            },
+            {
+                "name": "Power Source",
+                "value": "Corded Electric"
+            },
+            {
+                "name": "Number of Speeds",
+                "value": "10"
+            },
+            {
+                "name": "Voltage",
+                "value": "120 Volts"
+            },
+            {
+                "name": "Controls Type",
+                "value": "Knob"
+            },
+            {
+                "name": "Material Type Free",
+                "value": "BPA Free"
+            },
+            {
+                "name": "Blade Material",
+                "value": "Stainless Steel"
+            },
+            {
+                "name": "Warranty Type",
+                "value": "7-year full warranty covers parts, labor and return shipping both ways."
+            },
+            {
+                "name": "UPC",
+                "value": "703113013720"
+            },
+            {
+                "name": "Global Trade Identification Number",
+                "value": "00703113013720"
+            },
+            {
+                "name": "Manufacturer",
+                "value": "Vita-Mix Corporation"
+            },
+            {
+                "name": "Item Weight",
+                "value": "10.56 pounds"
+            },
+            {
+                "name": "ASIN",
+                "value": "B008H4SLV6"
+            },
+            {
+                "name": "Item model number",
+                "value": "001372"
+            },
+            {
+                "name": "Customer Reviews",
+                "value": "4.5  4.5 out of 5 stars    \n    7,725 ratings   \n\n\n 4.5 out of 5 stars"
+            },
+            {
+                "name": "Best Sellers Rank",
+                "value": "#5,844 in Kitchen & Dining (See Top 100 in Kitchen & Dining)  #22 in Countertop Blenders"
+            },
+            {
+                "name": "Is Discontinued By Manufacturer",
+                "value": "No"
+            },
+            {
+                "name": "Date First Available",
+                "value": "July 3, 2012"
+            }
+        ],
+        "technical_details": [],
+        "bestseller_ranks": [
+            {
+                "name": "See Top 100 in Kitchen & Dining",
+                "url": "https://www.amazon.com/gp/bestsellers/kitchen/ref=pd_zg_ts_kitchen",
+                "rank": 5844
+            },
+            {
+                "name": "Countertop Blenders",
+                "url": "https://www.amazon.com/gp/bestsellers/kitchen/289915/ref=pd_zg_hrsr_kitchen",
+                "rank": 22
+            }
+        ],
+        "seller_name": "Brandywine Tech",
+        "seller_url": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A29KLQP7IUULC5&asin=B008H4SLV6&ref_=dp_merchant_link",
+        "variants": {
+            "color": [
+                {
+                    "name": "Black",
+                    "in_stock": false,
+                    "asin": "B008H4SLV6",
+                    "url": "https://www.amazon.com/dp/B008H4SLV6",
+                    "price": 495.97,
+                    "price_per_unit": null
+                },
+                {
+                    "name": "Red",
+                    "in_stock": true,
+                    "asin": "B00BY0A8Y8",
+                    "url": "https://www.amazon.com/dp/B00BY0A8Y8",
+                    "price": 499.0,
+                    "price_per_unit": null
+                },
+                {
+                    "name": "White",
+                    "in_stock": true,
+                    "asin": "B004F9L4EI",
+                    "url": "https://www.amazon.com/dp/B004F9L4EI",
+                    "price": 499.0,
+                    "price_per_unit": null
+                }
+            ]
+        },
+        "reviews_summary": "Customers appreciate the food blender's powerful performance, quality blending, and ease of cleaning. They find it easy to use and clean, with dishwasher-safe parts. Customers also appreciate the smooth blend quality and smoothness. However, some customers disagree on value for money, build quality, and noise level.",
+        "review_aspects": [
+            {
+                "name": "Functionality",
+                "sentiment": "positive"
+            },
+            {
+                "name": "Blender quality",
+                "sentiment": "positive"
+            },
+            {
+                "name": "Ease of cleaning",
+                "sentiment": "positive"
+            },
+            {
+                "name": "Blend quality",
+                "sentiment": "positive"
+            },
+            {
+                "name": "Smoothness",
+                "sentiment": "positive"
+            },
+            {
+                "name": "Value for money",
+                "sentiment": "mixed"
+            },
+            {
+                "name": "Build quality",
+                "sentiment": "mixed"
+            },
+            {
+                "name": "Noise level",
+                "sentiment": "mixed"
+            }
+        ],
+        "top_reviews": [],
+        "policy_badges": [],
+        "product_videos": [
+            "https://www.amazon.com/vdp/05e922599fa343bd9beb4ed7a24e4b5d?ref=dp_vse_rvc_0",
+            "https://www.amazon.com/vdp/067ba3d1eff3485bb0f795caa3a4c370?ref=dp_vse_rvc_1",
+            "https://www.amazon.com/vdp/0beedae7c63c4f1ca0e19fc82bd14e18?ref=dp_vse_rvc_2",
+            "https://www.amazon.com/vdp/0302b32447ae4db5ba57a91574c2a51b?ref=dp_vse_rvc_3",
+            "https://www.amazon.com/vdp/0b98568cafff43f48a5081986a913930?ref=dp_vse_rvc_4",
+            "https://www.amazon.com/vdp/0bafd8fce87043f284d0045d32d13046?ref=dp_vse_rvc_5",
+            "https://www.amazon.com/vdp/03ca61c4e6c346639c9e4485b9077595?ref=dp_vse_rvc_6",
+            "https://www.amazon.com/vdp/02c5a0fadb144db29ab0e65cbc70dbcc?ref=dp_vse_rvc_7",
+            "https://www.amazon.com/vdp/0f19be81c341437e9cad24d0a9352dc1?ref=dp_vse_rvc_8",
+            "https://www.amazon.com/vdp/081a19ad55ac44b7acc061f7d282abd7?ref=dp_vse_rvc_9"
+        ],
+        "product_guides": [
+            {
+                "text": "User Manual (PDF)",
+                "url": "https://m.media-amazon.com/images/I/91F-ycoz7FL.pdf"
+            }
+        ],
+        "warranty_and_support": {
+            "return_policy": null,
+            "return_policy_link": null,
+            "product_warranty": null,
+            "product_warranty_link": null
+        },
+        "from_the_manufacturer": {
+            "text_content": [
+                "From the manufacturer",
+                "Vitamix 5200 Blender",
+                "The size and shape of our classic container is ideal for blending everything from a single smoothie to a family-sized batch of hot soup.",
+                "Every angle of our patented container is designed to fold ingredients back to the blades for faster, smoother blends—creating the Vitamix vortex.",
+                "Explore what you can make with the Vitamix blender",
+                "Make It In Minutes"
+            ],
+            "images": [
+                {
+                    "src": "https://m.media-amazon.com/images/S/aplus-media/vc/9262b5e2-54bb-478b-971f-b307ef427d94.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+                    "alt": "Vitamix 5200"
+                },
+                {
+                    "src": "https://m.media-amazon.com/images/S/aplus-media/vc/9262b5e2-54bb-478b-971f-b307ef427d94.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+                    "alt": "Vitamix 5200"
+                },
+                {
+                    "src": "https://m.media-amazon.com/images/S/aplus-media/vc/47cd2054-b210-4a4b-b3c9-078ce0e9280d.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+                    "alt": "Why Vitamix Durability "
+                },
+                {
+                    "src": "https://m.media-amazon.com/images/S/aplus-media/vc/e6baa360-af57-48c4-b1ac-efc6b5be80b8.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+                    "alt": "Why Vitamix: Power"
+                },
+                {
+                    "src": "https://m.media-amazon.com/images/S/aplus-media/vc/f29aa23f-a515-49f3-ad2e-a164a42b67d9.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+                    "alt": "Vitamix blenders are versatile "
+                },
+                {
+                    "src": "https://m.media-amazon.com/images/S/aplus-media/vc/75805c55-a1da-4c61-b2a7-b16c9dff2edc.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+                    "alt": "Vitamix is Family Owned"
+                },
+                {
+                    "src": "https://m.media-amazon.com/images/S/aplus-media/vc/16aee568-fb4d-4932-851e-cddea2376dce.__CR0,0,1464,600_PT0_SX1464_V1___.png",
+                    "alt": "Vitamix Rewards Program - Learn More"
+                }
+            ]
+        },
+        "small_business": false
+    },
+    "remaining_credits": 1891980
+}

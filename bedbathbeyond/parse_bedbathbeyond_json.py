@@ -5,6 +5,9 @@ from typing import Any
 from bs4 import BeautifulSoup
 from loguru import logger
 
+import requests
+import urllib.parse
+
 CUR_DIR = Path(__file__).parent
 
 html_path = CUR_DIR / "123.html"
@@ -29,7 +32,7 @@ def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
     return obj
 
 
-def parse_walmart_html(html_content: str) -> list[dict[str, Any]]:
+def parse_bedbathbeyond(html_content: str) -> list[dict[str, Any]]:
     """Parses html content and returns a list of product information."""
 
     page_elem = BeautifulSoup(html_content, "html.parser")
@@ -173,21 +176,32 @@ def parse_walmart_html(html_content: str) -> list[dict[str, Any]]:
 
 
 def main() -> None:
-    with html_path.open("r", encoding="utf-8") as html_file:
-        html_content = html_file.read()
 
-        list_result = parse_walmart_html(html_content=html_content)
+    url = 'https://www.bedbathandbeyond.com/Lighting-Ceiling-Fans/13.3-Modern-Matte-Black-3-Light-Crystal-Flush-Mount-Chandelier/36053058/product.html?refccid=6HTD2IHKWJY3Y4SIE5EGK5LLFY&searchidx=0'
+    url = 'https://www.bedbathandbeyond.com/Home-Garden/Motion-Sensor-13-Gallon-50-Liter-Stainless-Steel-Odorless-Slim-Trash-Can-by-Furniture-of-America/37966526/product.html?refccid=JCHJ6R35HXZ3VHCC6JVZL4PNVA&searchidx=0'
+    url = 'https://www.bedbathandbeyond.com/Home-Garden/Modern-Sectional-Couch-Comfortable-Upholstered-Sofa-Set-with-Lumbar-Pillow-and-Throw-Pillow-for-Living-Room/41966740/product.html?refccid=RZUUDKKB5PRJ4I2HGWBAMZKWLQ&searchidx=0'
+    url = 'https://www.bedbathandbeyond.com/Bedding-Bath/Are-You-Kidding-Bare-Coma-Inducer-Oversized-Comforter-Antarctica-Gray/32084702/product.html?refccid=NH4HBGMYILPIHQSANNNRO25RLU&searchidx=0'
+    url = 'https://www.bedbathandbeyond.com/Home-Garden/Alexander-Home-Megan-Traditional-Area-Rug/32828549/product.html?refccid=SXMGM56V6QZ2472KRRK3BJNXAU&searchidx=0'
 
-        with output_path.open("w", encoding="utf-8") as output_file:
-            json.dump(
-                list_result,
-                output_file,
-                ensure_ascii=False,
-                default=str,
-                indent=2,
-            )
+    #encode url
+    encoded_url = urllib.parse.quote(url, safe=':/')
+    
+    api_url = f'https://unwrangledrf.applikuapp.com/api/unblock?url={encoded_url}&render_js=false&premium_proxy=false&country_code=us&api_key=9b4d3f68caa2f7d103813f746b75e44ebb11749e'
+    
+    response = requests.get(api_url)
+    html_content = response.text
+    list_result = parse_bedbathbeyond(html_content=html_content)
 
-        logger.info(f"saved to `{output_path}`")
+    with output_path.open("w", encoding="utf-8") as output_file:
+        json.dump(
+            list_result,
+            output_file,
+            ensure_ascii=False,
+            default=str,
+            indent=2,
+        )
+
+    logger.info(f"saved to `{output_path}`")
 
 
 if __name__ == "__main__":

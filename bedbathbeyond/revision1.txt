@@ -1,0 +1,22 @@
+Really good work!
+
+
+
+I had a thorough look at the first example. This is the product I chose:
+https://www.bedbathandbeyond.com/Lighting-Ceiling-Fans/13.3-Modern-Matte-Black-3-Light-Crystal-Flush-Mount-Chandelier/36053058/product.html?refccid=JPSO3GA7ELHLILSDRK64ZXT73Q&searchidx=1&option=69615223
+
+
+
+I need these additional attributes in the response please:
+
+** list_price = this is missing only discounted price is there
+** description = (it's incomplete, I've attached a screenshot, in this example only 1 line is missing but in others whole paragraph is missing.)
+** reviews > verified_purchase = True or False based on whether the review has that written next to it
+** total_reviews = int value based on the written reviews value I have added a screenshot from this product and the html file
+** retailer_badge = High Satisfaction Item (or equivalent text in element at similar location)
+** features = list (entire list of features)
+** dimensions*= there's a separate list of dimension. If the dimensions list has a different 3rd name then we can club the lists into the features list
+** country_of_origin = text (in this example it's there maybe in others too)
+** product_guides^ = link to the pdf instruction manual when present (it is there in this example)
+** buying_offers^ = (the pay later or discount offer in a list of strings)
+** addon_offers^ = info about warranty purchase pricing I have added a json with this example

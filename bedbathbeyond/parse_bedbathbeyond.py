@@ -118,13 +118,14 @@ def parse_bedbathbeyond(html_content: str) -> list[dict[str, Any]]:
         ["extendResponse", "marketing", "adh", "offerTypeModal", "buttonsMarketing"],
     )
     addon_offers = []
-    for key, btn_marketing in btns_marketing.items():
-        addon_offers.append(
-            {
-                "name": get_from_json(btn_marketing, ["termLength"]),
-                "price": float(get_from_json(btn_marketing, ["price"])[1:]),
-            }
-        )
+    if btns_marketing is not None:
+        for key, btn_marketing in btns_marketing.items():
+            addon_offers.append(
+                {
+                    "name": get_from_json(btn_marketing, ["termLength"]),
+                    "price": float(get_from_json(btn_marketing, ["price"])[1:]),
+                }
+            )
     detail["addon_offers"] = addon_offers
 
     detail["pay_later_offers"] = None  # TODO
@@ -161,26 +162,31 @@ def parse_bedbathbeyond(html_content: str) -> list[dict[str, Any]]:
     desc_str = get_from_json(product_data, ["description"])
     features = []
     dimensions = []
-    status = "none"
+    description = ""
+    status = "details"
     desc_elem = BeautifulSoup(desc_str, "html.parser")
     for child in desc_elem.contents:
         if isinstance(child, str):
             continue
-        if status == "none":
-            if child.text.strip().lower() == "features:":
-                status = "features"
-            elif child.text.strip().lower() == "dimensions:":
-                status = "dimensions"
+        if child.text.strip().lower() == "features:":
+            status = "features"
+        elif child.text.strip().lower() == "dimensions:":
+            status = "dimensions"
+        elif status == "details":
+            child_elem = BeautifulSoup(str(child), "html.parser")
+            if child_elem.text.strip() == "":
+                continue
+            description += child_elem.text + "\n"
         elif status == "features":
             child_elem = BeautifulSoup(str(child), "html.parser")
             elems = child_elem.select("li")
             features = [elem.text.strip() for elem in elems]
-            status = "none"
         elif status == "dimensions":
             child_elem = BeautifulSoup(str(child), "html.parser")
             elems = child_elem.select("li")
             dimensions = [elem.text.strip() for elem in elems]
-            status = "none"
+    if description != "":
+        detail["description"] = description
     detail["features"] = features
     detail["dimensions"] = dimensions
 
@@ -193,6 +199,12 @@ def parse_bedbathbeyond(html_content: str) -> list[dict[str, Any]]:
     options: list[dict[str, Any]] = get_from_json(product_data, ["options"])
     variants: list[dict[str, Any]] = []
     for option in options:
+        img_url = None
+        img_id = get_from_json(option, ["oViewerImagesIds"])
+        for img_info in get_from_json(product_data, ["oViewerImages"]):
+            if img_id == get_from_json(img_info, ["id"]):
+                img_url = f'https://ak1.ostkcdn.com/images/products/{get_from_json(img_info, ["cdnPath"])}'
+
         variants.append(
             {
                 "option_id": get_from_json(option, ["optionId"]),
@@ -200,6 +212,7 @@ def parse_bedbathbeyond(html_content: str) -> list[dict[str, Any]]:
                 "price": get_from_json(option, ["price"]),
                 "listing_price": get_from_json(option, ["comparePrice"]),
                 "in_stock": get_from_json(option, ["isInStock"]),
+                "selector": img_url,
                 "url": None,
             }
         )
@@ -265,6 +278,8 @@ def main() -> None:
     url = "https://www.bedbathandbeyond.com/Bedding-Bath/Are-You-Kidding-Bare-Coma-Inducer-Oversized-Comforter-Antarctica-Gray/32084702/product.html?refccid=NH4HBGMYILPIHQSANNNRO25RLU&searchidx=0"
     url = "https://www.bedbathandbeyond.com/Home-Garden/Alexander-Home-Megan-Traditional-Area-Rug/32828549/product.html?refccid=SXMGM56V6QZ2472KRRK3BJNXAU&searchidx=0"
     url = "https://www.bedbathandbeyond.com/Lighting-Ceiling-Fans/13.3-Modern-Matte-Black-3-Light-Crystal-Flush-Mount-Chandelier/36053058/product.html?refccid=JPSO3GA7ELHLILSDRK64ZXT73Q&searchidx=1&option=69615223"
+    url = "https://www.bedbathandbeyond.com/Bedding-Bath/Are-You-Kidding-Bare-Coma-Inducer-Oversized-Comforter-Antarctica-Gray/32084702/product.html"
+    url = "https://www.bedbathandbeyond.com/Home-Garden/Motion-Sensor-13-Gallon-50-Liter-Stainless-Steel-Odorless-Slim-Trash-Can-by-Furniture-of-America/37966526/product.html?refccid=JCHJ6R35HXZ3VHCC6JVZL4PNVA&searchidx=0"
 
     # encode url
     encoded_url = urllib.parse.quote(url, safe=":/")

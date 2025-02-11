@@ -105,10 +105,10 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     detail["price_reduced"] = None  # TODO
     detail["price_per_unit"] = None  # TODO
 
-    # Currency
+    # Currency & Symbol
     detail["currency"] = get_from_json(product_variants, [0, "price", "currencyCode"])  # TODO
+    detail["currency_symbol"] = get_from_json(datalayer_product, ["currency"])
 
-    detail["currency_symbol"] = None  # TODO
     detail["buying_offers"] = None  # TODO
     detail["other_sellers"] = None  # TODO
     detail["rating"] = None  # TODO
@@ -119,7 +119,9 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     detail["delivery_zipcode"] = None  # TODO
     detail["addon_offers"] = None  # TODO
     detail["pay_later_offers"] = None  # TODO
-    detail["max_quantity"] = None  # TODO
+
+    # Quantity
+    detail["max_quantity"] = get_from_json(datalayer_product, ["inventory", 0, "quantity"])
 
     # Variant
     detail["variant"] = {
@@ -130,7 +132,16 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     detail["main_image"] = None  # TODO
     detail["images"] = None  # TODO
     detail["labelled_images"] = None  # TODO
-    detail["overview"] = None  # TODO
+
+    # Overview
+    attribute_list = get_from_json(datalayer_product, ["attributeList"])
+    detail["overview"] = [
+        {
+            "name": get_from_json(attribute, ["label"]),
+            "value": get_from_json(attribute, ["values"]),
+        }
+        for attribute in attribute_list
+    ]
 
     # Features & Dimensions & Description
     features = []
@@ -160,14 +171,7 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     detail["dimensions"] = dimensions
 
     # Details Table
-    attribute_list = get_from_json(datalayer_product, ["attributeList"])
-    detail["details_table"] = [
-        {
-            "name": get_from_json(attribute, ["label"]),
-            "value": get_from_json(attribute, ["values"]),
-        }
-        for attribute in attribute_list
-    ]
+    detail["details_table"] = detail["overview"]
 
     detail["technical_details"] = None  # TODO
     detail["bestseller_ranks"] = None  # TODO

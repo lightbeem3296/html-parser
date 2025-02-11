@@ -201,7 +201,7 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
 
     # Country of Region
     detail["country_of_origin"] = get_from_json(init_data, ["shop", "countryCode"])
-    
+
     detail["top_reviews"] = None  # TODO
     detail["policy_badges"] = None  # TODO
     detail["product_videos"] = None  # TODO

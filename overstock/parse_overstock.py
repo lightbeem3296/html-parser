@@ -131,8 +131,15 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     # Categories
     detail["categories"] = get_from_json(datalayer_product, ["taxonomyList"])
 
-    detail["main_image"] = None  # TODO
-    detail["images"] = None  # TODO
+    # Main Image
+    detail["main_image"] = "https:" + get_from_json(product_variants, [0, "image", "src"])
+
+    # Images
+    images: list[str] = []
+    for product_variant in product_variants:
+        images.append("https:" + get_from_json(product_variant, ["image", "src"]))
+    detail["images"] = list(set(images))
+
     detail["labelled_images"] = None  # TODO
 
     # Overview

@@ -1,3 +1,4 @@
+import requests
 import re
 import json
 from pathlib import Path
@@ -38,6 +39,32 @@ def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
     return obj
 
 
+def get_reviews(
+    api_key: str,
+    merchant_id: str,
+    page_id: str,
+) -> dict[str, Any]:
+    ret: dict[str, Any] = {}
+
+    size = 10
+    offset = 10 * 0
+    url = f"https://display.powerreviews.com/m/{merchant_id}/l/en_US/product/{page_id}/reviews?paging.from={offset}&paging.size={size}&filters=&search=&sort=Newest&image_only=false&page_locale=en_US&_noconfig=true&apikey={api_key}"
+    resp = requests.get(url)
+    resp_json = resp.json()
+
+    ret["rollup"] = get_from_json(resp_json, ["results", 0, "rollup"])
+    ret["reviews"] = list(get_from_json(resp_json, ["results", 0, "reviews"]))
+
+    pages_total = get_from_json(resp_json, ["paging", "pages_total"])
+    for i in range(1, pages_total):
+        offset = size * i
+        url = f"https://display.powerreviews.com/m/{merchant_id}/l/en_US/product/{page_id}/reviews?paging.from={offset}&paging.size={size}&filters=&search=&sort=Newest&image_only=false&page_locale=en_US&_noconfig=true&apikey={api_key}"
+        resp = requests.get(url)
+        resp_json = resp.json()
+        ret["reviews"].extend(list(get_from_json(resp_json, ["results", 0, "reviews"])))
+    return ret
+
+
 def parse_overstock(html_content: str) -> dict[str, Any]:
     page_elem = BeautifulSoup(html_content, "html.parser")
     dict_details: dict[str, Any] = {}
@@ -45,6 +72,8 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     missing_attrs: dict[str, Any] = {}
     init_data: dict[str, Any] = {}
     datalayer_product: dict[str, Any] = {}
+    render_config: dict[str, Any] = {}
+
     script_elems = page_elem.select("script")
     for script_elem in script_elems:
         if "const missingAttributes" in script_elem.text:
@@ -55,7 +84,6 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
             matches = pattern.findall(script_elem.string)
             json_text = matches[0]
             missing_attrs = json.loads(json_text)
-            continue
         if script_elem.attrs.get("id") == "web-pixels-manager-setup":
             pattern = re.compile(
                 r"initData:\s*(\{.*?purchasingCompany\"\:null\})\,\}",
@@ -64,7 +92,6 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
             matches = pattern.findall(script_elem.string)
             json_text = matches[0]
             init_data = json.loads(json_text)
-            continue
         if "window.salesforce.datalayer.product" in script_elem.text:
             pattern = re.compile(
                 r"window.salesforce.datalayer.product\s*=\s*(\{.*?\})\;",
@@ -73,7 +100,13 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
             matches = pattern.findall(script_elem.string)
             json_text = matches[1]
             datalayer_product = json.loads(json_text)
-            continue
+        if "merchant_group_id" in script_elem.text:
+            patterns = {
+                "api_key": r'api_key:\s*"([^"]+)"',
+                "merchant_id": r'merchant_id:\s*"([^"]+)"',
+                "page_id": r'page_id:\s*"([^"]+)"',
+            }
+            render_config = {key: re.search(pattern, script_elem.string).group(1) for key, pattern in patterns.items()}
 
     dict_details["success"] = True
     dict_details["url"] = get_from_json(missing_attrs, ["url"])
@@ -111,8 +144,16 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
 
     detail["buying_offers"] = None  # TODO
     detail["other_sellers"] = None  # TODO
-    detail["rating"] = None  # TODO
-    detail["total_ratings"] = None  # TODO
+
+    # Rating
+    reviews = get_reviews(
+        api_key=get_from_json(render_config, ["api_key"]),
+        merchant_id=get_from_json(render_config, ["merchant_id"]),
+        page_id=get_from_json(render_config, ["page_id"]),
+    )
+    detail["rating"] = get_from_json(reviews, ["rollup", "average_rating"])
+    detail["total_ratings"] = get_from_json(reviews, ["rollup", "rating_count"])
+
     detail["past_month_sales"] = None  # TODO
     detail["is_prime"] = None  # TODO
     detail["shipping_info"] = None  # TODO
@@ -203,8 +244,26 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     ]
 
     detail["reviews_summary"] = None  # TODO
-    detail["review_aspects"] = None  # TODO
-    detail["total_reviews"] = None  # TODO
+
+    # Review Aspects
+    detail["review_aspects"] = [
+        {
+            "name": get_from_json(review, ["details", "nickname"]),
+            "headline": get_from_json(review, ["details", "headline"]),
+            "comments": get_from_json(review, ["details", "comments"]),
+            "rating": get_from_json(review, ["metrics", "rating"]),
+            "helpful_votes": get_from_json(review, ["metrics", "helpful_votes"]),
+            "not_helpful_votes": get_from_json(review, ["metrics", "not_helpful_votes"]),
+            "helpful_score": get_from_json(review, ["metrics", "helpful_score"]),
+            "is_staff_reviewer": get_from_json(review, ["badges", "is_staff_reviewer"]),
+            "is_verified_buyer": get_from_json(review, ["badges", "is_verified_buyer"]),
+            "is_verified_reviewer": get_from_json(review, ["badges", "is_verified_reviewer"]),
+        }
+        for review in get_from_json(reviews, ["reviews"])
+    ]
+
+    # Total Reviews
+    detail["total_reviews"] = get_from_json(reviews, ["rollup", "review_count"])
 
     # Country of Region
     detail["country_of_origin"] = get_from_json(init_data, ["shop", "countryCode"])

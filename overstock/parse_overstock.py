@@ -1,3 +1,4 @@
+import re
 import json
 from pathlib import Path
 from typing import Any
@@ -7,6 +8,8 @@ from loguru import logger
 
 import requests
 import urllib.parse
+
+TEST_LOCAL = True
 
 CUR_DIR = Path(__file__).parent
 
@@ -24,16 +27,6 @@ output_path = CUR_DIR.parent / "result" / "overstock-result.json"
 
 
 def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
-    """
-    Get value from json object
-
-    Args:
-        json_obj (dict[str, Any] | None): json object
-        path (list[str], optional): path to get value. Defaults to [].
-
-    Returns:
-        Any: value from json object
-    """
     obj = json_obj
     for key in path:
         if obj is None:
@@ -46,242 +39,143 @@ def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
 
 
 def parse_overstock(html_content: str) -> dict[str, Any]:
-    """
-    Parse overstock product detail page
-
-    Args:
-        html_content (str): html content of product detail page
-
-    Returns:
-        dict[str, Any]: parsed product detail
-    """
-
     page_elem = BeautifulSoup(html_content, "html.parser")
     dict_details: dict[str, Any] = {}
 
-    # Extract __NEXT_DATA__ from html
-    json_data_str = page_elem.select_one("script[id=__NEXT_DATA__]").text
-    json_data = json.loads(json_data_str)
+    missing_attrs: dict[str, Any] = {}
+    init_data: dict[str, Any] = {}
+    script_elems = page_elem.select("script")
+    for script_elem in script_elems:
+        if "const missingAttributes" in script_elem.text:
+            pattern = re.compile(
+                r"const\s+missingAttributes\s*=\s*(\{.*?\})\s*const\s+scripts",
+                re.DOTALL,
+            )
+            matches = pattern.findall(script_elem.string)
+            json_text = matches[0]
+            missing_attrs = json.loads(json_text)
+            continue
+        if script_elem.attrs.get("id") == "web-pixels-manager-setup":
+            pattern = re.compile(
+                r"initData:\s*(\{.*?purchasingCompany\"\:null\})\,\}",
+                re.DOTALL,
+            )
+            matches = pattern.findall(script_elem.string)
+            json_text = matches[0]
+            init_data = json.loads(json_text)
+            continue
 
-    page_props_data = get_from_json(json_data, ["props", "pageProps"])
-    meta_data = get_from_json(page_props_data, ["meta"])
-    data_layer_data = get_from_json(meta_data, ["dataLayer"])
-    product_data = get_from_json(page_props_data, ["product"])
-    config_data = get_from_json(page_props_data, ["config"])
-
-    # Fill result dictionary
     dict_details["success"] = True
-    dict_details["url"] = get_from_json(product_data, ["meta", "htmlUrl"])
+    dict_details["url"] = get_from_json(missing_attrs, ["url"])
     dict_details["result_count"] = 1
 
-    # Fill detail
     detail: dict[str, Any] = {}
 
-    detail["name"] = get_from_json(product_data, ["name"])
-    detail["brand"] = get_from_json(product_data, ["brandName"])
-    detail["url"] = get_from_json(product_data, ["meta", "htmlUrl"])
-    detail["description"] = get_from_json(product_data, ["jsonLdDescription"])
+    detail["name"] = get_from_json(missing_attrs, ["name"])
+    detail["brand"] = get_from_json(missing_attrs, ["brand", "name"])
+    detail["url"] = get_from_json(missing_attrs, ["url"])
+    
+    # Description
+    description:str = get_from_json(missing_attrs, ["description"])
+    detail["description"] = description 
+
     detail["asin"] = None  # TODO
-    detail["retailer_badge"] = get_from_json(product_data, ["urgencyMessage"])
+    detail["retailer_badge"] = None  # TODO
     detail["deal_badge"] = None  # TODO
-    detail["listing_id"] = get_from_json(product_data, ["id"])
 
-    variant_option_id = get_from_json(product_data, ["defaultOptionId"])
-    list_price = None
-    for variant in get_from_json(product_data, ["options"]):
-        if get_from_json(variant, ["optionId"]) == variant_option_id:
-            list_price = get_from_json(variant, ["comparePrice"])
-    detail["list_price"] = list_price
+    # Listing ID
+    product_variants = get_from_json(init_data, ["productVariants"])
+    detail["listing_id"] = get_from_json(product_variants, [0, "product", "id"])
 
-    detail["price"] = get_from_json(product_data, ["memberPrice"])
+    detail["list_price"] = None  # TODO
+
+    # Price
+    detail["price"] = get_from_json(product_variants, [0, "price", "amount"])
+
     detail["price_reduced"] = None  # TODO
     detail["price_per_unit"] = None  # TODO
-    detail["currency"] = get_from_json(data_layer_data, ["order_currency"])
-    detail["currency_symbol"] = get_from_json(product_data, ["priceSet", 0, "symbol"])
 
-    finnancing_offers = get_from_json(page_props_data, ["financingOffer"])
-    buying_offers = []
-    for offer in finnancing_offers:
-        offer_description = None
-        description_html = get_from_json(offer, ["html", "messageHtml"])
-        if description_html is not None:
-            offer_description = BeautifulSoup(
-                description_html, "html.parser"
-            ).text.strip()
-        buying_offers.append(
-            {
-                "offer_type": get_from_json(offer, ["data", "financingOfferType"]),
-                "offer_description": offer_description,
-                "price": None,
-                "seller": None,
-            }
-        )
-    detail["buying_offers"] = buying_offers
+    # Currency
+    detail["currency"] = get_from_json(product_variants, [0, "price", "currencyCode"])  # TODO
 
-    detail["other_sellers"] = []  # TODO
-
-    ratings: dict[str, int] = get_from_json(product_data, ["ratingCounts"])
-    total_point = 0
-    total_count = 0
-    for key, value in ratings.items():
-        total_point += int(key) * value
-        total_count += value
-    detail["rating"] = total_point / total_count if total_count > 0 else 0
-    detail["total_ratings"] = total_count
-
+    detail["currency_symbol"] = None  # TODO
+    detail["buying_offers"] = None  # TODO
+    detail["other_sellers"] = None  # TODO
+    detail["rating"] = None  # TODO
+    detail["total_ratings"] = None  # TODO
     detail["past_month_sales"] = None  # TODO
     detail["is_prime"] = None  # TODO
-    detail["shipping_info"] = get_from_json(config_data, ["shipping"])
-    detail["delivery_zipcode"] = get_from_json(meta_data, ["zipCode"])
-
-    btns_marketing: dict[str, Any] = get_from_json(
-        page_props_data,
-        ["extendResponse", "marketing", "adh", "offerTypeModal", "buttonsMarketing"],
-    )
-    addon_offers = []
-    if btns_marketing is not None:
-        for key, btn_marketing in btns_marketing.items():
-            addon_offers.append(
-                {
-                    "name": get_from_json(btn_marketing, ["termLength"]),
-                    "price": float(get_from_json(btn_marketing, ["price"])[1:]),
-                }
-            )
-    detail["addon_offers"] = addon_offers
-
+    detail["shipping_info"] = None  # TODO
+    detail["delivery_zipcode"] = None  # TODO
+    detail["addon_offers"] = None  # TODO
     detail["pay_later_offers"] = None  # TODO
     detail["max_quantity"] = None  # TODO
-    detail["variant"] = {"option_id": variant_option_id}
 
-    subcategories: list[dict[str, Any]] = get_from_json(
-        page_props_data, ["crossSell", 0, "tiles"]
-    )
-    categories: list[dict[str, Any]] = []
-    for subcategory in subcategories:
-        categories.append(
-            {
-                "name": get_from_json(subcategory, ["subcategory_title"]),
-                "url": f'https://www.bedbathandbeyond.com/{get_from_json(subcategory, ["subcategory_url"])}',
-            }
-        )
-    detail["categories"] = categories
+    # Variant
+    detail["variant"] = {
+        "id": get_from_json(product_variants, [0, "id"]),
+    }
 
-    detail["main_image"] = get_from_json(data_layer_data, ["product_image_url", 0])
-    detail["images"] = [
-        f'https://ak1.ostkcdn.com/images/products/{get_from_json(img_info, ["cdnPath"])}'
-        for img_info in get_from_json(product_data, ["oViewerImages"])
-    ]
-    detail["labelled_images"] = None
+    detail["categories"] = None  # TODO
+    detail["main_image"] = None  # TODO
+    detail["images"] = None  # TODO
+    detail["labelled_images"] = None  # TODO
+    detail["overview"] = None  # TODO
 
-    attributes = get_from_json(
-        product_data, ["specificationAttributes", "attributeGroups", 0, "attributes"]
-    )
-    detail["overview"] = [
-        {"name": attr["label"], "value": attr["values"]} for attr in attributes
-    ]
-
-    desc_str = get_from_json(product_data, ["description"])
+    # Features & Dimensions & Description
     features = []
     dimensions = []
-    description = ""
-    status = "details"
-    desc_elem = BeautifulSoup(desc_str, "html.parser")
-    for child in desc_elem.contents:
-        if isinstance(child, str):
+    description_new = ""
+    status = "description"
+    for line in description.splitlines():
+        line = line.strip()
+        if line == "":
             continue
-        if child.text.strip().lower() == "features:":
+
+        if line.lower() == "features:":
             status = "features"
-        elif child.text.strip().lower() == "dimensions:":
+        elif line.lower() == "dimensions:":
             status = "dimensions"
-        elif status == "details":
-            child_elem = BeautifulSoup(str(child), "html.parser")
-            if child_elem.text.strip() == "":
-                continue
-            description += child_elem.text + "\n"
-        elif status == "features":
-            child_elem = BeautifulSoup(str(child), "html.parser")
-            elems = child_elem.select("li")
-            features = [elem.text.strip() for elem in elems]
-        elif status == "dimensions":
-            child_elem = BeautifulSoup(str(child), "html.parser")
-            elems = child_elem.select("li")
-            dimensions = [elem.text.strip() for elem in elems]
-    if description != "":
-        detail["description"] = description
+        elif line.endswith(":"):
+            status = "none"
+        else:
+            if status == "features":
+                features.append(line)
+            elif status == "dimensions":
+                dimensions.append(line)
+            elif status == "description":
+                description_new += f"{line}\n"
+    detail["description"] = description_new
     detail["features"] = features
     detail["dimensions"] = dimensions
 
-    detail["details_table"] = detail["overview"]
+    detail["details_table"] = None  # TODO
     detail["technical_details"] = None  # TODO
     detail["bestseller_ranks"] = None  # TODO
     detail["seller_name"] = None  # TODO
     detail["seller_url"] = None  # TODO
-
-    options: list[dict[str, Any]] = get_from_json(product_data, ["options"])
-    variants: list[dict[str, Any]] = []
-    for option in options:
-        img_url = None
-        img_id = get_from_json(option, ["oViewerImagesIds"])
-        for img_info in get_from_json(product_data, ["oViewerImages"]):
-            if img_id == get_from_json(img_info, ["id"]):
-                img_url = f'https://ak1.ostkcdn.com/images/products/{get_from_json(img_info, ["cdnPath"])}'
-
-        variants.append(
-            {
-                "option_id": get_from_json(option, ["optionId"]),
-                "description": get_from_json(option, ["decription"]),
-                "price": get_from_json(option, ["price"]),
-                "listing_price": get_from_json(option, ["comparePrice"]),
-                "in_stock": get_from_json(option, ["isInStock"]),
-                "selector": img_url,
-                "url": None,
-            }
-        )
-    detail["variants"] = variants
-
+    # Variants
+    detail["variants"] = [
+        {
+            "price": get_from_json(product_variant, ["price", "amount"]),
+            "currency_code": get_from_json(product_variant, ["price", "currencyCode"]),
+            "title": get_from_json(product_variant, ["product", "title"]),
+            "vendor": get_from_json(product_variant, ["product", "vendor"]),
+            "id": get_from_json(product_variant, ["id"]),
+            "image": get_from_json(product_variant, ["image", "src"]),
+            "sku": get_from_json(product_variant, ["sku"]),
+            "variant_title": get_from_json(product_variant, ["variant_title"]),
+        }
+        for product_variant in product_variants
+    ]
     detail["reviews_summary"] = None  # TODO
-
-    reviews: list[dict[str, Any]] = get_from_json(
-        page_props_data, ["initialPowerReviews", "results", 0, "reviews"]
-    )
-    aspects: list[dict[str, Any]] = []
-    for review in reviews:
-        aspects.append(
-            {
-                "name": get_from_json(review, ["details", "nickname"]),
-                "headline": get_from_json(review, ["details", "headline"]),
-                "comments": get_from_json(review, ["details", "comments"]),
-                "rating": get_from_json(review, ["metrics", "rating"]),
-                "helpful_votes": get_from_json(review, ["metrics", "helpful_votes"]),
-                "not_helpful_votes": get_from_json(
-                    review, ["metrics", "not_helpful_votes"]
-                ),
-                "helpful_score": get_from_json(review, ["metrics", "helpful_score"]),
-                "verified_purchase": get_from_json(
-                    review, ["badges", "is_verified_buyer"]
-                ),
-            }
-        )
-    detail["review_aspects"] = aspects
-    detail["total_reviews"] = get_from_json(
-        page_props_data, ["initialPowerReviews", "paging", "total_results"]
-    )
-    detail["country_of_origin"] = get_from_json(product_data, ["countryOfOrigin"])
+    detail["review_aspects"] = None  # TODO
+    detail["total_reviews"] = None  # TODO
+    detail["country_of_origin"] = get_from_json(init_data, ["shop", "countryCode"])
     detail["top_reviews"] = None  # TODO
     detail["policy_badges"] = None  # TODO
     detail["product_videos"] = None  # TODO
-
-    contents = get_from_json(product_data, ["productContents"])
-    guides = []
-    for content in contents:
-        guides.append(
-            {
-                "text": get_from_json(content, ["contentName"]),
-                "url": f'https://www.bedbathandbeyond.com{get_from_json(content, ["contentUrl"])}',
-            }
-        )
-    detail["product_guides"] = guides
-
+    detail["product_guides"] = None  # TODO
     detail["warranty_and_support"] = None  # TODO
     detail["from_the_manufacturer"] = None  # TODO
     detail["small_business"] = None  # TODO
@@ -342,8 +236,10 @@ def test_with_local_files() -> None:
 
 
 def main() -> None:
-    test_with_local_files()
-    test_with_api()
+    if TEST_LOCAL:
+        test_with_local_files()
+    else:
+        test_with_api()
 
 
 if __name__ == "__main__":

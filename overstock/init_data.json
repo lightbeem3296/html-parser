@@ -1,0 +1,332 @@
+{
+  "shop": {
+    "name": "Overstock",
+    "paymentSettings": {
+      "currencyCode": "USD"
+    },
+    "myshopifyDomain": "a37a28-2.myshopify.com",
+    "countryCode": "US",
+    "storefrontUrl": "https:\/\/www.overstock.com"
+  },
+  "customer": null,
+  "cart": null,
+  "checkout": null,
+  "productVariants": [
+    {
+      "price": {
+        "amount": 199.97,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007125663",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_e42232cc-97bc-45d7-b0fa-fda16c7402de.jpg?v=1737016779"
+      },
+      "sku": "36743467-000-000",
+      "title": "Set of 2 \/ Bar Height \/ Fabric Pale Grey",
+      "untranslatedTitle": "Set of 2 \/ Bar Height \/ Fabric Pale Grey"
+    },
+    {
+      "price": {
+        "amount": 189.73,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007223967",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_d40f36ca-8381-43d1-81f0-856555d5b4b5.jpg?v=1737016779"
+      },
+      "sku": "36743467-000-001",
+      "title": "Set of 2 \/ Bar Height \/ Fabric Middle Grey",
+      "untranslatedTitle": "Set of 2 \/ Bar Height \/ Fabric Middle Grey"
+    },
+    {
+      "price": {
+        "amount": 169.24,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007256735",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-Counter-or-High-Bar-Stools_e3a8f9b7-47ae-44d7-9dc5-d6a3a223016e.jpg?v=1737016779"
+      },
+      "sku": "36743467-000-002",
+      "title": "Set of 2 \/ Short \/ PU Brown",
+      "untranslatedTitle": "Set of 2 \/ Short \/ PU Brown"
+    },
+    {
+      "price": {
+        "amount": 210.21,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007289503",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-Counter-or-High-Bar-Stools_b2bd7123-42ac-41f5-b4ec-74d28f514a4e.jpg?v=1737016779"
+      },
+      "sku": "36743467-000-003",
+      "title": "Set of 2 \/ Short \/ PU Black",
+      "untranslatedTitle": "Set of 2 \/ Short \/ PU Black"
+    },
+    {
+      "price": {
+        "amount": 344.99,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007322271",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-Counter-or-High-Bar-Stools_d6376583-ad19-4fe8-a94e-b10fee12f9a1.jpg?v=1737017171"
+      },
+      "sku": "36743467-000-004",
+      "title": "Set of 2 \/ Bar Height \/ White \u0026 Black",
+      "untranslatedTitle": "Set of 2 \/ Bar Height \/ White \u0026 Black"
+    },
+    {
+      "price": {
+        "amount": 192.08,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007486111",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_fb678193-37f6-461d-b66e-021c0307c973.jpg?v=1737016779"
+      },
+      "sku": "36743467-000-005",
+      "title": "Set of 2 \/ Bar Height \/ PU Cream",
+      "untranslatedTitle": "Set of 2 \/ Bar Height \/ PU Cream"
+    },
+    {
+      "price": {
+        "amount": 192.98,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007551647",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_fbda1a02-72b3-4e01-aba9-a78b670b8b63.jpg?v=1737016966"
+      },
+      "sku": "36743467-000-006",
+      "title": "Set of 2 \/ Bar Height \/ PU Brown",
+      "untranslatedTitle": "Set of 2 \/ Bar Height \/ PU Brown"
+    },
+    {
+      "price": {
+        "amount": 200.47,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007584415",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_4f892ece-92de-4283-b7aa-41e46494f7b8.jpg?v=1737016966"
+      },
+      "sku": "36743467-000-007",
+      "title": "Set of 2 \/ Bar Height \/ PU Black",
+      "untranslatedTitle": "Set of 2 \/ Bar Height \/ PU Black"
+    },
+    {
+      "price": {
+        "amount": 448.49,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007649951",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_fb678193-37f6-461d-b66e-021c0307c973.jpg?v=1737016779"
+      },
+      "sku": "36743467-000-008",
+      "title": "Set of 4 \/ Bar Height \/ PU Cream",
+      "untranslatedTitle": "Set of 4 \/ Bar Height \/ PU Cream"
+    },
+    {
+      "price": {
+        "amount": 368.09,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007748255",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_fb441f25-5e58-4dd4-ac8e-195be2f1a312.jpg?v=1737016778"
+      },
+      "sku": "36743467-000-009",
+      "title": "Set of 4 \/ Counter Height \/ Fabric Pale Grey",
+      "untranslatedTitle": "Set of 4 \/ Counter Height \/ Fabric Pale Grey"
+    },
+    {
+      "price": {
+        "amount": 407.99,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007846559",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_e42232cc-97bc-45d7-b0fa-fda16c7402de.jpg?v=1737016779"
+      },
+      "sku": "36743467-000-010",
+      "title": "Set of 4 \/ Bar Height \/ Fabric Pale Grey",
+      "untranslatedTitle": "Set of 4 \/ Bar Height \/ Fabric Pale Grey"
+    },
+    {
+      "price": {
+        "amount": 187.77,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007944863",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_fb441f25-5e58-4dd4-ac8e-195be2f1a312.jpg?v=1737016778"
+      },
+      "sku": "36743467-000-011",
+      "title": "Set of 2 \/ Counter Height \/ Fabric Pale Grey",
+      "untranslatedTitle": "Set of 2 \/ Counter Height \/ Fabric Pale Grey"
+    },
+    {
+      "price": {
+        "amount": 369.98,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015007977631",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_d40f36ca-8381-43d1-81f0-856555d5b4b5.jpg?v=1737016779"
+      },
+      "sku": "36743467-000-012",
+      "title": "Set of 4 \/ Bar Height \/ Fabric Middle Grey",
+      "untranslatedTitle": "Set of 4 \/ Bar Height \/ Fabric Middle Grey"
+    },
+    {
+      "price": {
+        "amount": 447.92,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015008043167",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_4f892ece-92de-4283-b7aa-41e46494f7b8.jpg?v=1737016966"
+      },
+      "sku": "36743467-000-013",
+      "title": "Set of 4 \/ Bar Height \/ PU Black",
+      "untranslatedTitle": "Set of 4 \/ Bar Height \/ PU Black"
+    },
+    {
+      "price": {
+        "amount": 384.97,
+        "currencyCode": "USD"
+      },
+      "product": {
+        "title": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "vendor": "Glitzhome",
+        "id": "9402356596895",
+        "untranslatedTitle": "Glitzhome Set of 2 41\"H Modern Tapered Leg Counter or High Bar Stools",
+        "url": "\/products\/glitzhome-set-of-2-41h-modern-tapered-leg-counter-or-high-bar-stools-32118744",
+        "type": ""
+      },
+      "id": "55015008174239",
+      "image": {
+        "src": "\/\/www.overstock.com\/cdn\/shop\/files\/Glitzhome-Set-of-2-41_22H-Modern-Tapered-Leg-High-Bar-Stools_fbda1a02-72b3-4e01-aba9-a78b670b8b63.jpg?v=1737016966"
+      },
+      "sku": "36743467-000-014",
+      "title": "Set of 4 \/ Bar Height \/ PU Brown",
+      "untranslatedTitle": "Set of 4 \/ Bar Height \/ PU Brown"
+    }
+  ],
+  "purchasingCompany": null
+}

@@ -14,6 +14,7 @@ TEST_LOCAL = True
 
 CUR_DIR = Path(__file__).parent
 
+html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-08.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-45.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-49.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-52.html"
@@ -22,7 +23,6 @@ html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-57.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-01.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-02.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-06.html"
-html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-08.html"
 
 output_path = CUR_DIR.parent / "result" / "overstock-result.json"
 
@@ -57,6 +57,7 @@ def get_reviews(
 
     pages_total = get_from_json(resp_json, ["paging", "pages_total"])
     for i in range(1, pages_total):
+        logger.debug(f"fetching review: {i}/{pages_total} page")
         offset = size * i
         url = f"https://display.powerreviews.com/m/{merchant_id}/l/en_US/product/{page_id}/reviews?paging.from={offset}&paging.size={size}&filters=&search=&sort=Newest&image_only=false&page_locale=en_US&_noconfig=true&apikey={api_key}"
         resp = requests.get(url)

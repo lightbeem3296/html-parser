@@ -44,6 +44,7 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
 
     missing_attrs: dict[str, Any] = {}
     init_data: dict[str, Any] = {}
+    datalayer_product: dict[str, Any] = {}
     script_elems = page_elem.select("script")
     for script_elem in script_elems:
         if "const missingAttributes" in script_elem.text:
@@ -64,6 +65,15 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
             json_text = matches[0]
             init_data = json.loads(json_text)
             continue
+        if "window.salesforce.datalayer.product" in script_elem.text:
+            pattern = re.compile(
+                r"window.salesforce.datalayer.product\s*=\s*(\{.*?\})\;",
+                re.DOTALL,
+            )
+            matches = pattern.findall(script_elem.string)
+            json_text = matches[1]
+            datalayer_product = json.loads(json_text)
+            continue
 
     dict_details["success"] = True
     dict_details["url"] = get_from_json(missing_attrs, ["url"])
@@ -74,10 +84,10 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     detail["name"] = get_from_json(missing_attrs, ["name"])
     detail["brand"] = get_from_json(missing_attrs, ["brand", "name"])
     detail["url"] = get_from_json(missing_attrs, ["url"])
-    
+
     # Description
-    description:str = get_from_json(missing_attrs, ["description"])
-    detail["description"] = description 
+    description: str = get_from_json(missing_attrs, ["description"])
+    detail["description"] = description
 
     detail["asin"] = None  # TODO
     detail["retailer_badge"] = None  # TODO
@@ -149,11 +159,21 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     detail["features"] = features
     detail["dimensions"] = dimensions
 
-    detail["details_table"] = None  # TODO
+    # Details Table
+    attribute_list = get_from_json(datalayer_product, ["attributeList"])
+    detail["details_table"] = [
+        {
+            "name": get_from_json(attribute, ["label"]),
+            "value": get_from_json(attribute, ["values"]),
+        }
+        for attribute in attribute_list
+    ]
+
     detail["technical_details"] = None  # TODO
     detail["bestseller_ranks"] = None  # TODO
     detail["seller_name"] = None  # TODO
     detail["seller_url"] = None  # TODO
+
     # Variants
     detail["variants"] = [
         {
@@ -168,6 +188,7 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
         }
         for product_variant in product_variants
     ]
+
     detail["reviews_summary"] = None  # TODO
     detail["review_aspects"] = None  # TODO
     detail["total_reviews"] = None  # TODO

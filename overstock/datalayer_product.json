@@ -1,0 +1,218 @@
+ window.salesforce.datalayer.product = 
+ {
+    "productId": 9402356596895,
+    "sku": "36743467-000-002",
+    "price": "169.24",
+    "listPrice": "448.49",
+    "priceDescription": "$169.24 - $448.49",
+    "currency": "$",
+    "inventory": [
+        {
+            "subSku": "36743467-000-000",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-001",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-002",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-003",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-004",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-005",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-006",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-007",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-008",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-009",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-010",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-011",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-012",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-013",
+            "quantity": 26
+        },
+        {
+            "subSku": "36743467-000-014",
+            "quantity": 26
+        }
+    ],
+    "taxonomyList": [
+        {
+            "name": "Furniture"
+        },
+        {
+            "name": "Dining, Kitchen and Bar Furniture"
+        },
+        {
+            "name": "Bar Furniture"
+        },
+        {
+            "name": "Counter and Bar Stools"
+        }
+    ],
+    "attributeList": [
+        {
+            "label": "Style",
+            "values": [
+                "Modern \u0026amp; Contemporary"
+            ]
+        },
+        {
+            "label": "Material",
+            "values": [
+                "Fabric",
+                "Steel",
+                "Wood"
+            ]
+        },
+        {
+            "label": "Finish",
+            "values": [
+                "Antique",
+                "Black Finish",
+                "Cream Finish",
+                "Metal Finish"
+            ]
+        },
+        {
+            "label": "Set Size",
+            "values": [
+                "Set of 2",
+                "Set of 4"
+            ]
+        },
+        {
+            "label": "Frame Material",
+            "values": [
+                "Steel",
+                "Wood"
+            ]
+        },
+        {
+            "label": "Assembly",
+            "values": [
+                "Assembly Required"
+            ]
+        },
+        {
+            "label": "Chair Back Height",
+            "values": [
+                "Standard"
+            ]
+        },
+        {
+            "label": "Arms",
+            "values": [
+                "With Arms"
+            ]
+        },
+        {
+            "label": "Color",
+            "values": [
+                "Black",
+                "Brown",
+                "Cream",
+                "Grey",
+                "White"
+            ]
+        },
+        {
+            "label": "Number of Pieces",
+            "values": [
+                "2-Piece",
+                "4-Piece"
+            ]
+        },
+        {
+            "label": "Product Features",
+            "values": [
+                "Footrest"
+            ]
+        },
+        {
+            "label": "Seat Height",
+            "values": [
+                "Bar Height",
+                "Counter Height",
+                "Short"
+            ]
+        },
+        {
+            "label": "Seat Material",
+            "values": [
+                "Fabric",
+                "Faux Leather"
+            ]
+        },
+        {
+            "label": "Seat Style",
+            "values": [
+                "Square Seat"
+            ]
+        },
+        {
+            "label": "Stool Base",
+            "values": [
+                "4 Legs"
+            ]
+        },
+        {
+            "label": "Weight Capacity",
+            "values": [
+                "250lbs"
+            ]
+        },
+        {
+            "label": "Dimensions",
+            "values": [
+                "20.5 In. L X 22.0 In. W X 36.5 In. H"
+            ]
+        },
+        {
+            "label": "Warranty",
+            "values": [
+                "1 year Limited Manufacturer"
+            ]
+        },
+        {
+            "label": "Model Number",
+            "values": [
+                "2027700018A"
+            ]
+        }
+    ],
+    "taxonomyId": 24416
+};
+

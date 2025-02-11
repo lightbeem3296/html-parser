@@ -128,7 +128,9 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
         "id": get_from_json(product_variants, [0, "id"]),
     }
 
-    detail["categories"] = None  # TODO
+    # Categories
+    detail["categories"] = get_from_json(datalayer_product, ["taxonomyList"])
+
     detail["main_image"] = None  # TODO
     detail["images"] = None  # TODO
     detail["labelled_images"] = None  # TODO
@@ -188,7 +190,7 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
             "id": get_from_json(product_variant, ["id"]),
             "image": get_from_json(product_variant, ["image", "src"]),
             "sku": get_from_json(product_variant, ["sku"]),
-            "variant_title": get_from_json(product_variant, ["variant_title"]),
+            "variant_title": get_from_json(product_variant, ["title"]),
         }
         for product_variant in product_variants
     ]
@@ -196,7 +198,10 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
     detail["reviews_summary"] = None  # TODO
     detail["review_aspects"] = None  # TODO
     detail["total_reviews"] = None  # TODO
+
+    # Country of Region
     detail["country_of_origin"] = get_from_json(init_data, ["shop", "countryCode"])
+    
     detail["top_reviews"] = None  # TODO
     detail["policy_badges"] = None  # TODO
     detail["product_videos"] = None  # TODO

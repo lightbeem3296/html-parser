@@ -14,15 +14,15 @@ TEST_LOCAL = True
 
 CUR_DIR = Path(__file__).parent
 
-html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-08.html"
-html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-45.html"
-html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-49.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-52.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-54.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-57.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-01.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-02.html"
 html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-06.html"
+html_path = CUR_DIR / "overstock_detail_2025-02-10_10-46-08.html"
+html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-45.html"
+html_path = CUR_DIR / "overstock_detail_2025-02-10_10-45-49.html"
 
 output_path = CUR_DIR.parent / "result" / "overstock-result.json"
 
@@ -178,9 +178,16 @@ def parse_overstock(html_content: str) -> dict[str, Any]:
 
     # Images
     images: list[str] = []
-    for product_variant in product_variants:
-        images.append("https:" + get_from_json(product_variant, ["image", "src"]))
-    detail["images"] = list(set(images))
+    image_elems = page_elem.select("li.media-viewer__item")
+    for image_elem in image_elems:
+        image_elem = image_elem.select_one("img")
+        if image_elem is not None:
+            image_src = image_elem.attrs.get("data-src", image_elem.attrs.get("src"))
+            if image_src is not None:
+                image_url = "https:" + image_src
+                image_url = image_url.split("?")[0].strip() # Ensures max image size 2000x2000
+                images.append(image_url)
+    detail["images"] = images
 
     detail["labelled_images"] = None  # TODO
 

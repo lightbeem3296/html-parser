@@ -1,22 +1,20 @@
-import re
-import requests
 import json
+import re
+import urllib.parse
 from pathlib import Path
 from typing import Any
 
+import requests
 from bs4 import BeautifulSoup
 from loguru import logger
-
-import requests
-import urllib.parse
 
 TEST_LOCAL = True
 
 CUR_DIR = Path(__file__).parent
 
-html_path = CUR_DIR / "costco_1.html"
-html_path = CUR_DIR / "costco_2.html"
 html_path = CUR_DIR / "costco_3.html"
+html_path = CUR_DIR / "costco_2.html"
+html_path = CUR_DIR / "costco_1.html"
 
 output_path = CUR_DIR.parent / "result" / "costco-result.json"
 
@@ -179,8 +177,14 @@ def parse_costco(html_content: str) -> dict[str, Any]:
     shipping_elem = page_elem.select_one("div.product-info-shipping")
     if shipping_elem:
         for content in shipping_elem.contents:
-            if isinstance(content, str) and content.strip():
-                detail["shipping"] += "\n" + content.strip()
+            if isinstance(content, str):
+                shipping = content.strip()
+                if shipping:
+                    detail["shipping"] += content.strip() + "\n"
+            else:
+                shipping = content.text.strip()
+                if shipping:
+                    detail["shipping"] += content.text.strip() + "\n"
 
     # Returns
     detail["returns"] = ""
@@ -188,9 +192,9 @@ def parse_costco(html_content: str) -> dict[str, Any]:
     if returns_elem:
         for content in returns_elem.contents:
             if isinstance(content, str):
-                shipping = content.strip()
-                if shipping:
-                    detail["returns"] += shipping + "\n"
+                return_str = content.strip()
+                if return_str:
+                    detail["returns"] += return_str + "\n"
             else:
                 return_str = content.text.strip()
                 if return_str:

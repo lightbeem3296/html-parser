@@ -140,6 +140,16 @@ def parse_costco(html_content: str) -> dict[str, Any]:
     # Model Number
     detail["model_numbers"] = get_from_json(product_summary, ["ModelNumbers"])
 
+    # Pills
+    detail["pills"] = None
+    pills = []
+    pills_elem = page_elem.select_one("div.pills-section")
+    if pills_elem:
+        pill_elems = pills_elem.select("div.single-pill")
+        for pill_elem in pill_elems:
+            pills.append(pill_elem.text.strip())
+    detail["pills"] = pills
+
     # Image
     image_elem = page_elem.select_one("meta[property='og:image']")
     image_url = image_elem.attrs.get("content")

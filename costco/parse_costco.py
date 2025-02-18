@@ -31,12 +31,61 @@ def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
     return obj
 
 
+def get_api_key() -> str:
+    url = "https://apps.bazaarvoice.com/deployments/costco/native_review_form/production/en_US/rating_summary-config.js"
+    resp = requests.get(url)
+    content = resp.text
+    pattern = re.compile(r"\"apiKey\"\s*:\s*\"(.*?)\"\s*,", re.DOTALL)  # "apiKey":"bai25xto36hkl5erybga10t99",
+    matches = pattern.findall(content)
+    return matches[0]
+
+
+def get_product_summary(product_id: str, api_key: str) -> dict[str, Any]:
+    url = f"https://api.bazaarvoice.com/data/products.json?resource=products&filter=id%3Aeq%3A{product_id}&filter_reviews=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter_questions=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter_answers=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter_reviewcomments=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filteredstats=Reviews%2C+questions%2C+answers&stats=Reviews%2C+questions%2C+answers&passkey={api_key}&apiversion=5.5&displaycode=2070_2_0-en_us"
+    resp = requests.get(url)
+    return resp.json()
+
+
+def get_reviews(product_id: str, api_key: str) -> dict[str, Any]:
+    url = f"https://api.bazaarvoice.com/data/reviews.json?resource=reviews&action=REVIEWS_N_STATS&filter=productid%3Aeq%3A{product_id}&filter=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter=isratingsonly%3Aeq%3Afalse&filter_reviews=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&include=authors%2Cproducts%2Ccomments&filteredstats=reviews&Stats=Reviews&limit=8&offset=0&limit_comments=3&sort=relevancy%3Aa1&passkey={api_key}&apiversion=5.5&displaycode=2070_2_0-en_us"
+    resp = requests.get(url)
+    return resp.json()
+
+
 def parse_costco(html_content: str) -> dict[str, Any]:
     page_elem = BeautifulSoup(html_content, "html.parser")
     dict_details: dict[str, Any] = {}
 
     script_elems = page_elem.select("script")
     paragraph_elems = page_elem.select("p")
+
+    api_key = get_api_key()
+
+    price = None
+    price_listing = None
+    product_id = None
+    sku = None
+    for script_elem in script_elems:
+        if "priceMax" in script_elem.text:
+            pattern = re.compile(r"priceMax\s*:\s*\'(.*?)\',", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            price = matches[0]
+
+            pattern = re.compile(r"priceMin\s*:\s*\'(.*?)\',", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            price_listing = matches[0]
+
+            pattern = re.compile(r"pid\s*:\s*\'(.*?)\',", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            product_id = matches[0]
+
+            pattern = re.compile(r"sku\s*:\s*\'(.*?)\',", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            sku = matches[0]
+            break
+
+    product_summary = get_product_summary(product_id, api_key)["Results"][0]
+    reviews = get_reviews(product_id, api_key)["Results"]
 
     # Success
     dict_details["success"] = True
@@ -65,6 +114,12 @@ def parse_costco(html_content: str) -> dict[str, Any]:
     description_elem = page_elem.select_one("meta[name=description]")
     detail["description"] = description_elem.attrs.get("content") if description_elem else None
 
+    # Product ID
+    detail["product_id"] = product_id
+
+    # SKU
+    detail["sku"] = sku
+
     # Image
     image_elem = page_elem.select_one("meta[property='og:image']")
     image_url = image_elem.attrs.get("content")
@@ -81,19 +136,8 @@ def parse_costco(html_content: str) -> dict[str, Any]:
     detail["images"] = images
 
     # Price
-    detail["price"] = None
-    for script_elem in script_elems:
-        if "priceMax" in script_elem.text:
-            pattern = re.compile(r"priceMax\s*:\s*\'(.*?)\',", re.DOTALL)
-            matches = pattern.findall(script_elem.string)
-            detail["price"] = matches[0]
-
-            pattern = re.compile(r"priceMin\s*:\s*\'(.*?)\',", re.DOTALL)
-            matches = pattern.findall(script_elem.string)
-            detail["price_listing"] = matches[0]
-            break
-
-    # Price Listing
+    detail["price"] = price
+    detail["price_listing"] = price_listing
 
     # Currency
     detail["currency"] = None
@@ -220,6 +264,16 @@ def parse_costco(html_content: str) -> dict[str, Any]:
                     detail["returns"] += return_str + "\n"
 
     # Reviews
+    detail["rating"] = None
+
+    # Total Ratings
+    detail["total_ratings"] = None
+
+    # Review Aspects
+    detail["review_aspects"] = None
+
+    # Total Reviews
+    detail["total_reviews"] = None
 
     dict_details["detail"] = detail
     dict_details["remaining_credits"] = None

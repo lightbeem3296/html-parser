@@ -81,6 +81,25 @@ def parse_costco(html_content: str) -> dict[str, Any]:
     detail["images"] = images
 
     # Price
+    detail["price"] = None
+    for script_elem in script_elems:
+        if "priceMax" in script_elem.text:
+            pattern = re.compile(r"priceMax\s*:\s*\'(.*?)\',", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            detail["price"] = matches[0]
+
+            pattern = re.compile(r"priceMin\s*:\s*\'(.*?)\',", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            detail["price_listing"] = matches[0]
+            break
+
+    # Price Listing
+
+    # Currency
+    detail["currency"] = None
+    currenty_elem = page_elem.select_one("span.currency")
+    if currenty_elem:
+        detail["currency"] = currenty_elem.text.strip()
 
     # Product Label
     detail["product_label"] = None

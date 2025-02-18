@@ -35,7 +35,7 @@ def get_api_key() -> str:
     url = "https://apps.bazaarvoice.com/deployments/costco/native_review_form/production/en_US/rating_summary-config.js"
     resp = requests.get(url)
     content = resp.text
-    pattern = re.compile(r"\"apiKey\"\s*:\s*\"(.*?)\"\s*,", re.DOTALL)  # "apiKey":"bai25xto36hkl5erybga10t99",
+    pattern = re.compile(r"\"apiKey\"\s*:\s*\"(.*?)\"\s*,", re.DOTALL)
     matches = pattern.findall(content)
     return matches[0]
 

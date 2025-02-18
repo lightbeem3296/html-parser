@@ -47,9 +47,26 @@ def get_product_summary(product_id: str, api_key: str) -> dict[str, Any]:
 
 
 def get_reviews(product_id: str, api_key: str) -> dict[str, Any]:
-    url = f"https://api.bazaarvoice.com/data/reviews.json?resource=reviews&action=REVIEWS_N_STATS&filter=productid%3Aeq%3A{product_id}&filter=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter=isratingsonly%3Aeq%3Afalse&filter_reviews=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&include=authors%2Cproducts%2Ccomments&filteredstats=reviews&Stats=Reviews&limit=8&offset=0&limit_comments=3&sort=relevancy%3Aa1&passkey={api_key}&apiversion=5.5&displaycode=2070_2_0-en_us"
+    ret: dict[str, Any] = {}
+
+    size = 10
+    offset = 10 * 0
+    url = f"https://api.bazaarvoice.com/data/reviews.json?resource=reviews&action=REVIEWS_N_STATS&filter=productid%3Aeq%3A{product_id}&filter=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter=isratingsonly%3Aeq%3Afalse&filter_reviews=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&include=authors%2Cproducts%2Ccomments&filteredstats=reviews&Stats=Reviews&limit={size}&offset={offset}&limit_comments=3&sort=relevancy%3Aa1&passkey={api_key}&apiversion=5.5&displaycode=2070_2_0-en_us"
     resp = requests.get(url)
-    return resp.json()
+    resp_json = resp.json()
+
+    ret["TotalResults"] = get_from_json(resp_json, ["TotalResults"])
+    ret["Results"] = list(get_from_json(resp_json, ["Results"]))
+
+    pages_total = (ret["TotalResults"] + size - 1) // size
+    for i in range(1, pages_total):
+        logger.debug(f"fetching review: {i}/{pages_total} page")
+        offset = size * i
+        url = f"https://api.bazaarvoice.com/data/reviews.json?resource=reviews&action=REVIEWS_N_STATS&filter=productid%3Aeq%3A{product_id}&filter=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter=isratingsonly%3Aeq%3Afalse&filter_reviews=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&include=authors%2Cproducts%2Ccomments&filteredstats=reviews&Stats=Reviews&limit={size}&offset={offset}&limit_comments=3&sort=relevancy%3Aa1&passkey={api_key}&apiversion=5.5&displaycode=2070_2_0-en_us"
+        resp = requests.get(url)
+        resp_json = resp.json()
+        ret["Results"].extend(list(get_from_json(resp_json, ["Results"])))
+    return ret
 
 
 def parse_costco(html_content: str) -> dict[str, Any]:
@@ -85,7 +102,7 @@ def parse_costco(html_content: str) -> dict[str, Any]:
             break
 
     product_summary = get_product_summary(product_id, api_key)["Results"][0]
-    reviews = get_reviews(product_id, api_key)["Results"]
+    reviews = get_reviews(product_id, api_key)
 
     # Success
     dict_details["success"] = True
@@ -119,6 +136,9 @@ def parse_costco(html_content: str) -> dict[str, Any]:
 
     # SKU
     detail["sku"] = sku
+
+    # Model Number
+    detail["model_numbers"] = get_from_json(product_summary, ["ModelNumbers"])
 
     # Image
     image_elem = page_elem.select_one("meta[property='og:image']")
@@ -264,16 +284,27 @@ def parse_costco(html_content: str) -> dict[str, Any]:
                     detail["returns"] += return_str + "\n"
 
     # Reviews
-    detail["rating"] = None
+    detail["rating"] = get_from_json(product_summary, ["ReviewStatistics", "AverageOverallRating"])
 
     # Total Ratings
-    detail["total_ratings"] = None
+    detail["total_ratings"] = get_from_json(product_summary, ["ReviewStatistics", "TotalReviewCount"])
 
     # Review Aspects
-    detail["review_aspects"] = None
+    detail["review_aspects"] = [
+        {
+            "name": get_from_json(review, ["UserNickname"]),
+            "headline": get_from_json(review, ["Title"]),
+            "comments": get_from_json(review, ["ReviewText"]),
+            "rating": get_from_json(review, ["Rating"]),
+            "helpful_votes": get_from_json(review, ["TotalPositiveFeedbackCount"]),
+            "not_helpful_votes": get_from_json(review, ["TotalNegativeFeedbackCount"]),
+            "helpful_score": get_from_json(review, ["Helpfulness"]),
+        }
+        for review in get_from_json(reviews, ["Results"])
+    ]
 
     # Total Reviews
-    detail["total_reviews"] = None
+    detail["total_reviews"] = reviews["TotalResults"]
 
     dict_details["detail"] = detail
     dict_details["remaining_credits"] = None

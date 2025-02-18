@@ -1,0 +1,1889 @@
+{
+  "Limit": 8,
+  "Offset": 0,
+  "TotalResults": 47,
+  "Locale": "en_US",
+  "Results": [
+    {
+      "Id": "239795940",
+      "CID": "de2bbe8d-8042-5288-99a3-03feea93ab76",
+      "SourceClient": "costco",
+      "LastModeratedTime": "2025-02-17T12:15:06.000+00:00",
+      "LastModificationTime": "2025-02-18T09:00:04.000+00:00",
+      "ProductId": "4000310896",
+      "OriginalProductName": "Dayna 4-piece Fabric Modular Sectional",
+      "CampaignId": "BV_MOBILE_REVIEW_DISPLAY",
+      "UserLocation": "San Diego",
+      "AuthorId": "4136998c-e0b9-41cb-9b77-7150fbb6b6ae",
+      "ContentLocale": "en_US",
+      "IsFeatured": false,
+      "TotalInappropriateFeedbackCount": 0,
+      "TotalClientResponseCount": 0,
+      "TotalCommentCount": 0,
+      "Photos": [
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/84b80466-92d8-54fb-b0ea-a4a72f1840ce"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/db73e941-4361-527f-b595-d2e38406da7f"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/8678b93c-6695-55c5-95dd-43c7372ca144"
+            }
+          },
+          "Id": "12804434",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/adbc8c12-63ce-567f-9db2-024421037d4f"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/8b5fcafe-4b58-5b9b-a288-bd9efa29a0cc"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/e9a6cbf7-2564-554a-a4d3-6bd97c62b6ce"
+            }
+          },
+          "Id": "12804435",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/085387d3-c3d6-59b1-b2e9-382d7f9f1e8d"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/e9e60674-ba20-5181-acec-fdd726dada06"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/2dd4c132-50cb-5fba-a016-2545ad011a90"
+            }
+          },
+          "Id": "12804436",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/6e7d3d0b-c65c-575a-8fd1-9bf128b54099"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/dc15ab5d-12ab-583c-b016-5852e79d1efb"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/931b2985-8c76-5739-bfeb-b086cdd8e1e3"
+            }
+          },
+          "Id": "12804437",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/3cb1ae0a-85bc-5e8e-a431-df6e9f4a2ca4"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/de3002c8-4091-57a0-a2f2-97eb57325f9d"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/7f6997cb-27fa-5f89-bd9a-799d4ae2fee3"
+            }
+          },
+          "Id": "12804438",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/76b08fb5-9b22-5d92-8ac6-d2aad86d90b4"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/613856b8-148d-5f88-9944-d750db296146"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/c09322ca-9d7e-5965-88ab-178b36d55cdc"
+            }
+          },
+          "Id": "12804439",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": "Love it!"
+        }
+      ],
+      "Rating": 5,
+      "IsRatingsOnly": false,
+      "IsRecommended": true,
+      "Helpfulness": 1.0,
+      "TotalFeedbackCount": 7,
+      "TotalNegativeFeedbackCount": 0,
+      "TotalPositiveFeedbackCount": 7,
+      "ModerationStatus": "APPROVED",
+      "SubmissionId": "r12070_2_0_17396001CO5eIROjmT",
+      "SubmissionTime": "2025-02-15T06:16:19.000+00:00",
+      "ReviewText": "I purchased for $999 & then went down to $799, I was credited $200 by Costco. This sofa is really a great bargain. I don't have kids, 2 small dogs & fits nicely in the room.",
+      "Title": "Buy this sofa!",
+      "UserNickname": "Lily Rae",
+      "AdditionalFields": {},
+      "ClientResponses": [],
+      "RatingRange": 5,
+      "InappropriateFeedbackList": [],
+      "TagDimensionsOrder": [],
+      "CommentIds": [],
+      "Videos": [],
+      "BadgesOrder": [],
+      "SecondaryRatings": {},
+      "Pros": null,
+      "SecondaryRatingsOrder": [],
+      "IsSyndicated": false,
+      "ProductRecommendationIds": [],
+      "AdditionalFieldsOrder": [],
+      "Cons": null,
+      "Badges": {},
+      "ContextDataValuesOrder": [],
+      "ContextDataValues": {},
+      "TagDimensions": {}
+    },
+    {
+      "Id": "238427769",
+      "CID": "965e718b-2749-5559-9856-a403f6e18cc0",
+      "SourceClient": "costco",
+      "Badges": {
+        "verifiedPurchaser": {
+          "ContentType": "REVIEW",
+          "Id": "verifiedPurchaser",
+          "BadgeType": "Custom"
+        }
+      },
+      "BadgesOrder": [
+        "verifiedPurchaser"
+      ],
+      "LastModeratedTime": "2025-02-12T01:45:10.000+00:00",
+      "LastModificationTime": "2025-02-18T12:42:45.000+00:00",
+      "ProductId": "4000310896",
+      "OriginalProductName": "Dayna 4-piece Fabric Modular Sectional",
+      "CampaignId": "orderDetails",
+      "UserLocation": "Los Angeles",
+      "AuthorId": "7589f4c3-7b44-423f-aeee-ae000ddd651e",
+      "ContentLocale": "en_US",
+      "IsFeatured": false,
+      "InappropriateFeedbackList": [
+        {
+          "AuthorId": "zqgt9pje4o4psjoob5npqiat3l",
+          "SubmissionTime": "2025-02-17T19:14:45.000+00:00"
+        },
+        {
+          "AuthorId": "z9xucfenuf9leeqcz3nfle3n4g",
+          "SubmissionTime": "2025-02-15T21:41:23.000+00:00"
+        },
+        {
+          "AuthorId": "zlzcsp4f0pipzmgo93i3mfj0kb",
+          "SubmissionTime": "2025-02-15T18:30:57.000+00:00"
+        },
+        {
+          "AuthorId": "z61omedw3xo6g7oqtu7h6r7wm8",
+          "SubmissionTime": "2025-02-11T17:54:49.000+00:00"
+        },
+        {
+          "AuthorId": "zpoekjht6o0vlu3gdzzw0u8kqi",
+          "SubmissionTime": "2025-02-07T23:04:54.000+00:00"
+        },
+        {
+          "AuthorId": "zov95imcp4n8ttln7fskx21mgk",
+          "SubmissionTime": "2025-02-03T07:22:24.000+00:00"
+        },
+        {
+          "AuthorId": "zdhggtphq7l2ejmzu1z12vt0yc",
+          "SubmissionTime": "2025-01-28T20:45:39.000+00:00"
+        },
+        {
+          "AuthorId": "z9kr4oabjhtj9722zzzvdavz10",
+          "SubmissionTime": "2025-01-04T19:05:01.000+00:00"
+        }
+      ],
+      "TotalInappropriateFeedbackCount": 8,
+      "TotalClientResponseCount": 0,
+      "TotalCommentCount": 0,
+      "Photos": [
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/9e450acd-afcb-53ac-8c2d-695b88a4754c"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/1ef82b1a-333e-5ecc-9c17-f6dd967637f3"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/7623e2c3-4f0a-531f-97f8-6012198b889c"
+            }
+          },
+          "Id": "12263222",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/22b11b86-2b72-5a98-aad9-18d85ca94ec2"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/cd9c142e-6b10-5c32-8a47-588568a36e41"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/b13f1ddf-c14c-5256-973e-3085ec029494"
+            }
+          },
+          "Id": "12263223",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/de9720fe-715c-5f24-a2a3-d6a7e460fe94"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/49b33086-ee89-5b67-b820-b5eee0189916"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/9e1a3fcc-ba1d-5903-92e1-563346d04d77"
+            }
+          },
+          "Id": "12263224",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": "Puppy Approval!"
+        }
+      ],
+      "Rating": 5,
+      "IsRatingsOnly": false,
+      "IsRecommended": true,
+      "Helpfulness": 0.9068629741668701,
+      "TotalFeedbackCount": 204,
+      "TotalNegativeFeedbackCount": 19,
+      "TotalPositiveFeedbackCount": 185,
+      "ModerationStatus": "APPROVED",
+      "SubmissionId": "r12070_2_0_17349256TjcTGBiadv",
+      "SubmissionTime": "2024-12-23T03:48:10.000+00:00",
+      "ReviewText": "I am absolutely in love with this sofa! Its medium size is perfect for my living space, fitting beautifully into my setup without overwhelming the room. The sleek, modern design, soft texture, and neutral tone add a touch of elegance to the living room. (My puppy baby approved it too\uD83E\uDD79) Friends who visited yesterday couldn\u2019t stop raving about it and kept asking where I got it. I briefly considered getting two sets since it\u2019s easy to assemble in different configurations but decided one was enough for my cozy apartment. Truly, this is the best sofa I\u2019ve ever owned, and I highly recommend it to anyone looking for a stylish and versatile addition to their home!",
+      "Title": "Love it!!!",
+      "UserNickname": "Tina",
+      "AdditionalFields": {},
+      "ClientResponses": [],
+      "RatingRange": 5,
+      "TagDimensionsOrder": [],
+      "CommentIds": [],
+      "Videos": [],
+      "SecondaryRatings": {},
+      "Pros": null,
+      "SecondaryRatingsOrder": [],
+      "IsSyndicated": false,
+      "ProductRecommendationIds": [],
+      "AdditionalFieldsOrder": [],
+      "Cons": null,
+      "ContextDataValuesOrder": [],
+      "ContextDataValues": {},
+      "TagDimensions": {}
+    },
+    {
+      "Id": "239570179",
+      "CID": "27dba99f-aad0-54da-b3d3-0b57144580a3",
+      "SourceClient": "costco",
+      "LastModeratedTime": "2025-02-07T17:45:11.000+00:00",
+      "LastModificationTime": "2025-02-17T02:38:43.000+00:00",
+      "ProductId": "4000310896",
+      "OriginalProductName": "Dayna 4-piece Fabric Modular Sectional",
+      "CampaignId": "orderDetails",
+      "AuthorId": "332f39df-a081-4959-91ce-f55c0d59279c",
+      "ContentLocale": "en_US",
+      "IsFeatured": false,
+      "TotalInappropriateFeedbackCount": 0,
+      "TotalClientResponseCount": 0,
+      "TotalCommentCount": 0,
+      "Photos": [
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/273d6197-5a1c-5313-8a46-faa09226e7e5"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/057e91bc-51fe-5e12-95b1-7bc2feebcf36"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/09c45eef-06d5-5dd6-b99a-8fdca64cde1e"
+            }
+          },
+          "Id": "12701572",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/066bd4c9-c030-5a99-ad68-6fd6f5866136"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/790499fa-3b44-54f2-813e-d4aa58892361"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/674cb616-5e76-5e6c-8211-a942c19c5e40"
+            }
+          },
+          "Id": "12701573",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/3a6d6013-b941-5da7-a3c5-b144762232cb"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/3b1a0759-955d-5688-9654-972187b39814"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/2bb2ef84-2a05-5352-ae88-fe8891c54a8e"
+            }
+          },
+          "Id": "12701574",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/1fed4967-4423-5109-aad0-6f7cb00ff3ad"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/a3a92bdd-dace-525e-bb1f-249f25dfb6bb"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/c73e649b-217d-538f-8cb8-9c03ba593bd2"
+            }
+          },
+          "Id": "12701575",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        }
+      ],
+      "Rating": 5,
+      "IsRatingsOnly": false,
+      "IsRecommended": true,
+      "Helpfulness": 0.9523810148239136,
+      "TotalFeedbackCount": 42,
+      "TotalNegativeFeedbackCount": 2,
+      "TotalPositiveFeedbackCount": 40,
+      "ModerationStatus": "APPROVED",
+      "SubmissionId": "r12070_2_0_17388007fzh3s5UjhS",
+      "SubmissionTime": "2025-02-06T00:12:45.000+00:00",
+      "ReviewText": "After months of searching, we finally found the perfect sofas! They are extremely comfortable, soft, and the quality is amazing! The cushions do not sink in. Although they do not have connectors, we haven't had any issues with them moving on the carpet. We are beyond happy with this purchase!",
+      "Title": "Buy the couch ... or two!!",
+      "UserNickname": "Danielle",
+      "AdditionalFields": {},
+      "ClientResponses": [],
+      "RatingRange": 5,
+      "InappropriateFeedbackList": [],
+      "TagDimensionsOrder": [],
+      "CommentIds": [],
+      "Videos": [],
+      "BadgesOrder": [],
+      "SecondaryRatings": {},
+      "Pros": null,
+      "SecondaryRatingsOrder": [],
+      "UserLocation": null,
+      "IsSyndicated": false,
+      "ProductRecommendationIds": [],
+      "AdditionalFieldsOrder": [],
+      "Cons": null,
+      "Badges": {},
+      "ContextDataValuesOrder": [],
+      "ContextDataValues": {},
+      "TagDimensions": {}
+    },
+    {
+      "Id": "239686448",
+      "CID": "69fa3111-9324-5949-9fd7-8a8c3613a7b9",
+      "SourceClient": "costco",
+      "Badges": {
+        "verifiedPurchaser": {
+          "ContentType": "REVIEW",
+          "Id": "verifiedPurchaser",
+          "BadgeType": "Custom"
+        }
+      },
+      "BadgesOrder": [
+        "verifiedPurchaser"
+      ],
+      "LastModeratedTime": "2025-02-11T22:00:12.000+00:00",
+      "LastModificationTime": "2025-02-18T03:14:35.000+00:00",
+      "ProductId": "4000310896",
+      "OriginalProductName": "Dayna 4-piece Fabric Modular Sectional",
+      "CampaignId": "BV_PIE_MPR",
+      "UserLocation": "Las Vegas, NV",
+      "AuthorId": "f2356048-e321-4116-b9ce-5625d925249f",
+      "ContentLocale": "en_US",
+      "IsFeatured": false,
+      "InappropriateFeedbackList": [
+        {
+          "AuthorId": "z6l83dxjvmhqssrrf580rg6fbp",
+          "SubmissionTime": "2025-02-16T17:31:26.000+00:00"
+        }
+      ],
+      "TotalInappropriateFeedbackCount": 1,
+      "TotalClientResponseCount": 0,
+      "TotalCommentCount": 0,
+      "Photos": [
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/dfd3a6a4-c52d-52ce-b231-ad66ae2a0c9d"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/9a26cd74-f381-51ad-b00f-6606b13cc4f4"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/e987377a-d9f5-5a8b-89c6-72bcc37fe2fc"
+            }
+          },
+          "Id": "12756473",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/5a62bda6-7df8-5a9f-908d-774f2db5b0d7"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/507d6f54-e609-58c3-b3ec-72b48f749c9d"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/ae0e1fef-1b66-54f8-8b7f-9d357f4909f0"
+            }
+          },
+          "Id": "12756474",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/f9748eb9-4c95-545d-a497-a2263941757c"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/1b3c9bcb-0ecb-5955-9497-78242d9e6060"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/29433d01-0503-5730-8d32-e90ee03a9ba1"
+            }
+          },
+          "Id": "12756475",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": "Uneven pillow density; wrinkling; seam sagging."
+        }
+      ],
+      "Rating": 2,
+      "IsRatingsOnly": false,
+      "IsRecommended": false,
+      "Helpfulness": 0.9107139706611633,
+      "TotalFeedbackCount": 56,
+      "TotalNegativeFeedbackCount": 5,
+      "TotalPositiveFeedbackCount": 51,
+      "ModerationStatus": "APPROVED",
+      "SubmissionId": "r12070-en__17392128UrAS8QECO1",
+      "SubmissionTime": "2025-02-10T18:40:33.000+00:00",
+      "ReviewText": "I really wanted to love this modular sofa, but it was not a good fit for my home. All the cushions are unattached, and with little effort, they move about and soon the overall look is quite disheveled. The seat back support is low and the cushions are very soft which contributed to poor posture and back support. The seating is quite deep and is more for relaxed lounging. Some structural issues with the manufacturing including varying densities of down in the cushion top made for some cushions appearing plump while another is wrinkled. In less than 2 weeks the seams started to relax giving an uneven appearance in the furniture lines. Costco's delivery service was seamless and so was the return process.",
+      "Title": "Not what I had hoped",
+      "UserNickname": "salonwitch01",
+      "AdditionalFields": {},
+      "ClientResponses": [],
+      "RatingRange": 5,
+      "TagDimensionsOrder": [],
+      "CommentIds": [],
+      "Videos": [],
+      "SecondaryRatings": {},
+      "Pros": null,
+      "SecondaryRatingsOrder": [],
+      "IsSyndicated": false,
+      "ProductRecommendationIds": [],
+      "AdditionalFieldsOrder": [],
+      "Cons": null,
+      "ContextDataValuesOrder": [],
+      "ContextDataValues": {},
+      "TagDimensions": {}
+    },
+    {
+      "Id": "239085698",
+      "CID": "89793859-ab40-5ed8-b309-082c51f87c0b",
+      "SourceClient": "costco",
+      "Badges": {
+        "verifiedPurchaser": {
+          "ContentType": "REVIEW",
+          "Id": "verifiedPurchaser",
+          "BadgeType": "Custom"
+        }
+      },
+      "BadgesOrder": [
+        "verifiedPurchaser"
+      ],
+      "LastModeratedTime": "2025-01-16T15:15:10.000+00:00",
+      "LastModificationTime": "2025-02-16T21:34:22.000+00:00",
+      "ProductId": "4000310896",
+      "OriginalProductName": "Dayna 4-piece Fabric Modular Sectional",
+      "CampaignId": "BV_RATING_SUMMARY",
+      "UserLocation": "Madison, Wisconsin",
+      "AuthorId": "6be9635c-b9b5-4051-85ac-d158daaec2a2",
+      "ContentLocale": "en_US",
+      "IsFeatured": false,
+      "TotalInappropriateFeedbackCount": 0,
+      "TotalClientResponseCount": 0,
+      "TotalCommentCount": 0,
+      "Photos": [
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/a1fab2eb-ca16-5d8b-9629-a807eb1a04d4"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/8775e54b-0cc7-5d2d-985e-94b2ac3db553"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/003060d7-fc47-516d-8b24-ad9d8d1aef4e"
+            }
+          },
+          "Id": "12519965",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/5405ddf2-4c61-5d13-ba57-8556eddf6d80"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/66f55d25-a8f5-5d2e-ae25-eed49969f200"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/e6936dc5-019f-5a13-9731-273ff86fd6ce"
+            }
+          },
+          "Id": "12519966",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        }
+      ],
+      "Rating": 5,
+      "IsRatingsOnly": false,
+      "IsRecommended": true,
+      "Helpfulness": 0.9772729873657227,
+      "TotalFeedbackCount": 44,
+      "TotalNegativeFeedbackCount": 1,
+      "TotalPositiveFeedbackCount": 43,
+      "ModerationStatus": "APPROVED",
+      "SubmissionId": "r12070_2_0_17368910c6ORI7fR6r",
+      "SubmissionTime": "2025-01-14T21:43:57.000+00:00",
+      "ReviewText": "Purchased this sectional to replace an older sleeper sofa I had for years that was showing a lot of wear and tear. Only had to wait 7 days in between placing my order online and the sectional showing up at my door. Setup and delivery was included, and the two gentlemen that helped unbox everything had the sectional set up and all trash removed within 15 minutes or so, so thumbs up for a super fast delivery and setup! The sectional itself feels great and looks great in my apartment. At the time of this review, given the price and comfort it affords, this sectional is outstanding value, and I would wholeheartedly recommend it to anyone.",
+      "Title": "Fantastic sectional for great price",
+      "UserNickname": "Skylance",
+      "AdditionalFields": {},
+      "ClientResponses": [],
+      "RatingRange": 5,
+      "InappropriateFeedbackList": [],
+      "TagDimensionsOrder": [],
+      "CommentIds": [],
+      "Videos": [],
+      "SecondaryRatings": {},
+      "Pros": null,
+      "SecondaryRatingsOrder": [],
+      "IsSyndicated": false,
+      "ProductRecommendationIds": [],
+      "AdditionalFieldsOrder": [],
+      "Cons": null,
+      "ContextDataValuesOrder": [],
+      "ContextDataValues": {},
+      "TagDimensions": {}
+    },
+    {
+      "Id": "238836487",
+      "CID": "702565e4-e566-5bad-868e-0b2cdeac73cb",
+      "SourceClient": "costco",
+      "Badges": {
+        "verifiedPurchaser": {
+          "ContentType": "REVIEW",
+          "Id": "verifiedPurchaser",
+          "BadgeType": "Custom"
+        }
+      },
+      "BadgesOrder": [
+        "verifiedPurchaser"
+      ],
+      "LastModeratedTime": "2025-01-08T18:00:15.000+00:00",
+      "LastModificationTime": "2025-02-16T21:37:06.000+00:00",
+      "ProductId": "4000310896",
+      "OriginalProductName": "Dayna 4-piece Fabric Modular Sectional",
+      "CampaignId": "BV_MOBILE_REVIEW_DISPLAY",
+      "UserLocation": "Bellevue",
+      "AuthorId": "e8835729-1183-4355-a3fd-04066c189436",
+      "ContentLocale": "en_US",
+      "IsFeatured": false,
+      "InappropriateFeedbackList": [
+        {
+          "AuthorId": "zoxgw508ddpm7yif75xgbpgdpb",
+          "SubmissionTime": "2025-02-13T22:17:17.000+00:00"
+        },
+        {
+          "AuthorId": "z6oardhvbtayb0yfwv1pudcbl9",
+          "SubmissionTime": "2025-02-11T05:16:15.000+00:00"
+        },
+        {
+          "AuthorId": "zl1zftcoxe4ab4n7fb2gbvexyz",
+          "SubmissionTime": "2025-02-09T02:05:26.000+00:00"
+        }
+      ],
+      "TotalInappropriateFeedbackCount": 3,
+      "TotalClientResponseCount": 0,
+      "TotalCommentCount": 0,
+      "Photos": [
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/dd1643ea-f7fc-5e29-b2ed-7c1a18dae13e"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/aaeb9adf-43bd-5caa-93e0-430d6425368a"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/181aab98-ee0d-5312-bada-ce479d7bdc64"
+            }
+          },
+          "Id": "12424878",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/a2bd9180-a279-5532-9ce3-bd341a33d5ee"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/ac3da529-6cd4-5b89-96ea-fc490449cd18"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/7d79f21b-bec2-51e2-82fe-b2c2991f313b"
+            }
+          },
+          "Id": "12424879",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/90df47cc-6022-5497-bb8c-86f19a93f0c2"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/040e7cab-69c7-545b-9e57-2d8592239efa"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/d76b5d54-209e-551d-a61c-988f45bb4f6c"
+            }
+          },
+          "Id": "12424880",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        }
+      ],
+      "Rating": 5,
+      "IsRatingsOnly": false,
+      "IsRecommended": true,
+      "Helpfulness": 0.9629629850387573,
+      "TotalFeedbackCount": 27,
+      "TotalNegativeFeedbackCount": 1,
+      "TotalPositiveFeedbackCount": 26,
+      "ModerationStatus": "APPROVED",
+      "SubmissionId": "r12070_2_0_17361112wieE4nZ5J4",
+      "SubmissionTime": "2025-01-05T21:07:58.000+00:00",
+      "ReviewText": "Impressive. I\u2019ve never been able to fall asleep on a couch but this one feels like a waterbed, pillow soft but snug and strong! Bonus- Beautiful modern, clean-cozy look too! Lightweight but strong. Only 4 days into it so\u2026unsure if I love the material on my bare skin but overall sofa is very comfortable and fits my living room/office space perfectly!",
+      "Title": "Lightweight but strong, cozy-clean-comfort!",
+      "UserNickname": "Dara",
+      "AdditionalFields": {},
+      "ClientResponses": [],
+      "RatingRange": 5,
+      "TagDimensionsOrder": [],
+      "CommentIds": [],
+      "Videos": [],
+      "SecondaryRatings": {},
+      "Pros": null,
+      "SecondaryRatingsOrder": [],
+      "IsSyndicated": false,
+      "ProductRecommendationIds": [],
+      "AdditionalFieldsOrder": [],
+      "Cons": null,
+      "ContextDataValuesOrder": [],
+      "ContextDataValues": {},
+      "TagDimensions": {}
+    },
+    {
+      "Id": "239608419",
+      "CID": "0d0ec960-19c9-5dfc-a0ff-949004474f6b",
+      "SourceClient": "costco",
+      "LastModeratedTime": "2025-02-08T19:00:10.000+00:00",
+      "LastModificationTime": "2025-02-18T07:11:06.000+00:00",
+      "ProductId": "4000310896",
+      "OriginalProductName": "Dayna 4-piece Fabric Modular Sectional",
+      "CampaignId": "BV_MOBILE_RATING_SUMMARY",
+      "AuthorId": "510e1278-369c-486b-b974-57064d152daf",
+      "ContentLocale": "en_US",
+      "IsFeatured": false,
+      "InappropriateFeedbackList": [
+        {
+          "AuthorId": "zdf2ds05k7xeege3qcjegsmk9w",
+          "SubmissionTime": "2025-02-13T04:14:50.000+00:00"
+        }
+      ],
+      "TotalInappropriateFeedbackCount": 1,
+      "TotalClientResponseCount": 0,
+      "TotalCommentCount": 0,
+      "Photos": [
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/31bc3721-685e-5f78-920f-1fc7aa513b3a"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/4ebfe982-c268-5cc2-b4d8-1d4796b02cf0"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/b3b441f1-d703-54d5-815c-6514f41d4b9b"
+            }
+          },
+          "Id": "12723412",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/1acb1a5a-b4d2-5725-9dbb-c9b58d87dc97"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/0bad495d-7fef-568d-81ee-8555d6a58f65"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/bfc8ce55-5ba7-5689-b5c6-8441ede19133"
+            }
+          },
+          "Id": "12723413",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        }
+      ],
+      "Rating": 5,
+      "IsRatingsOnly": false,
+      "IsRecommended": true,
+      "Helpfulness": 1.0,
+      "TotalFeedbackCount": 35,
+      "TotalNegativeFeedbackCount": 0,
+      "TotalPositiveFeedbackCount": 35,
+      "ModerationStatus": "APPROVED",
+      "SubmissionId": "r12070_2_0_17388837XgfoYZwbgZ",
+      "SubmissionTime": "2025-02-06T23:15:52.000+00:00",
+      "ReviewText": "There were only 6 reviews on this couch when I made this purchase and I definitely don\u2019t regret it! For reference, I\u2019ve had the couch for about 3 weeks now. PROs: It\u2019s so cozy and more plush than I thought it would be. The woven fabric doesn\u2019t bother me\u2014 I actually love it! Seat dimensions are perfect for sitting cross legged (5\u20195\u201D) and just for bumming around. If you\u2019re on the fence & this is on sale, get it!!! CONs: I\u2019d say that the biggest con is that there is nothing to attach the modular pieces together. However, I HIGHLY recommend getting Slipstick Gorilla Pads and sticking them to the feet of the couch. The pads completely stopped the sections from sliding around on my low-pile rug, but I\u2019m not sure how effective it\u2019ll be if you have young kids/pets jumping on it.\n\n**Delivery guys were friendly but I\u2019d advise to watch them carefully while they\u2019re unpacking. They ripped the black bottom fabric of my couch where the legs were originally stored in.**",
+      "UserNickname": "Pickles99",
+      "AdditionalFields": {},
+      "ClientResponses": [],
+      "Title": null,
+      "RatingRange": 5,
+      "TagDimensionsOrder": [],
+      "CommentIds": [],
+      "Videos": [],
+      "BadgesOrder": [],
+      "SecondaryRatings": {},
+      "Pros": null,
+      "SecondaryRatingsOrder": [],
+      "UserLocation": null,
+      "IsSyndicated": false,
+      "ProductRecommendationIds": [],
+      "AdditionalFieldsOrder": [],
+      "Cons": null,
+      "Badges": {},
+      "ContextDataValuesOrder": [],
+      "ContextDataValues": {},
+      "TagDimensions": {}
+    },
+    {
+      "Id": "239482966",
+      "CID": "9d483b5e-0448-542f-9be8-47c06293c0ac",
+      "SourceClient": "costco",
+      "LastModeratedTime": "2025-02-03T17:15:10.000+00:00",
+      "LastModificationTime": "2025-02-17T18:49:52.000+00:00",
+      "ProductId": "4000310896",
+      "OriginalProductName": "Dayna 4-piece Fabric Modular Sectional",
+      "CampaignId": "BV_MOBILE_REVIEW_DISPLAY",
+      "ClientResponses": [
+        {
+          "Department": "Buying Team",
+          "Response": "We noticed your comments about the sectional pieces coming apart to easily and wanted to share that the customer service center for Aiden & Ivy now stocks replacement legs that have a better non-skid surface. You may want to contact them for a set of these, free-of-charge, of course, at aidenandivyservice@serveco.com. We hope this resolves the issue for you. Thank you for your Costco membership!",
+          "ResponseSource": "mc-api",
+          "Name": "",
+          "Date": "2025-02-06T23:13:13.000+00:00",
+          "SourceClientName": "Costco Wholesale"
+        }
+      ],
+      "UserLocation": "Oakland, CA",
+      "AuthorId": "da3d9a46-c93b-4382-81e7-ce21d3c39b0c",
+      "ContentLocale": "en_US",
+      "IsFeatured": false,
+      "InappropriateFeedbackList": [
+        {
+          "AuthorId": "zostjb52xsvxau0726tc8odbok",
+          "SubmissionTime": "2025-02-08T19:16:58.000+00:00"
+        }
+      ],
+      "TotalInappropriateFeedbackCount": 1,
+      "TotalClientResponseCount": 1,
+      "TotalCommentCount": 0,
+      "Photos": [
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/c79ef162-1948-5083-8017-245771a31fe8"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/f8d167fd-ea29-5100-aa9b-211808886743"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/d0992abc-553e-5ebd-bcb5-1ed71056126b"
+            }
+          },
+          "Id": "12671197",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        },
+        {
+          "Sizes": {
+            "normal": {
+              "Id": "normal",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/3a9006e8-b027-507f-a154-b27a7b23a0bb"
+            },
+            "thumbnail": {
+              "Id": "thumbnail",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/7d02914a-f280-579e-a95a-8b200fc8ccf4"
+            },
+            "large": {
+              "Id": "large",
+              "Url": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86Y29zdGNv/e1a03b4e-5ec7-504a-8ee7-96741da25024"
+            }
+          },
+          "Id": "12671198",
+          "SizesOrder": [
+            "normal",
+            "thumbnail",
+            "large"
+          ],
+          "Caption": null
+        }
+      ],
+      "Rating": 4,
+      "IsRatingsOnly": false,
+      "IsRecommended": true,
+      "Helpfulness": 0.9148939847946167,
+      "TotalFeedbackCount": 47,
+      "TotalNegativeFeedbackCount": 4,
+      "TotalPositiveFeedbackCount": 43,
+      "ModerationStatus": "APPROVED",
+      "SubmissionId": "r12070_2_0_17384490AIwfkAP3y6",
+      "SubmissionTime": "2025-02-01T22:31:17.000+00:00",
+      "ReviewText": "Decided I wanted a modular coach and this one is super comfy and versatile. I would have lived it to be darker but still fits my color scheme. Plan to use it as a sleeper when I have guests.  I do wish they included something to hold the pieces together and Velcro to keep the ottoman cushion in place.",
+      "Title": "Super Comfy and Versatile",
+      "UserNickname": "Rynne B",
+      "AdditionalFields": {},
+      "RatingRange": 5,
+      "TagDimensionsOrder": [],
+      "CommentIds": [],
+      "Videos": [],
+      "BadgesOrder": [],
+      "SecondaryRatings": {},
+      "Pros": null,
+      "SecondaryRatingsOrder": [],
+      "IsSyndicated": false,
+      "ProductRecommendationIds": [],
+      "AdditionalFieldsOrder": [],
+      "Cons": null,
+      "Badges": {},
+      "ContextDataValuesOrder": [],
+      "ContextDataValues": {},
+      "TagDimensions": {}
+    }
+  ],
+  "Includes": {
+    "Products": {
+      "4000310896": {
+        "Description": "<!-- Start Product Label --><div class=\"productlabel\"><img alt=\"Product Label\" src=\"https://mobilecontent.costco.com/live/resource/img/feature-pages/productlabel.png\" style=\"width: 20px;height: auto;padding-bottom: 6px;\" /><span style=\"font-weight:bold;\"><a class=\"external\" href=\"https://cdn.bfldr.com/U447IH35/as/8cznrsmtwm8gknspkrxh68p/4000310896-law-label\" target=\"_blank\"> Product Label</a></span></div><br/><!-- END Product Label --><!-- START prop65 --><div class=\"prop65warning\"><img alt=\"WARNING\" src=\"/wcsstore/CostcoUSBCCatalogAssetStore/feature-pages/prop-65-warning.png\" style=\"width: 20px;height: auto;padding-bottom: 6px;\"><span style=\"font-weight:bold;\">WARNING: </span> This product can expose you to wood dust, which is known to the State of California to cause cancer and birth defects or other reproductive harm. For more information go to: <a href=\"https://www.p65warnings.ca.gov\" target=\"_blank\" class=\"external\">www.P65Warnings.ca.gov</a>.</div><br><!-- END prop65 --><!-- DO NOT REMOVE THIS --><div id=\"SP_ProductImage\"></div><!-- <span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">The Dayna 4-piece sectional is the stylish and versatile solution your room has been waiting for. With its modular design, you have the freedom to arrange the pieces in any configuration that suits your space and lifestyle&mdash;no rules! Whether you&rsquo;re hosting guests or enjoying a quiet night in, Dayna adapts to your needs with ease. The thick, pocket-coil seat cushions strike a great balance of plush comfort and durability, providing support that holds its shape over time. Upholstered in a soft, light gray fabric with a rich, textured feel, Dayna delivers both style and practicality.&nbsp;<br /><br /><strong>Includes:</strong><br />Corner x 2, Armless Seat x 1, Ottoman x 1,Toss Pillow x 2<br /><br /><strong>Features:</strong></span></span><ul><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Soft-to-the-touch light gray 100% polyester fabric</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Modular design for flexible layouts</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">High-resiliency foam cushions with pocket-coil inner cores</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Two accent pillows&nbsp;</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Responsible Down Standard (RDS) Sourced Feather and Greenguard Gold Certified</span></span></li></ul><br /><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><strong>General Care:&nbsp;</strong>Vacuum on a weekly basis to avoid dust particles from settling into fabric. Wipe fabric with a soft cloth and warm water. Do not use chemicals. Avoid placing your furniture in direct sunlight. All materials fade over time when placed in direct sunlight and/or heating sources.<br /><br /><strong>Overall Sectional Dimensions:</strong></span></span><ul><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">112.9&quot; L x 75.5&quot; W x 33.8&quot; H &nbsp;</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Weight: 350.53 lbs.</span></span></li></ul><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><strong>Individual Dimensions:</strong><br /><br />Corner:</span></span><ul><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">37.7&quot; L x 37.7&quot; W x 33.8&quot; H</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Weight: 61.7 lbs.</span></span></li></ul><br /><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Armless Seat:</span></span><ul><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">37.7&quot; L x 37.7&quot; W x 33.8&quot; H</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Weight: 54.1 lbs.</span></span></li></ul><br /><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Ottoman:</span></span><ul><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">37.7&quot; L x 37.7&quot; W x 20.4&quot; H</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Weight: 46.3 lbs.</span></span></li></ul><br /><br /><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><strong>Additional Dimensions:</strong></span></span><ul><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Seat cushions are 23.6&quot; deep and 20&quot; high off the ground</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Armrests are&nbsp;24.8&quot; high off the ground</span></span></li><li><span style=\"font-size:16px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Pillow length is 19.6&quot; and width 19.6&quot;</span></span></li></ul><br />&nbsp; -->",
+        "ModelNumbers": [
+          "1812589"
+        ],
+        "AttributesOrder": [
+          "AVAILABILITY"
+        ],
+        "Attributes": {
+          "AVAILABILITY": {
+            "Id": "AVAILABILITY",
+            "Values": [
+              {
+                "Value": "True",
+                "Locale": null
+              }
+            ]
+          }
+        },
+        "Name": "Dayna 4-piece Fabric Modular Sectional",
+        "ImageUrl": "https://cdn.bfldr.com/U447IH35/as/k98r3xfvw6bbnr5k258j3b2n/4000310896-847__1?auto=webp&format=jpg&width=700&height=700&fit=bounds&canvas=700,700",
+        "Id": "4000310896",
+        "CategoryId": "30864",
+        "BrandExternalId": "7o0unq4g2z69aqmw7o0yfw7l7",
+        "Brand": {
+          "Id": "7o0unq4g2z69aqmw7o0yfw7l7",
+          "Name": "Aiden & Ivy Furniture"
+        },
+        "Active": true,
+        "ProductPageUrl": "http://www.costco.com//.product.4000310896.html",
+        "Disabled": false,
+        "UPCs": [],
+        "ReviewIds": [],
+        "StoryIds": [],
+        "ISBNs": [],
+        "QuestionIds": [],
+        "FamilyIds": [],
+        "ManufacturerPartNumbers": [],
+        "EANs": [],
+        "ReviewStatistics": {
+          "RatingsOnlyReviewCount": 0,
+          "TotalReviewCount": 47,
+          "RecommendedCount": 38,
+          "NotRecommendedCount": 2,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 36
+            },
+            {
+              "RatingValue": 2,
+              "Count": 4
+            },
+            {
+              "RatingValue": 4,
+              "Count": 4
+            },
+            {
+              "RatingValue": 3,
+              "Count": 2
+            },
+            {
+              "RatingValue": 1,
+              "Count": 1
+            }
+          ],
+          "NotHelpfulVoteCount": 111,
+          "FeaturedReviewCount": 0,
+          "FirstSubmissionTime": "2024-12-15T20:27:57.000+00:00",
+          "LastSubmissionTime": "2025-02-18T02:49:05.000+00:00",
+          "AverageOverallRating": 4.48936170212766,
+          "HelpfulVoteCount": 1034,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 47,
+        "FilteredReviewStatistics": {
+          "RatingsOnlyReviewCount": 0,
+          "TotalReviewCount": 47,
+          "RecommendedCount": 38,
+          "NotRecommendedCount": 2,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 36
+            },
+            {
+              "RatingValue": 2,
+              "Count": 4
+            },
+            {
+              "RatingValue": 4,
+              "Count": 4
+            },
+            {
+              "RatingValue": 3,
+              "Count": 2
+            },
+            {
+              "RatingValue": 1,
+              "Count": 1
+            }
+          ],
+          "NotHelpfulVoteCount": 111,
+          "FeaturedReviewCount": 0,
+          "FirstSubmissionTime": "2024-12-15T20:27:57.000+00:00",
+          "LastSubmissionTime": "2025-02-18T02:49:05.000+00:00",
+          "AverageOverallRating": 4.48936170212766,
+          "HelpfulVoteCount": 1034,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      }
+    },
+    "Authors": {
+      "4136998c-e0b9-41cb-9b77-7150fbb6b6ae": {
+        "Id": "4136998c-e0b9-41cb-9b77-7150fbb6b6ae",
+        "Location": "San Diego",
+        "ContributorRank": "NONE",
+        "UserNickname": "Lily Rae",
+        "LastModeratedTime": "2025-02-15T06:45:05.000+00:00",
+        "ModerationStatus": "APPROVED",
+        "SubmissionTime": "2025-02-15T06:16:12.000+00:00",
+        "ThirdPartyIds": [],
+        "ReviewIds": [],
+        "QuestionIds": [],
+        "AdditionalFieldsOrder": [],
+        "Avatar": {},
+        "Photos": [],
+        "Videos": [],
+        "StoryIds": [],
+        "AnswerIds": [],
+        "ContextDataValues": {},
+        "ContextDataValuesOrder": [],
+        "SecondaryRatingsOrder": [],
+        "Badges": {},
+        "BadgesOrder": [],
+        "CommentIds": [],
+        "SubmissionId": null,
+        "SecondaryRatings": {},
+        "AdditionalFields": {},
+        "ProductRecommendationIds": [],
+        "ReviewStatistics": {
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "FirstSubmissionTime": "2025-02-15T06:16:19.000+00:00",
+          "LastSubmissionTime": "2025-02-15T06:16:19.000+00:00",
+          "NotRecommendedCount": 0,
+          "RecommendedCount": 1,
+          "FeaturedReviewCount": 0,
+          "TotalReviewCount": 1,
+          "NotHelpfulVoteCount": 0,
+          "AverageOverallRating": 5.0,
+          "HelpfulVoteCount": 7,
+          "RatingsOnlyReviewCount": 0,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 1,
+        "FilteredReviewStatistics": {
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "FirstSubmissionTime": "2025-02-15T06:16:19.000+00:00",
+          "LastSubmissionTime": "2025-02-15T06:16:19.000+00:00",
+          "NotRecommendedCount": 0,
+          "RecommendedCount": 1,
+          "FeaturedReviewCount": 0,
+          "TotalReviewCount": 1,
+          "NotHelpfulVoteCount": 0,
+          "AverageOverallRating": 5.0,
+          "HelpfulVoteCount": 7,
+          "RatingsOnlyReviewCount": 0,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      },
+      "7589f4c3-7b44-423f-aeee-ae000ddd651e": {
+        "Id": "7589f4c3-7b44-423f-aeee-ae000ddd651e",
+        "Location": "Los Angeles",
+        "ContributorRank": "NONE",
+        "UserNickname": "Tina",
+        "LastModeratedTime": "2024-12-23T05:30:04.000+00:00",
+        "ModerationStatus": "APPROVED",
+        "SubmissionTime": "2024-12-23T03:48:10.000+00:00",
+        "ThirdPartyIds": [],
+        "ReviewIds": [],
+        "QuestionIds": [],
+        "AdditionalFieldsOrder": [],
+        "Avatar": {},
+        "Photos": [],
+        "Videos": [],
+        "StoryIds": [],
+        "AnswerIds": [],
+        "ContextDataValues": {},
+        "ContextDataValuesOrder": [],
+        "SecondaryRatingsOrder": [],
+        "Badges": {},
+        "BadgesOrder": [],
+        "CommentIds": [],
+        "SubmissionId": null,
+        "SecondaryRatings": {},
+        "AdditionalFields": {},
+        "ProductRecommendationIds": [],
+        "ReviewStatistics": {
+          "TotalReviewCount": 1,
+          "RatingsOnlyReviewCount": 0,
+          "AverageOverallRating": 5.0,
+          "HelpfulVoteCount": 185,
+          "RecommendedCount": 1,
+          "NotRecommendedCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "FirstSubmissionTime": "2024-12-23T03:48:10.000+00:00",
+          "LastSubmissionTime": "2024-12-23T03:48:10.000+00:00",
+          "FeaturedReviewCount": 0,
+          "NotHelpfulVoteCount": 19,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 1,
+        "FilteredReviewStatistics": {
+          "TotalReviewCount": 1,
+          "RatingsOnlyReviewCount": 0,
+          "AverageOverallRating": 5.0,
+          "HelpfulVoteCount": 185,
+          "RecommendedCount": 1,
+          "NotRecommendedCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "FirstSubmissionTime": "2024-12-23T03:48:10.000+00:00",
+          "LastSubmissionTime": "2024-12-23T03:48:10.000+00:00",
+          "FeaturedReviewCount": 0,
+          "NotHelpfulVoteCount": 19,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      },
+      "332f39df-a081-4959-91ce-f55c0d59279c": {
+        "Id": "332f39df-a081-4959-91ce-f55c0d59279c",
+        "ContributorRank": "NONE",
+        "UserNickname": "Danielle",
+        "LastModeratedTime": "2022-02-07T22:00:06.000+00:00",
+        "ModerationStatus": "APPROVED",
+        "SubmissionTime": "2022-02-07T15:36:37.000+00:00",
+        "ThirdPartyIds": [],
+        "ReviewIds": [],
+        "QuestionIds": [],
+        "AdditionalFieldsOrder": [],
+        "Avatar": {},
+        "Photos": [],
+        "Videos": [],
+        "StoryIds": [],
+        "AnswerIds": [],
+        "Location": null,
+        "ContextDataValues": {},
+        "ContextDataValuesOrder": [],
+        "SecondaryRatingsOrder": [],
+        "Badges": {},
+        "BadgesOrder": [],
+        "CommentIds": [],
+        "SubmissionId": null,
+        "SecondaryRatings": {},
+        "AdditionalFields": {},
+        "ProductRecommendationIds": [],
+        "ReviewStatistics": {
+          "NotRecommendedCount": 1,
+          "FirstSubmissionTime": "2022-02-07T15:36:46.000+00:00",
+          "LastSubmissionTime": "2025-02-06T00:12:45.000+00:00",
+          "RatingsOnlyReviewCount": 1,
+          "FeaturedReviewCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 3
+            },
+            {
+              "RatingValue": 1,
+              "Count": 1
+            }
+          ],
+          "HelpfulVoteCount": 40,
+          "AverageOverallRating": 4.0,
+          "TotalReviewCount": 4,
+          "RecommendedCount": 2,
+          "NotHelpfulVoteCount": 2,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 4,
+        "FilteredReviewStatistics": {
+          "NotRecommendedCount": 0,
+          "FirstSubmissionTime": "2025-02-06T00:12:45.000+00:00",
+          "LastSubmissionTime": "2025-02-06T00:12:45.000+00:00",
+          "RatingsOnlyReviewCount": 0,
+          "FeaturedReviewCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "HelpfulVoteCount": 40,
+          "AverageOverallRating": 5.0,
+          "TotalReviewCount": 1,
+          "RecommendedCount": 1,
+          "NotHelpfulVoteCount": 2,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      },
+      "f2356048-e321-4116-b9ce-5625d925249f": {
+        "Id": "f2356048-e321-4116-b9ce-5625d925249f",
+        "Location": "Las Vegas, NV",
+        "ContributorRank": "NONE",
+        "UserNickname": "salonwitch01",
+        "LastModeratedTime": "2023-05-11T15:15:16.000+00:00",
+        "ModerationStatus": "APPROVED",
+        "SubmissionTime": "2023-05-11T03:43:36.000+00:00",
+        "ThirdPartyIds": [],
+        "ReviewIds": [],
+        "QuestionIds": [],
+        "AdditionalFieldsOrder": [],
+        "Avatar": {},
+        "Photos": [],
+        "Videos": [],
+        "StoryIds": [],
+        "AnswerIds": [],
+        "ContextDataValues": {},
+        "ContextDataValuesOrder": [],
+        "SecondaryRatingsOrder": [],
+        "Badges": {},
+        "BadgesOrder": [],
+        "CommentIds": [],
+        "SubmissionId": null,
+        "SecondaryRatings": {},
+        "AdditionalFields": {},
+        "ProductRecommendationIds": [],
+        "ReviewStatistics": {
+          "FirstSubmissionTime": "2020-10-03T21:03:53.000+00:00",
+          "LastSubmissionTime": "2025-02-10T18:40:33.000+00:00",
+          "AverageOverallRating": 3.875,
+          "HelpfulVoteCount": 56,
+          "RecommendedCount": 4,
+          "NotRecommendedCount": 2,
+          "TotalReviewCount": 8,
+          "FeaturedReviewCount": 0,
+          "RatingsOnlyReviewCount": 1,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 4
+            },
+            {
+              "RatingValue": 4,
+              "Count": 2
+            },
+            {
+              "RatingValue": 1,
+              "Count": 1
+            },
+            {
+              "RatingValue": 2,
+              "Count": 1
+            }
+          ],
+          "NotHelpfulVoteCount": 5,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 8,
+        "FilteredReviewStatistics": {
+          "FirstSubmissionTime": "2025-02-10T18:40:33.000+00:00",
+          "LastSubmissionTime": "2025-02-10T18:40:33.000+00:00",
+          "AverageOverallRating": 2.0,
+          "HelpfulVoteCount": 51,
+          "RecommendedCount": 0,
+          "NotRecommendedCount": 1,
+          "TotalReviewCount": 1,
+          "FeaturedReviewCount": 0,
+          "RatingsOnlyReviewCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 2,
+              "Count": 1
+            }
+          ],
+          "NotHelpfulVoteCount": 5,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      },
+      "6be9635c-b9b5-4051-85ac-d158daaec2a2": {
+        "Id": "6be9635c-b9b5-4051-85ac-d158daaec2a2",
+        "Location": "Madison, Wisconsin",
+        "ContributorRank": "NONE",
+        "UserNickname": "Skylance",
+        "LastModeratedTime": "2025-01-16T15:15:10.000+00:00",
+        "ModerationStatus": "APPROVED",
+        "SubmissionTime": "2025-01-14T21:43:54.000+00:00",
+        "ThirdPartyIds": [],
+        "ReviewIds": [],
+        "QuestionIds": [],
+        "AdditionalFieldsOrder": [],
+        "Avatar": {},
+        "Photos": [],
+        "Videos": [],
+        "StoryIds": [],
+        "AnswerIds": [],
+        "ContextDataValues": {},
+        "ContextDataValuesOrder": [],
+        "SecondaryRatingsOrder": [],
+        "Badges": {},
+        "BadgesOrder": [],
+        "CommentIds": [],
+        "SubmissionId": null,
+        "SecondaryRatings": {},
+        "AdditionalFields": {},
+        "ProductRecommendationIds": [],
+        "ReviewStatistics": {
+          "HelpfulVoteCount": 43,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "RatingsOnlyReviewCount": 0,
+          "FeaturedReviewCount": 0,
+          "TotalReviewCount": 1,
+          "FirstSubmissionTime": "2025-01-14T21:43:57.000+00:00",
+          "LastSubmissionTime": "2025-01-14T21:43:57.000+00:00",
+          "AverageOverallRating": 5.0,
+          "NotHelpfulVoteCount": 1,
+          "NotRecommendedCount": 0,
+          "RecommendedCount": 1,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 1,
+        "FilteredReviewStatistics": {
+          "HelpfulVoteCount": 43,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "RatingsOnlyReviewCount": 0,
+          "FeaturedReviewCount": 0,
+          "TotalReviewCount": 1,
+          "FirstSubmissionTime": "2025-01-14T21:43:57.000+00:00",
+          "LastSubmissionTime": "2025-01-14T21:43:57.000+00:00",
+          "AverageOverallRating": 5.0,
+          "NotHelpfulVoteCount": 1,
+          "NotRecommendedCount": 0,
+          "RecommendedCount": 1,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      },
+      "e8835729-1183-4355-a3fd-04066c189436": {
+        "Id": "e8835729-1183-4355-a3fd-04066c189436",
+        "Location": "Bellevue",
+        "ContributorRank": "NONE",
+        "UserNickname": "Dara",
+        "LastModeratedTime": "2025-01-05T21:30:12.000+00:00",
+        "ModerationStatus": "APPROVED",
+        "SubmissionTime": "2025-01-05T21:07:49.000+00:00",
+        "ThirdPartyIds": [],
+        "ReviewIds": [],
+        "QuestionIds": [],
+        "AdditionalFieldsOrder": [],
+        "Avatar": {},
+        "Photos": [],
+        "Videos": [],
+        "StoryIds": [],
+        "AnswerIds": [],
+        "ContextDataValues": {},
+        "ContextDataValuesOrder": [],
+        "SecondaryRatingsOrder": [],
+        "Badges": {},
+        "BadgesOrder": [],
+        "CommentIds": [],
+        "SubmissionId": null,
+        "SecondaryRatings": {},
+        "AdditionalFields": {},
+        "ProductRecommendationIds": [],
+        "ReviewStatistics": {
+          "TotalReviewCount": 1,
+          "RatingsOnlyReviewCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "HelpfulVoteCount": 26,
+          "FeaturedReviewCount": 0,
+          "RecommendedCount": 1,
+          "NotRecommendedCount": 0,
+          "AverageOverallRating": 5.0,
+          "NotHelpfulVoteCount": 1,
+          "FirstSubmissionTime": "2025-01-05T21:07:58.000+00:00",
+          "LastSubmissionTime": "2025-01-05T21:07:58.000+00:00",
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 1,
+        "FilteredReviewStatistics": {
+          "TotalReviewCount": 1,
+          "RatingsOnlyReviewCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "HelpfulVoteCount": 26,
+          "FeaturedReviewCount": 0,
+          "RecommendedCount": 1,
+          "NotRecommendedCount": 0,
+          "AverageOverallRating": 5.0,
+          "NotHelpfulVoteCount": 1,
+          "FirstSubmissionTime": "2025-01-05T21:07:58.000+00:00",
+          "LastSubmissionTime": "2025-01-05T21:07:58.000+00:00",
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      },
+      "510e1278-369c-486b-b974-57064d152daf": {
+        "Id": "510e1278-369c-486b-b974-57064d152daf",
+        "ContributorRank": "NONE",
+        "UserNickname": "Pickles99",
+        "LastModeratedTime": "2025-02-08T19:00:10.000+00:00",
+        "ModerationStatus": "APPROVED",
+        "SubmissionTime": "2025-02-06T23:10:23.000+00:00",
+        "ThirdPartyIds": [],
+        "ReviewIds": [],
+        "QuestionIds": [],
+        "AdditionalFieldsOrder": [],
+        "Avatar": {},
+        "Photos": [],
+        "Videos": [],
+        "StoryIds": [],
+        "AnswerIds": [],
+        "Location": null,
+        "ContextDataValues": {},
+        "ContextDataValuesOrder": [],
+        "SecondaryRatingsOrder": [],
+        "Badges": {},
+        "BadgesOrder": [],
+        "CommentIds": [],
+        "SubmissionId": null,
+        "SecondaryRatings": {},
+        "AdditionalFields": {},
+        "ProductRecommendationIds": [],
+        "ReviewStatistics": {
+          "NotHelpfulVoteCount": 0,
+          "RatingsOnlyReviewCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "FirstSubmissionTime": "2025-02-06T23:15:52.000+00:00",
+          "LastSubmissionTime": "2025-02-06T23:15:52.000+00:00",
+          "NotRecommendedCount": 0,
+          "AverageOverallRating": 5.0,
+          "RecommendedCount": 1,
+          "FeaturedReviewCount": 0,
+          "HelpfulVoteCount": 35,
+          "TotalReviewCount": 1,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 1,
+        "FilteredReviewStatistics": {
+          "NotHelpfulVoteCount": 0,
+          "RatingsOnlyReviewCount": 0,
+          "RatingDistribution": [
+            {
+              "RatingValue": 5,
+              "Count": 1
+            }
+          ],
+          "FirstSubmissionTime": "2025-02-06T23:15:52.000+00:00",
+          "LastSubmissionTime": "2025-02-06T23:15:52.000+00:00",
+          "NotRecommendedCount": 0,
+          "AverageOverallRating": 5.0,
+          "RecommendedCount": 1,
+          "FeaturedReviewCount": 0,
+          "HelpfulVoteCount": 35,
+          "TotalReviewCount": 1,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      },
+      "da3d9a46-c93b-4382-81e7-ce21d3c39b0c": {
+        "Id": "da3d9a46-c93b-4382-81e7-ce21d3c39b0c",
+        "Location": "Oakland, CA",
+        "ContributorRank": "NONE",
+        "UserNickname": "Rynne B",
+        "LastModeratedTime": "2025-02-01T23:00:09.000+00:00",
+        "ModerationStatus": "APPROVED",
+        "SubmissionTime": "2025-02-01T22:31:07.000+00:00",
+        "ThirdPartyIds": [],
+        "ReviewIds": [],
+        "QuestionIds": [],
+        "AdditionalFieldsOrder": [],
+        "Avatar": {},
+        "Photos": [],
+        "Videos": [],
+        "StoryIds": [],
+        "AnswerIds": [],
+        "ContextDataValues": {},
+        "ContextDataValuesOrder": [],
+        "SecondaryRatingsOrder": [],
+        "Badges": {},
+        "BadgesOrder": [],
+        "CommentIds": [],
+        "SubmissionId": null,
+        "SecondaryRatings": {},
+        "AdditionalFields": {},
+        "ProductRecommendationIds": [],
+        "ReviewStatistics": {
+          "RatingDistribution": [
+            {
+              "RatingValue": 2,
+              "Count": 2
+            },
+            {
+              "RatingValue": 4,
+              "Count": 2
+            }
+          ],
+          "FirstSubmissionTime": "2020-02-13T19:45:37.000+00:00",
+          "LastSubmissionTime": "2025-02-01T22:31:17.000+00:00",
+          "RecommendedCount": 1,
+          "NotRecommendedCount": 1,
+          "AverageOverallRating": 3.0,
+          "NotHelpfulVoteCount": 4,
+          "HelpfulVoteCount": 43,
+          "TotalReviewCount": 4,
+          "RatingsOnlyReviewCount": 2,
+          "FeaturedReviewCount": 0,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        },
+        "TotalReviewCount": 4,
+        "FilteredReviewStatistics": {
+          "RatingDistribution": [
+            {
+              "RatingValue": 4,
+              "Count": 1
+            }
+          ],
+          "FirstSubmissionTime": "2025-02-01T22:31:17.000+00:00",
+          "LastSubmissionTime": "2025-02-01T22:31:17.000+00:00",
+          "RecommendedCount": 1,
+          "NotRecommendedCount": 0,
+          "AverageOverallRating": 4.0,
+          "NotHelpfulVoteCount": 4,
+          "HelpfulVoteCount": 43,
+          "TotalReviewCount": 1,
+          "RatingsOnlyReviewCount": 0,
+          "FeaturedReviewCount": 0,
+          "ContextDataDistribution": {},
+          "ContextDataDistributionOrder": [],
+          "SecondaryRatingsAveragesOrder": [],
+          "TagDistributionOrder": [],
+          "OverallRatingRange": 5,
+          "TagDistribution": {},
+          "SecondaryRatingsAverages": {}
+        }
+      }
+    },
+    "ProductsOrder": [
+      "4000310896"
+    ],
+    "AuthorsOrder": [
+      "4136998c-e0b9-41cb-9b77-7150fbb6b6ae",
+      "7589f4c3-7b44-423f-aeee-ae000ddd651e",
+      "332f39df-a081-4959-91ce-f55c0d59279c",
+      "f2356048-e321-4116-b9ce-5625d925249f",
+      "6be9635c-b9b5-4051-85ac-d158daaec2a2",
+      "e8835729-1183-4355-a3fd-04066c189436",
+      "510e1278-369c-486b-b974-57064d152daf",
+      "da3d9a46-c93b-4382-81e7-ce21d3c39b0c"
+    ]
+  },
+  "HasErrors": false,
+  "Errors": []
+}

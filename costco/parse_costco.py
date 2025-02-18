@@ -19,64 +19,12 @@ html_path = CUR_DIR / "costco_1.html"
 output_path = CUR_DIR.parent / "result" / "costco-result.json"
 
 
-def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
-    obj = json_obj
-    for key in path:
-        if obj is None:
-            break
-        if isinstance(key, int):
-            obj = obj[key]
-        elif isinstance(key, str):
-            obj = obj.get(key)
-    return obj
-
-
-def get_api_key() -> str:
-    url = "https://apps.bazaarvoice.com/deployments/costco/native_review_form/production/en_US/rating_summary-config.js"
-    resp = requests.get(url)
-    content = resp.text
-    pattern = re.compile(r"\"apiKey\"\s*:\s*\"(.*?)\"\s*,", re.DOTALL)
-    matches = pattern.findall(content)
-    return matches[0]
-
-
-def get_product_summary(product_id: str, api_key: str) -> dict[str, Any]:
-    url = f"https://api.bazaarvoice.com/data/products.json?resource=products&filter=id%3Aeq%3A{product_id}&filter_reviews=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter_questions=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter_answers=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter_reviewcomments=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filteredstats=Reviews%2C+questions%2C+answers&stats=Reviews%2C+questions%2C+answers&passkey={api_key}&apiversion=5.5&displaycode=2070_2_0-en_us"
-    resp = requests.get(url)
-    return resp.json()
-
-
-def get_reviews(product_id: str, api_key: str) -> dict[str, Any]:
-    ret: dict[str, Any] = {}
-
-    size = 10
-    offset = 10 * 0
-    url = f"https://api.bazaarvoice.com/data/reviews.json?resource=reviews&action=REVIEWS_N_STATS&filter=productid%3Aeq%3A{product_id}&filter=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter=isratingsonly%3Aeq%3Afalse&filter_reviews=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&include=authors%2Cproducts%2Ccomments&filteredstats=reviews&Stats=Reviews&limit={size}&offset={offset}&limit_comments=3&sort=relevancy%3Aa1&passkey={api_key}&apiversion=5.5&displaycode=2070_2_0-en_us"
-    resp = requests.get(url)
-    resp_json = resp.json()
-
-    ret["TotalResults"] = get_from_json(resp_json, ["TotalResults"])
-    ret["Results"] = list(get_from_json(resp_json, ["Results"]))
-
-    pages_total = (ret["TotalResults"] + size - 1) // size
-    for i in range(1, pages_total):
-        logger.debug(f"fetching review: {i}/{pages_total} page")
-        offset = size * i
-        url = f"https://api.bazaarvoice.com/data/reviews.json?resource=reviews&action=REVIEWS_N_STATS&filter=productid%3Aeq%3A{product_id}&filter=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&filter=isratingsonly%3Aeq%3Afalse&filter_reviews=contentlocale%3Aeq%3Aen_CA%2Cfr_CA%2Cen_US%2Cen_US&include=authors%2Cproducts%2Ccomments&filteredstats=reviews&Stats=Reviews&limit={size}&offset={offset}&limit_comments=3&sort=relevancy%3Aa1&passkey={api_key}&apiversion=5.5&displaycode=2070_2_0-en_us"
-        resp = requests.get(url)
-        resp_json = resp.json()
-        ret["Results"].extend(list(get_from_json(resp_json, ["Results"])))
-    return ret
-
-
 def parse_costco(html_content: str) -> dict[str, Any]:
     page_elem = BeautifulSoup(html_content, "html.parser")
     dict_details: dict[str, Any] = {}
 
     script_elems = page_elem.select("script")
     paragraph_elems = page_elem.select("p")
-
-    api_key = get_api_key()
 
     price = None
     price_listing = None
@@ -100,9 +48,6 @@ def parse_costco(html_content: str) -> dict[str, Any]:
             matches = pattern.findall(script_elem.string)
             sku = matches[0]
             break
-
-    product_summary = get_product_summary(product_id, api_key)["Results"][0]
-    reviews = get_reviews(product_id, api_key)
 
     # Success
     dict_details["success"] = True
@@ -138,7 +83,14 @@ def parse_costco(html_content: str) -> dict[str, Any]:
     detail["sku"] = sku
 
     # Model Number
-    detail["model_numbers"] = get_from_json(product_summary, ["ModelNumbers"])
+    detail["model_numbers"] = None
+    model_numbers = []
+    model_number_elems = page_elem.select("div.item-model-number")
+    for model_number_elem in model_number_elems:
+        span_elem = model_number_elem.select_one("span[itemprop=sku]")
+        if span_elem:
+            model_numbers.append(span_elem.text.strip())
+    detail["model_numbers"] = model_numbers
 
     # Pills
     detail["pills"] = None
@@ -294,27 +246,16 @@ def parse_costco(html_content: str) -> dict[str, Any]:
                     detail["returns"] += return_str + "\n"
 
     # Reviews
-    detail["rating"] = get_from_json(product_summary, ["ReviewStatistics", "AverageOverallRating"])
+    detail["rating"] = None
 
     # Total Ratings
-    detail["total_ratings"] = get_from_json(product_summary, ["ReviewStatistics", "TotalReviewCount"])
+    detail["total_ratings"] = None
 
     # Review Aspects
-    detail["review_aspects"] = [
-        {
-            "name": get_from_json(review, ["UserNickname"]),
-            "headline": get_from_json(review, ["Title"]),
-            "comments": get_from_json(review, ["ReviewText"]),
-            "rating": get_from_json(review, ["Rating"]),
-            "helpful_votes": get_from_json(review, ["TotalPositiveFeedbackCount"]),
-            "not_helpful_votes": get_from_json(review, ["TotalNegativeFeedbackCount"]),
-            "helpful_score": get_from_json(review, ["Helpfulness"]),
-        }
-        for review in get_from_json(reviews, ["Results"])
-    ]
+    detail["review_aspects"] = None
 
     # Total Reviews
-    detail["total_reviews"] = reviews["TotalResults"]
+    detail["total_reviews"] = None
 
     dict_details["detail"] = detail
     dict_details["remaining_credits"] = None

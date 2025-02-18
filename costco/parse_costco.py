@@ -302,7 +302,7 @@ def parse_costco(html_content: str) -> dict[str, Any]:
     for variant_option in variant_options_data:
         variant_options.append(
             {
-                "type": get_from_json(variant_option, ["n"]),
+                "name": get_from_json(variant_option, ["n"]),
                 "values": get_from_json(variant_option, ["v"]),
             }
         )

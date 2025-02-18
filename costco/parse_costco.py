@@ -1,3 +1,4 @@
+import base64
 import json
 import re
 import urllib.parse
@@ -15,8 +16,21 @@ CUR_DIR = Path(__file__).parent
 html_path = CUR_DIR / "costco_3.html"
 html_path = CUR_DIR / "costco_2.html"
 html_path = CUR_DIR / "costco_1.html"
+html_path = CUR_DIR / "costco_4.html"
 
 output_path = CUR_DIR.parent / "result" / "costco-result.json"
+
+
+def get_from_json(json_obj: dict[str, Any] | None, path: list[str] = []) -> Any:
+    obj = json_obj
+    for key in path:
+        if obj is None:
+            break
+        if isinstance(key, int):
+            obj = obj[key]
+        elif isinstance(key, str):
+            obj = obj.get(key)
+    return obj
 
 
 def parse_costco(html_content: str) -> dict[str, Any]:
@@ -256,6 +270,67 @@ def parse_costco(html_content: str) -> dict[str, Any]:
 
     # Total Reviews
     detail["total_reviews"] = None
+
+    # Variant
+    detail["variant"] = None
+
+    # Variant Options
+
+    # Variants
+    detail["variant_options"] = None
+    detail["variants"] = None
+
+    variant_options: list[dict[str, Any]] = []
+    variants: list[dict[str, Any]] = []
+
+    variant_options_data: dict[str, Any] = {}
+    variant_data: dict[str, Any] = {}
+    for script_elem in script_elems:
+        if "var products = [" in script_elem.text:
+            pattern = re.compile(r"var\s*products\s*=\s*\[\s*(\[.*?\])\s*\]\;", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            json_text = matches[0]
+            variant_data = json.loads(json_text)
+
+            pattern = re.compile(r"var\s*options\s*=\s*\[\s*(\[.*?\])\s*\]\;", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            json_text = matches[0]
+            json_text = json_text.replace("'", '"')
+            variant_options_data = json.loads(json_text)
+            break
+
+    for variant_option in variant_options_data:
+        variant_options.append(
+            {
+                "type": get_from_json(variant_option, ["n"]),
+                "values": get_from_json(variant_option, ["v"]),
+            }
+        )
+    detail["variant_options"] = variant_options
+
+    for variant in variant_data:
+        price = None
+        b64_price = get_from_json(variant, ["price"])
+        if b64_price:
+            price = base64.b64decode(b64_price).decode("utf-8")
+        list_price = None
+        b64_list_price = get_from_json(variant, ["listPrice"])
+        if b64_list_price:
+            list_price = base64.b64decode(b64_list_price).decode("utf-8")
+        variants.append(
+            {
+                "part_number": get_from_json(variant, ["partNumber"]),
+                "product_url": get_from_json(variant, ["productUrl"]),
+                "price": price,
+                "list_price": list_price,
+                "min_quantity": get_from_json(variant, ["minQty"]),
+                "max_quantity": get_from_json(variant, ["maxQty"]),
+                "img_url": get_from_json(variant, ["img_url"]),
+                "options": get_from_json(variant, ["options"]),
+                "inventory": get_from_json(variant, ["inventory"]),
+            }
+        )
+    detail["variants"] = variants
 
     dict_details["detail"] = detail
     dict_details["remaining_credits"] = None

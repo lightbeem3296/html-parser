@@ -1,14 +1,32 @@
 import json
 import re
 import ast
+from typing import Any
 from lxml import html
+from bs4 import BeautifulSoup
+from pathlib import Path
+
+CUR_DIR = Path(__file__).parent
+output_path = CUR_DIR.parent / "result" / "costco-result.json"
+
 
 def parse_product_data(html_file_path):
     with open(html_file_path, 'r', encoding='utf-8') as f:
         html_content = f.read()
     
     response = html.fromstring(html_content)
-    
+    page_elem = BeautifulSoup(html_content, "html.parser")
+
+    initial_data: dict[str, Any] = {}
+    script_elems = page_elem.select("script")
+    for script_elem in script_elems:
+        if "initializer.initializeComponent({" in script_elem.text and "\\\"UPC\\\"" in script_elem.text:
+            pattern = re.compile(r"\"(\{\\\"app\\\".*?\}\})\",", re.DOTALL)
+            matches = pattern.findall(script_elem.string)
+            json_str = matches[0]
+            json_str = json.loads(f"\"{json_str}\"")
+            initial_data = json.loads(json_str)
+
     detail = {}
     
     # Extract product name
@@ -119,10 +137,25 @@ def parse_product_data(html_file_path):
 
     # TODO: Add code to extract UPC from the specifications script tag
     # and add it to the detail dictionary as detail['upc']
+    detail["upc"] = None
+    if "specifications" in initial_data:
+        specifications = initial_data["specifications"]
+        if "categories" in specifications:
+            categories = specifications["categories"]
+            if isinstance(categories, list):
+                for category in categories:
+                    if "specifications" in category:
+                        sub_specifications = category["specifications"]
+                        if isinstance(sub_specifications, list):
+                            for sub_specification in sub_specifications:
+                                if sub_specification.get("displayName") == "UPC":
+                                    detail["upc"] = sub_specification.get("value")
+
+    detail["initial_data"] = initial_data
 
     return detail
 
 # Test the function
 if __name__ == "__main__":
-    result = parse_product_data("bestbuy_detail.html")
+    result = parse_product_data(str(CUR_DIR / "bestbuy_detail_2025-02-27_16-05-10.html"))
     print(json.dumps(result, indent=2))

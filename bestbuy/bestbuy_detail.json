@@ -1,0 +1,76 @@
+{
+    "success": true,
+    "url": "https://www.bestbuy.com/site/crucial-p3-1tb-internal-ssd-pcie-gen-3-x4-nvme/6509712.p?intl=nosplash&skuId=6509712",
+    "result_count": 1,
+    "detail": {
+        "name": "Crucial - P3 1TB Internal SSD PCIe Gen 3 x4  NVMe",
+        "brand": "Crucial",
+        "url": "https://www.bestbuy.com/site/crucial-p3-1tb-internal-ssd-pcie-gen-3-x4-nvme/6509712.p?intl=nosplash&skuId=6509712",
+        "images": [
+            "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509712_sd.jpg",
+            "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509712cv1d.jpg",
+            "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509712cv11d.jpg",
+            "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/78c87131-1cf2-4306-98dc-4d49910106fd.jpg",
+            "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/b1c0c956-8690-45bf-89f9-06d9ca679791.jpg",
+            "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/b84e4fa9-9e51-4d83-a0c2-a62fb1a0a544.jpg",
+            "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/914e5f4f15a34b53cd1ef7a08a1fb47d.jpg"
+        ],
+        "price": 59.99,
+        "currency": "USD",
+        "currency_symbol": "$",
+        "product_id": "6509712",
+        "rating": 4.8,
+        "total_reviews": 1022,
+        "in_stock": true,
+        "categories": [
+            {
+                "name": "Computers & Tablets",
+                "url": "https://www.bestbuy.com/site/electronics/computers-pcs/abcat0500000.c?id=abcat0500000"
+            },
+            {
+                "name": "Computer Accessories & Peripherals",
+                "url": "https://www.bestbuy.com/site/computers-pcs/computer-accessories/abcat0515000.c?id=abcat0515000"
+            },
+            {
+                "name": "Hard Drives, SSD & Storage",
+                "url": "https://www.bestbuy.com/site/computer-accessories/hard-drives/abcat0504001.c?id=abcat0504001"
+            },
+            {
+                "name": "Internal SSDs",
+                "url": "https://www.bestbuy.com/site/hard-drives/internal-solid-state-drives/pcmcat1538498095184.c?id=pcmcat1538498095184"
+            }
+        ],
+        "description": "Basic bootup speeds won’t cut it — not at work, on the go, or in the game. But the Crucial P3 SSD is anything but basic. With NVMe performance that’s more than 6x faster than SATA2 and storage capacities up to 4TB3, the P3 leaves older storage technology in the dust. Get faster bootups, downloads and file transfers, and store all your files, photos, videos, apps, and games with room to spare with the quality and dependability you expect from Crucial.",
+        "included_items": [],
+        "product_features": [
+            {
+                "name": "Speed",
+                "value": "Impressive read/write speeds up to 3500/3000MB/s"
+            },
+            {
+                "name": "Storage",
+                "value": "Spacious storage up to 4TB"
+            },
+            {
+                "name": "Performance",
+                "value": "Performs up to 33% better than the previous generation"
+            },
+            {
+                "name": "Trusted Technology",
+                "value": "Micron Advanced 3D NAND"
+            },
+            {
+                "name": "Flexibility",
+                "value": "Solid Gen3 performance"
+            },
+            {
+                "name": "Solid Security",
+                "value": "SSD management software for performance optimization and firmware updates give the Crucial P3 everything you need for security and peace of mind."
+            }
+        ],
+        "is_energy_star_certified": false,
+        "model_no": "CT1000P3SSD8",
+        "specifications": []
+    },
+    "remaining_credits": 6066207.5
+}

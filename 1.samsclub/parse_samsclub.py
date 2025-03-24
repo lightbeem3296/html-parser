@@ -18,6 +18,9 @@ html_path = CUR_DIR / "samsclub_detail_2025-03-20_13-31-58.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-20_13-27-54.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-20_13-31-09.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-20_13-30-59.html"
+html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-16-48.html"
+html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-17-17.html"
+html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-17-47.html"
 
 output_path = CUR_DIR.parent / "result" / "samsclub-result.json"
 
@@ -36,13 +39,20 @@ def parse_detail(html_content: str) -> dict[str, Any]:
                 obj = obj.get(key)
         return obj
 
-    def parse_html_as_str(html_text: str) -> str:
+    def parse_html_as_str(html_text: str | None) -> str:
+        if not html_text:
+            return ""
+
         soup = BeautifulSoup(html_text, "html.parser")
         return soup.get_text()
 
-    def parse_html_as_data(html_test: str) -> list:
+    def parse_html_as_data(html_text: str | None) -> list:
         ret = []
-        soup = BeautifulSoup(html_test, "html.parser")
+
+        if not html_text:
+            return ret
+
+        soup = BeautifulSoup(html_text, "html.parser")
 
         ul_elems = soup.select("ul")
         for ul_elem in ul_elems:
@@ -86,10 +96,15 @@ def parse_detail(html_content: str) -> dict[str, Any]:
     if script_elem is not None:
         json_data_str = script_elem.text
         json_data: dict = json.loads(json_data_str)
+
         products_data: dict = json_data.get("cache", {}).get("products", {})
-        product_data = list(products_data.values())[0]
+        if products_data:
+            product_data = list(products_data.values())[0]
+
         product_images: dict = json_data.get("productImages", {})
-        image_data = (list(product_images.values())[0]).get("images", [])
+        if product_images:
+            image_data = (list(product_images.values())[0]).get("images", [])
+
         messages_data: list = product_data.get("messages", [])
 
     # Success

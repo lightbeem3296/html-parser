@@ -22,6 +22,8 @@ html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-16-48.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-17-17.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-17-47.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-24_19-00-02.html"
+html_path = CUR_DIR / "samsclub_detail_2025-03-24_19-02-58.html"
+html_path = CUR_DIR / "samsclub_detail_2025-03-24_18-56-17.html"
 
 output_path = CUR_DIR.parent / "result" / "samsclub-result.json"
 
@@ -193,6 +195,14 @@ def parse_detail(html_content: str) -> dict[str, Any]:
     parsed_data = parse_html_as_data(specifications_text)
     if parsed_data:
         detail["specifications"] = parsed_data
+
+    # Manufacturing
+    detail["manufacturing_info_others"] = {
+        "shipping_info": get_from_json(product_data, ["shippingOption", "info"]),
+        "warranty": parse_html_as_str(get_from_json(product_data, ["manufacturingInfo", "warranty"])),
+        "component_country": get_from_json(product_data, ["manufacturingInfo", "componentCountry"]),
+        "assembled_country": get_from_json(product_data, ["manufacturingInfo", "assembledCountry"]),
+    }
 
     # Shipping
     detail["shipping"] = None

@@ -21,6 +21,7 @@ html_path = CUR_DIR / "samsclub_detail_2025-03-20_13-30-59.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-16-48.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-17-17.html"
 html_path = CUR_DIR / "samsclub_detail_2025-03-24_17-17-47.html"
+html_path = CUR_DIR / "samsclub_detail_2025-03-24_19-00-02.html"
 
 output_path = CUR_DIR.parent / "result" / "samsclub-result.json"
 
@@ -166,6 +167,16 @@ def parse_detail(html_content: str) -> dict[str, Any]:
     detail["price"] = get_from_json(product_data, ["skus", 0, "onlineOffer", "price", "finalPrice", "amount"])
     detail["price_listing"] = get_from_json(product_data, ["skus", 0, "onlineOffer", "price", "startPrice", "amount"])
     detail["price_unit"] = get_from_json(product_data, ["skus", 0, "onlineOffer", "price", "unitPrice", "amount"])
+
+    # Retailer Badge
+    savings = get_from_json(product_data, ["skus", 0, "onlineOffer", "price", "savings"])
+    detail["retailer_badge"] = {
+        "savings_amount" : get_from_json(savings, ["savingsAmount"]),
+        "type": get_from_json(savings, ["memberPromotions", 0, "type"]),
+        "limit": get_from_json(savings, ["householdLimit"]),
+        "start_date": get_from_json(savings, ["startDate"]),
+        "end_date": get_from_json(savings, ["endDate"]),
+    }
 
     # Currency
     detail["currency"] = get_from_json(product_data, ["skus", 0, "onlineOffer", "price", "startPrice", "currency"])

@@ -173,7 +173,7 @@ def parse_detail(html_content: str) -> dict[str, Any]:
     # Retailer Badge
     savings = get_from_json(product_data, ["skus", 0, "onlineOffer", "price", "savings"])
     detail["retailer_badge"] = {
-        "savings_amount" : get_from_json(savings, ["savingsAmount"]),
+        "savings_amount": get_from_json(savings, ["savingsAmount"]),
         "type": get_from_json(savings, ["memberPromotions", 0, "type"]),
         "limit": get_from_json(savings, ["householdLimit"]),
         "start_date": get_from_json(savings, ["startDate"]),

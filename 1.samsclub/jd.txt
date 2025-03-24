@@ -1,0 +1,12 @@
+Hello,
+
+Please read the job description slowly. This task appears simple but doing it well requires attention to detail and patience.
+
+I need a `parse_detail` function written in Python that takes a string `html_content` similar to the html files attached, parses all the product details present within the html and script tags on the page and returns a dict called `detail` with all attributes structured similar to example json files attached.
+
+Things to keep in mind:
+- It's essential to try and select all the attributes that may be present on the page that would be useful to a online shopper researching what product to buy or a brand researcher studying various aspects of the retail listing. To get a clear understanding of the attributes available, visiting the url on your browser and having a thorough look helps. For e.g. on this page https://www.samsclub.com/p/pure-life-purified-water/prod21002929, we can see the following attributes: name, rating, no. of reviews, brand, item no. , model no. , upc code (generatedUPC enclosed within script tag on page), price, price_per_unit, list_price (if item discounted), main_image, images, shipping_info (equivalent text of Free for Plus on eligible orders over $50), highlights, product_details, specifications, return policy. On this other page (https://www.samsclub.com/p/quilted-northern-ultra-soft-and-strong-2-ply-toilet-paper-32-rolls/P03016073), we have retailer_badges (Instant Savings, Limit 2. Ends Apr 06 )
+- It's important that the urls in the images array point to the hi-res version of the image. You may need to replace parts of the carousel image to mimic the url of the main image to get this right.
+- There could be other details not visible when you open the image in the browser hidden in json objects wtihin script tags. Please watch out for attributes within just json script tags and parse attributes from them as necessary.
+
+Kind regards,

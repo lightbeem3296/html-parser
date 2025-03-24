@@ -1,0 +1,363 @@
+{
+    "success": true,
+    "url": "https://www.walmart.com/ip/Sony-PS5-DualSense-Wireless-Controller-Midnight-Black/5226693884?athAsset=eyJhdGhjcGlkIjogIlYxdUU5bmRCY0h3STZWZGpHaGFZIiwgImF0aHN0aWQiOiAiQ1MwMjAiLCAiYXRoYW5jaWQiOiAiSXRlbUNhcm91c2VsIiwgImF0aHIiOiAwLjB9&athena=true",
+    "detail": {
+        "id": "5226693884",
+        "url": "https://www.walmart.com/ip/Sony-PS5-DualSense-Wireless-Controller-Midnight-Black/5226693884",
+        "name": "Sony PS5 DualSense Wireless Controller - Midnight Black",
+        "brand": "PlayStation",
+        "brand_url": "https://www.walmart.com/search?q=PlayStation&facet=brand:PlayStation",
+        "retailer_badges": [
+            "Best seller"
+        ],
+        "images": [
+            "https://i5.walmartimages.com/seo/Sony-PS5-DualSense-Wireless-Controller-Midnight-Black_e3eff53b-6a19-459d-9ea3-d096e2cdc6f1.ad599bfa32e2b77504802807c4cde5ec.jpeg",
+            "https://i5.walmartimages.com/asr/f979d1bd-a70d-4adc-b8bc-c47bcb28a8a2.514f93087ee19297fe26017dc21be021.jpeg",
+            "https://i5.walmartimages.com/asr/aa93e699-ccf9-41ea-8a48-197f21bb58dd.b3d33223efda2f9339cff7214522645b.jpeg",
+            "https://i5.walmartimages.com/asr/0591efa5-946c-4c65-9e6e-4afc9660c3f3.dde298299341d6b7e65c43b1f564add8.jpeg",
+            "https://i5.walmartimages.com/asr/eb925edb-3944-4f66-9c78-3f020b39f1b5.3021a97b1efc63123f93466e63c1526e.jpeg",
+            "https://i5.walmartimages.com/seo/Sony-PS5-DualSense-Wireless-Controller-Midnight-Black_e3eff53b-6a19-459d-9ea3-d096e2cdc6f1.ad599bfa32e2b77504802807c4cde5ec.jpeg"
+        ],
+        "price": 69.99,
+        "list_price": null,
+        "currency": "USD",
+        "currency_symbol": "$",
+        "is_subscription": false,
+        "offer_text": null,
+        "variants": [
+            {
+                "type": "Actual Color",
+                "id": "3JFTJ4A612YB",
+                "value": "Cobalt Blue",
+                "image": "https://i5.walmartimages.com/asr/4d0465e2-f72a-4737-acad-b85edeb540b7.d1116a3c0d9678dfcf639740d502f779.png",
+                "in_stock": "True",
+                "price": 74.97
+            },
+            {
+                "type": "Actual Color",
+                "id": "5IM2H9MTHDRB",
+                "value": "Cosmic Red",
+                "image": "https://i5.walmartimages.com/asr/d2e74756-0eb2-4378-8f26-c7cac4a3f89b.92974347936303b10bc994c829dfa429.png",
+                "in_stock": "True",
+                "price": 69.94
+            },
+            {
+                "type": "Actual Color",
+                "id": "4S2O0NPGBPW1",
+                "value": "Galantic Purple",
+                "image": "https://i5.walmartimages.com/asr/865c4106-fd23-4107-aa19-c3c41bb75303.aadad593367e187a6275b8b6f347b720.jpeg",
+                "in_stock": "True",
+                "price": 68
+            },
+            {
+                "type": "Actual Color",
+                "id": "1H05N1UK1H15",
+                "value": "Grey Camouflage",
+                "image": "https://i5.walmartimages.com/asr/5e5b834c-33c0-41fc-a263-4cd6224d3afc.6feaab193f3314f6bf5d3837b924eaf1.png",
+                "in_stock": "True",
+                "price": 74
+            },
+            {
+                "type": "Actual Color",
+                "id": "479FO8YW6XLK",
+                "value": "Indigo",
+                "image": "https://i5.walmartimages.com/asr/b23ed157-a378-4c29-b4eb-f0c29837c9b3.d3e184aaf54d270212f17560b0bbbc63.png",
+                "in_stock": "True",
+                "price": 72.93
+            },
+            {
+                "type": "Actual Color",
+                "id": "4WOHRZYI2J1L",
+                "value": "Midnight Black",
+                "image": "https://i5.walmartimages.com/asr/64abb6b8-0eb4-4b17-8759-d8c92be78791.5aff48df0c020accf5a75c2d1784a478.png",
+                "in_stock": "True",
+                "price": 69.99
+            },
+            {
+                "type": "Actual Color",
+                "id": "49RIZY2Z9VDY",
+                "value": "Pearl",
+                "image": "https://i5.walmartimages.com/asr/f8fb27a0-83a0-4428-8804-3a92af061a07.300f9f503eddc84e2fac83923993b96f.png",
+                "in_stock": "True",
+                "price": 73.93
+            },
+            {
+                "type": "Actual Color",
+                "id": "475690NQ8NJL",
+                "value": "Starlight Blue",
+                "image": "https://i5.walmartimages.com/asr/5e4b6194-5af2-4e35-af12-7d9e5f34509f.7d7e52602248bd7ece774fd6b6dc1f71.png",
+                "in_stock": "True",
+                "price": 67.97
+            },
+            {
+                "type": "Actual Color",
+                "id": "5JOUNW8XH9K8",
+                "value": "Sterling Silver",
+                "image": "https://i5.walmartimages.com/asr/760381b5-6dcf-4a74-aed7-6e42b613dabd.3fe23090136c5a7296deed9a31ec7618.png",
+                "in_stock": "True",
+                "price": 71.87
+            },
+            {
+                "type": "Actual Color",
+                "id": "2UZP2KKFRU99",
+                "value": "Teal",
+                "image": "https://i5.walmartimages.com/asr/69f78f2e-6ee1-4982-9e3c-64178430700c.f5b3689973bd61e1f66d43267a285735.png",
+                "in_stock": "True",
+                "price": 78.95
+            },
+            {
+                "type": "Actual Color",
+                "id": "5WH9QFI76E7D",
+                "value": "Volcanic Red",
+                "image": "https://i5.walmartimages.com/asr/78a9deef-7a91-4d40-ae97-b9b919cecea8.14721bb861b77c9f4cd60a02332e13c2.png",
+                "in_stock": "True",
+                "price": 72.47
+            },
+            {
+                "type": "Actual Color",
+                "id": "2YD0YB5BBY2H",
+                "value": "White",
+                "image": "https://i5.walmartimages.com/asr/4e76bc59-98c1-4ac6-a774-152542667dad.780d19e30e781cf5ae8281da10800d9c.jpeg",
+                "in_stock": "True",
+                "price": 65.95
+            }
+        ],
+        "gen_ai_description": "The Sony PS5 DualSense Wireless Controller in Midnight Black offers an immersive gaming experience with <span style=\"background:#E6F1FC\">&nbsp;<strong>haptic feedback</strong>&nbsp;</span>, <span style=\"background:#E6F1FC\">&nbsp;<strong>dynamic adaptive triggers</strong>&nbsp;</span>, and a <span style=\"background:#E6F1FC\">&nbsp;<strong>built-in microphone</strong>&nbsp;</span>. The controller features a signature comfortable design with an evolved, two-tone layout and enhanced sticks. It also has a built-in battery that can be charged via USB Type-C, an integrated speaker, and a motion sensor for intuitive motion control. The controller is <span style=\"background:#E6F1FC\">&nbsp;<strong>compatible with multiple devices</strong>&nbsp;</span>, including Windows PC, Mac, Android, and iOS, and supports PC gaming with haptic feedback and adaptive triggers. It also enables remote play from PS5 or PS4 consoles to PC using the PS Remote Play App.",
+        "rating": 4.7,
+        "total_ratings": null,
+        "total_reviews": 12585,
+        "in_stock": true,
+        "categories": [
+            {
+                "name": "Video Games",
+                "url": "https://www.walmart.com/cp/video-games/2636"
+            },
+            {
+                "name": "PlayStation",
+                "url": "https://www.walmart.com/browse/video-games/playstation/2636_5170403"
+            },
+            {
+                "name": "PlayStation 5",
+                "url": "https://www.walmart.com/cp/playstation-5/3475115"
+            },
+            {
+                "name": "PlayStation 5 (PS5) Accessories",
+                "url": "https://www.walmart.com/browse/video-games/playstation-5-ps5-accessories/2636_5170403_3475115_6249472"
+            },
+            {
+                "name": "PlayStation 5 (PS5) Controllers",
+                "url": "https://www.walmart.com/browse/video-games/playstation-5-ps5-controllers/2636_5170403_3475115_6249472_4051508"
+            }
+        ],
+        "description": "<p>Discover a deeper, highly immersive gaming experience that brings the action to life in the palms of your hands. The DualSense™ wireless controller offers immersive haptic feedback, dynamic adaptive triggers and a built-in microphone, all integrated into an iconic comfortable design. Ignite your gaming nights on your PS5™ console with the DualSense™ Midnight Black wireless controller. Part of a new line-up of galaxy-themed colors, this sleek design takes inspiration from how we view the wonders of space through the night sky</p>",
+        "key_features": [
+            "Bring gaming worlds to lifeHaptic feedbackFeel physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, these dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons.Adaptive triggersExperience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions.Find your voice, share your passionBuilt-in microphone and headset jackChat with friends online using the built-in microphone –or by connecting a headset to the 3.5mm jack. Easily switch voice capture on and off at a moment’s notice with the dedicated mute button.Create buttonCapture and broadcast your most epic gaming moments with the create button. Building on the success of the pioneering SHARE button, “create” offers players more ways to produce gaming content and broadcast their adventures live to the world.A gaming icon in your handsSignature comfortTake control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar.Familiar featuresThe DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play.Built-in batteryCharge and play, now via USB Type-C.Integrated speakerSelect games take on an extra dimension with higher-fidelity sound effects bursting from the controller.Motion sensorBring intuitive motion control to supported games with the built-in accelerometer and gyroscope.Multi-device connectivityPlay on more devicesConnect using a USB Type-C® cable or Bluetooth® wireless technology so you can easily play on more devices including Windows PC and Mac® computers, Android and iOS mobile phones.Elevate PC gamingDiscover a deeper immersive experience in your favorite PC games. Bring gaming worlds to life in the palms of your hand with haptic feedback and dynamic adaptive triggers, all integrated into an iconic comfortable design.* Discover a wide range of PC titles published by PlayStation which support immersive DualSense® controller features at https://www.playstation.com/games/pc-games/Remote PlayStream compatible games from your PS5® or PS4™ console to your PC using the PS Remote Play App** and control them with the DualSense controller. The app requires an internet connection and account for PlayStation™Network (available for free at remoteplay.dl.playstation.net/remoteplay/).1 Compared to DUALSHOCK®4 wireless controller. 2 Available when feature is supported by game. 3 Internet and account for PlayStation™Network required. 4 Cable not included. To connect or charge the controller use the USB cable supplied with the PS5™ console. *Haptic feedback and adaptive triggers may require USB connection and are available when supported by game. **PS Remote Play requires Remote Play App, PS4™ or PS5™ console connected to a broadband network with at least 5Mpbs, the latest system software and compatible game. A PS4 or PS5 console with a wired connection via a LAN cable is recommended. In PS4 games streamed via Remote Play, haptic feedback is replaced with basic rumble and adaptive triggers are not supported. Always update your PS5™ system software and the wireless controller device software to the latest version. “PlayStation”, “PlayStation Family Mark”, “PS5 logo”, “PS5”, “DualSense” and “DUALSHOCK” are registered trademarks or trademarks of Sony Interactive Entertainment Inc. “SONY” is a registered trademark of Sony Corporation. \"Heighten Your Senses\" is a registered trademark or trademark of Sony Interactive Entertainment LLC. USB Type-C® is a registered trademark of USB Implementers Forum.",
+            "Bring gaming worlds to lifeHaptic feedbackFeel physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, these dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons.Adaptive triggersExperience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions.",
+            "Find your voice, share your passionBuilt-in microphone and headset jackChat with friends online using the built-in microphone –or by connecting a headset to the 3.5mm jack. Easily switch voice capture on and off at a moment’s notice with the dedicated mute button.Create buttonCapture and broadcast your most epic gaming moments with the create button. Building on the success of the pioneering SHARE button, “create” offers players more ways to produce gaming content and broadcast their adventures live to the world.A gaming icon in your handsSignature comfortTake control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar.Familiar featuresThe DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play.Built-in batteryCharge and play, now via USB Type-C.Integrated speakerSelect games take on an extra dimension with higher-fidelity sound effects bursting from the controller.Motion sensorBring intuitive motion control to supported games with the built-in accelerometer and gyroscope.Multi-device connectivityPlay on more devicesConnect using a USB Type-C® cable or Bluetooth® wireless technology so you can easily play on more devices including Windows PC and Mac® computers, Android and iOS mobile phones.Elevate PC gamingDiscover a deeper immersive experience in your favorite PC games. Bring gaming worlds to life in the palms of your hand with haptic feedback and dynamic adaptive triggers, all integrated into an iconic comfortable design.* Discover a wide range of PC titles published by PlayStation which support immersive DualSense® controller features at https://www.playstation.com/games/pc-games/Remote PlayStream compatible games from your PS5® or PS4™ console to your PC using the PS Remote Play App** and control them with the DualSense controller. The app requires an internet connection and account for PlayStation™Network (available for free at remoteplay.dl.playstation.net/remoteplay/).",
+            "1 Compared to DUALSHOCK®4 wireless controller. 2 Available when feature is supported by game. 3 Internet and account for PlayStation™Network required. 4 Cable not included. To connect or charge the controller use the USB cable supplied with the PS5™ console. *Haptic feedback and adaptive triggers may require USB connection and are available when supported by game. **PS Remote Play requires Remote Play App, PS4™ or PS5™ console connected to a broadband network with at least 5Mpbs, the latest system software and compatible game. A PS4 or PS5 console with a wired connection via a LAN cable is recommended. In PS4 games streamed via Remote Play, haptic feedback is replaced with basic rumble and adaptive triggers are not supported. Always update your PS5™ system software and the wireless controller device software to the latest version. “PlayStation”, “PlayStation Family Mark”, “PS5 logo”, “PS5”, “DualSense” and “DUALSHOCK” are registered trademarks or trademarks of Sony Interactive Entertainment Inc. “SONY” is a registered trademark of Sony Corporation. \"Heighten Your Senses\" is a registered trademark or trademark of Sony Interactive Entertainment LLC. USB Type-C® is a registered trademark of USB Implementers Forum.",
+            "Bring gaming worlds to lifeHaptic feedbackFeel physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, these dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons.Adaptive triggersExperience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions.Find your voice, share your passionBuilt-in microphone and headset jackChat with friends online using the built-in microphone –or by connecting a headset to the 3.5mm jack. Easily switch voice capture on and off at a moment’s notice with the dedicated mute button.Create buttonCapture and broadcast your most epic gaming moments with the create button. Building on the success of the pioneering SHARE button, “create” offers players more ways to produce gaming content and broadcast their adventures live to the world.A gaming icon in your handsSignature comfortTake control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar.Familiar featuresThe DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play.Built-in batteryCharge and play, now via USB Type-C.Integrated speakerSelect games take on an extra dimension with higher-fidelity sound effects bursting from the controller.Motion sensorBring intuitive motion control to supported games with the built-in accelerometer and gyroscope.Multi-device connectivityPlay on more devicesConnect using a USB Type-C® cable or Bluetooth® wireless technology so you can easily play on more devices including Windows PC and Mac® computers, Android and iOS mobile phones.Elevate PC gamingDiscover a deeper immersive experience in your favorite PC games. Bring gaming worlds to life in the palms of your hand with haptic feedback and dynamic adaptive triggers, all integrated into an iconic comfortable design.* Discover a wide range of PC titles published by PlayStation which support immersive DualSense® controller features at https://www.playstation.com/games/pc-games/Remote PlayStream compatible games from your PS5® or PS4™ console to your PC using the PS Remote Play App** and control them with the DualSense controller. The app requires an internet connection and account for PlayStation™Network (available for free at remoteplay.dl.playstation.net/remoteplay/).1 Compared to DUALSHOCK®4 wireless controller. 2 Available when feature is supported by game. 3 Internet and account for PlayStation™Network required. 4 Cable not included. To connect or charge the controller use the USB cable supplied with the PS5™ console. *Haptic feedback and adaptive triggers may require USB connection and are available when supported by game. **PS Remote Play requires Remote Play App, PS4™ or PS5™ console connected to a broadband network with at least 5Mpbs, the latest system software and compatible game. A PS4 or PS5 console with a wired connection via a LAN cable is recommended. In PS4 games streamed via Remote Play, haptic feedback is replaced with basic rumble and adaptive triggers are not supported. Always update your PS5™ system software and the wireless controller device software to the latest version. “PlayStation”, “PlayStation Family Mark”, “PS5 logo”, “PS5”, “DualSense” and “DUALSHOCK” are registered trademarks or trademarks of Sony Interactive Entertainment Inc. “SONY” is a registered trademark of Sony Corporation. \"Heighten Your Senses\" is a registered trademark or trademark of Sony Interactive Entertainment LLC. USB Type-C® is a registered trademark of USB Implementers Forum.",
+            "Bring gaming worlds to lifeHaptic feedbackFeel physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, these dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons.Adaptive triggersExperience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions.",
+            "Find your voice, share your passionBuilt-in microphone and headset jackChat with friends online using the built-in microphone –or by connecting a headset to the 3.5mm jack. Easily switch voice capture on and off at a moment’s notice with the dedicated mute button.Create buttonCapture and broadcast your most epic gaming moments with the create button. Building on the success of the pioneering SHARE button, “create” offers players more ways to produce gaming content and broadcast their adventures live to the world.A gaming icon in your handsSignature comfortTake control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar.Familiar featuresThe DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play.Built-in batteryCharge and play, now via USB Type-C.Integrated speakerSelect games take on an extra dimension with higher-fidelity sound effects bursting from the controller.Motion sensorBring intuitive motion control to supported games with the built-in accelerometer and gyroscope.Multi-device connectivityPlay on more devicesConnect using a USB Type-C® cable or Bluetooth® wireless technology so you can easily play on more devices including Windows PC and Mac® computers, Android and iOS mobile phones.Elevate PC gamingDiscover a deeper immersive experience in your favorite PC games. Bring gaming worlds to life in the palms of your hand with haptic feedback and dynamic adaptive triggers, all integrated into an iconic comfortable design.* Discover a wide range of PC titles published by PlayStation which support immersive DualSense® controller features at https://www.playstation.com/games/pc-games/Remote PlayStream compatible games from your PS5® or PS4™ console to your PC using the PS Remote Play App** and control them with the DualSense controller. The app requires an internet connection and account for PlayStation™Network (available for free at remoteplay.dl.playstation.net/remoteplay/).",
+            "1 Compared to DUALSHOCK®4 wireless controller. 2 Available when feature is supported by game. 3 Internet and account for PlayStation™Network required. 4 Cable not included. To connect or charge the controller use the USB cable supplied with the PS5™ console. *Haptic feedback and adaptive triggers may require USB connection and are available when supported by game. **PS Remote Play requires Remote Play App, PS4™ or PS5™ console connected to a broadband network with at least 5Mpbs, the latest system software and compatible game. A PS4 or PS5 console with a wired connection via a LAN cable is recommended. In PS4 games streamed via Remote Play, haptic feedback is replaced with basic rumble and adaptive triggers are not supported. Always update your PS5™ system software and the wireless controller device software to the latest version. “PlayStation”, “PlayStation Family Mark”, “PS5 logo”, “PS5”, “DualSense” and “DUALSHOCK” are registered trademarks or trademarks of Sony Interactive Entertainment Inc. “SONY” is a registered trademark of Sony Corporation. \"Heighten Your Senses\" is a registered trademark or trademark of Sony Interactive Entertainment LLC. USB Type-C® is a registered trademark of USB Implementers Forum.",
+            "Bring gaming worlds to lifeHaptic feedbackFeel physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, these dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons.Adaptive triggersExperience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions.Find your voice, share your passionBuilt-in microphone and headset jackChat with friends online using the built-in microphone –or by connecting a headset to the 3.5mm jack. Easily switch voice capture on and off at a moment’s notice with the dedicated mute button.Create buttonCapture and broadcast your most epic gaming moments with the create button. Building on the success of the pioneering SHARE button, “create” offers players more ways to produce gaming content and broadcast their adventures live to the world.A gaming icon in your handsSignature comfortTake control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar.Familiar featuresThe DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play.Built-in batteryCharge and play, now via USB Type-C.Integrated speakerSelect games take on an extra dimension with higher-fidelity sound effects bursting from the controller.Motion sensorBring intuitive motion control to supported games with the built-in accelerometer and gyroscope.Multi-device connectivityPlay on more devicesConnect using a USB Type-C® cable or Bluetooth® wireless technology so you can easily play on more devices including Windows PC and Mac® computers, Android and iOS mobile phones.Elevate PC gamingDiscover a deeper immersive experience in your favorite PC games. Bring gaming worlds to life in the palms of your hand with haptic feedback and dynamic adaptive triggers, all integrated into an iconic comfortable design.* Discover a wide range of PC titles published by PlayStation which support immersive DualSense® controller features at https://www.playstation.com/games/pc-games/Remote PlayStream compatible games from your PS5® or PS4™ console to your PC using the PS Remote Play App** and control them with the DualSense controller. The app requires an internet connection and account for PlayStation™Network (available for free at remoteplay.dl.playstation.net/remoteplay/).1 Compared to DUALSHOCK®4 wireless controller. 2 Available when feature is supported by game. 3 Internet and account for PlayStation™Network required. 4 Cable not included. To connect or charge the controller use the USB cable supplied with the PS5™ console. *Haptic feedback and adaptive triggers may require USB connection and are available when supported by game. **PS Remote Play requires Remote Play App, PS4™ or PS5™ console connected to a broadband network with at least 5Mpbs, the latest system software and compatible game. A PS4 or PS5 console with a wired connection via a LAN cable is recommended. In PS4 games streamed via Remote Play, haptic feedback is replaced with basic rumble and adaptive triggers are not supported. Always update your PS5™ system software and the wireless controller device software to the latest version. “PlayStation”, “PlayStation Family Mark”, “PS5 logo”, “PS5”, “DualSense” and “DUALSHOCK” are registered trademarks or trademarks of Sony Interactive Entertainment Inc. “SONY” is a registered trademark of Sony Corporation. \"Heighten Your Senses\" is a registered trademark or trademark of Sony Interactive Entertainment LLC. USB Type-C® is a registered trademark of USB Implementers Forum.",
+            "Bring gaming worlds to lifeHaptic feedbackFeel physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, these dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons.Adaptive triggersExperience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions.",
+            "Find your voice, share your passionBuilt-in microphone and headset jackChat with friends online using the built-in microphone –or by connecting a headset to the 3.5mm jack. Easily switch voice capture on and off at a moment’s notice with the dedicated mute button.Create buttonCapture and broadcast your most epic gaming moments with the create button. Building on the success of the pioneering SHARE button, “create” offers players more ways to produce gaming content and broadcast their adventures live to the world.A gaming icon in your handsSignature comfortTake control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar.Familiar featuresThe DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play.Built-in batteryCharge and play, now via USB Type-C.Integrated speakerSelect games take on an extra dimension with higher-fidelity sound effects bursting from the controller.Motion sensorBring intuitive motion control to supported games with the built-in accelerometer and gyroscope.Multi-device connectivityPlay on more devicesConnect using a USB Type-C® cable or Bluetooth® wireless technology so you can easily play on more devices including Windows PC and Mac® computers, Android and iOS mobile phones.Elevate PC gamingDiscover a deeper immersive experience in your favorite PC games. Bring gaming worlds to life in the palms of your hand with haptic feedback and dynamic adaptive triggers, all integrated into an iconic comfortable design.* Discover a wide range of PC titles published by PlayStation which support immersive DualSense® controller features at https://www.playstation.com/games/pc-games/Remote PlayStream compatible games from your PS5® or PS4™ console to your PC using the PS Remote Play App** and control them with the DualSense controller. The app requires an internet connection and account for PlayStation™Network (available for free at remoteplay.dl.playstation.net/remoteplay/).",
+            "1 Compared to DUALSHOCK®4 wireless controller. 2 Available when feature is supported by game. 3 Internet and account for PlayStation™Network required. 4 Cable not included. To connect or charge the controller use the USB cable supplied with the PS5™ console. *Haptic feedback and adaptive triggers may require USB connection and are available when supported by game. **PS Remote Play requires Remote Play App, PS4™ or PS5™ console connected to a broadband network with at least 5Mpbs, the latest system software and compatible game. A PS4 or PS5 console with a wired connection via a LAN cable is recommended. In PS4 games streamed via Remote Play, haptic feedback is replaced with basic rumble and adaptive triggers are not supported. Always update your PS5™ system software and the wireless controller device software to the latest version. “PlayStation”, “PlayStation Family Mark”, “PS5 logo”, “PS5”, “DualSense” and “DUALSHOCK” are registered trademarks or trademarks of Sony Interactive Entertainment Inc. “SONY” is a registered trademark of Sony Corporation. \"Heighten Your Senses\" is a registered trademark or trademark of Sony Interactive Entertainment LLC. USB Type-C® is a registered trademark of USB Implementers Forum."
+        ],
+        "seller_name": "Kiss Electronics Inc",
+        "seller_url": "https://www.walmart.com/seller/ED6F630F4BA94318A00A1D0BAACD0A48",
+        "est_delivery_date": "2025-03-26",
+        "returns_info": "Free 30-day returns",
+        "at_a_glance": [
+            {
+                "name": "Batteries incl",
+                "value": "Y"
+            },
+            {
+                "name": "Brand",
+                "value": "PlayStation"
+            },
+            {
+                "name": "Color",
+                "value": "Midnight Black"
+            },
+            {
+                "name": "Dimensions",
+                "value": "6.30 x 4.20 x 2.60 Inches"
+            },
+            {
+                "name": "Compatibility",
+                "value": "PlayStation, Apple, Google"
+            },
+            {
+                "name": "Compatible models",
+                "value": "Playstation 5"
+            },
+            {
+                "name": "Compatible OS",
+                "value": "PlayStation 5, Mac, Android, iOS, Xbox, Xbox One, PlayStation 4"
+            },
+            {
+                "name": "Condition",
+                "value": "New"
+            },
+            {
+                "name": "Connection",
+                "value": "USB Type-C"
+            },
+            {
+                "name": "Model",
+                "value": "CFI-ZCT1W"
+            }
+        ],
+        "review_summary_title": "Beautiful design and smooth functionality marred by quality issues",
+        "review_summary_text": "Customers praise the product's beautiful appearance, vibrant color options, and smooth controller functionality, but some report defects like stick drift and malfunctioning buttons. While opinions on the controller's quality are mixed, the product's aesthetic appeal and suitability as a gift are widely appreciated. Overall, customers are pleased with their purchase, despite some quality control issues.",
+        "review_aspects": [
+            {
+                "name": "Controller",
+                "value": "neutral"
+            },
+            {
+                "name": "Appearance",
+                "value": "positive"
+            },
+            {
+                "name": "Color",
+                "value": "positive"
+            },
+            {
+                "name": "Drift",
+                "value": "negative"
+            },
+            {
+                "name": "As A Gift",
+                "value": "positive"
+            }
+        ],
+        "top_reviews": [
+            {
+                "review_title": "Good transaction item as said.",
+                "review_text": "Box corners was worn and showed little wear, But you don't play with the box.  All was good with the controller.  Looks to be genuine Sony unlike some that's bought online.  \nI had no issues with this order at all to speak of.  \n  Now for Walmart it is pathetic how they allow sellers to use their site to inflate prices and rip people off.  Lol at the prices of done grocery items by sellers then look at the Walmart price.  Check feedback on all sellers Before You Buy!\n  $36 for a 24pk of mnt dew from a seller $13.28 at the store!  Just one example.  Another Old El Paso seasoning about a$1 in store seller on here has/ had it listed for $28 making it sound like you was buying a case in fact it was for one package! \n  WALMART SHOULD STOP THIS BEHAVIOR... REALLY MAKES ME NOT WANT TO BUY ANYTHING FROM WALMART. CON...",
+                "rating": 5,
+                "date": "2024-08-15",
+                "reviewer_name": "Troy"
+            },
+            {
+                "review_title": null,
+                "review_text": "Awesome controller i brought for my son and good price.... i was going to buy a used/furnished one at gamestop, but what's the point if it's almost the same price as a new ps5 controller! but it's newer! it came very fast same day delivery from Walmart store!",
+                "rating": 5,
+                "date": "2024-08-31",
+                "reviewer_name": "diana"
+            },
+            {
+                "review_title": "Great controller",
+                "review_text": "Pretty much the greatest controller ever made now in black. I was surprised to find a little scratch on the controller beside the start button on the right. But it’s just a little surface scratch. Not really ideal when you’re paying $70 for a controller but it’s not something that would make me return it.",
+                "rating": 5,
+                "date": "2024-02-26",
+                "reviewer_name": "rob"
+            },
+            {
+                "review_title": "We’ve had many many PlayStation controllers",
+                "review_text": "My son always had to have the blue playstation5 controller.  Light and dark performed the same.  Poorly.  The colored ones just didn’t withstand the level or duration of play we’re talking about.  Once he got a black one they’ve last a long time.  Like shhhhh 👀almost a year.  So we highly recommend the standard issue black controller.  It stands the test of time.",
+                "rating": 5,
+                "date": "2024-07-20",
+                "reviewer_name": "Cmkoehn"
+            },
+            {
+                "review_title": "Awesome.",
+                "review_text": "I only got this to replace the standard blanco controller. I like it better since I got the Tisms and prefer a colorful life. This Cosmic Red is stunning each time I see it.",
+                "rating": 5,
+                "date": "2024-07-08",
+                "reviewer_name": "Jay"
+            },
+            {
+                "review_title": "Nice, but not as bright as pic",
+                "review_text": "It’s a nice dark grape purple color. It definitely isn’t as bright as it is in the picture shown. It’s darker and more dull. It’s still a very nice color just not what I was expecting. Luckily when I purchased it, it was not more $ than the black or white.",
+                "rating": 4,
+                "date": "2024-07-08",
+                "reviewer_name": "Heather"
+            },
+            {
+                "review_title": "Colbat Blue 😍",
+                "review_text": "This color is beautiful!! The buttons are blue as well 😍 \nThis was a birthday gift for my grandson and he loves it",
+                "rating": 4,
+                "date": "2024-08-23",
+                "reviewer_name": "Amy"
+            },
+            {
+                "review_title": "Refurbished controller",
+                "review_text": "I received a refurbished, remote controller, and the box was open. I paid full price for a brand new one, I even paid $10 extra to get it delivered right away",
+                "rating": 1,
+                "date": "2024-08-24",
+                "reviewer_name": "Joseph"
+            },
+            {
+                "review_title": "Disappointed",
+                "review_text": "I ordered via Walmart plus delivery and this item was not in my order. I immediately called the driver and she claimed to not know what I was talking about and proceeded to block me from calling her. I had to call and get my money refunded and ended up still having to go the actual store to get my daughter this item. Horrible service!",
+                "rating": 1,
+                "date": "2024-07-16",
+                "reviewer_name": "Lisa"
+            },
+            {
+                "review_title": "Beware of this product",
+                "review_text": "I purchased this product on April 10, 2024\nSince then, the product was working fine for a week or so now the product does not work at all the joystick on the left-hand side sticks a lot doesn’t let me control anything on the left hand controller. I tried communicating with Walmart and Allstate Allstate is mine protective warranty. They told me to contact Walmart. Walmart tells me to contact Allstate either way nobody seems to know nothing or how to help me on this matter all I want to do is return, the product back and get a new one in exchange. I don’t want my money back. I just want another one and somebody please help me on this matter.",
+                "rating": 1,
+                "date": "2024-05-31",
+                "reviewer_name": "Ramon"
+            }
+        ],
+        "selected_variant": "Midnight Black",
+        "variant": {
+            "type": "Actual Color",
+            "value": "Midnight Black"
+        },
+        "upc": "711719574309",
+        "specifications": [
+            {
+                "name": "Video Game Platform",
+                "value": "PlayStation 5"
+            },
+            {
+                "name": "Brand",
+                "value": "PlayStation"
+            },
+            {
+                "name": "Color",
+                "value": "Midnight Black"
+            },
+            {
+                "name": "Compatible Operating Systems",
+                "value": "PlayStation 5, Mac, Android, iOS, Xbox, Xbox One, PlayStation 4"
+            },
+            {
+                "name": "Battery Size",
+                "value": "10"
+            },
+            {
+                "name": "Assembled Product Dimensions (L x W x H)",
+                "value": "6.30 x 4.20 x 2.60 Inches"
+            }
+        ],
+        "warnings": [
+            {
+                "name": "Ingestion Hazard",
+                "value": "This product contains a battery. Death or serious injury can occur if ingested. A swallowed battery can cause Internal Chemical Burn in as little as 2 hours. Keep new and used batteries OUT OF REACH OF CHILDREN. Seek Immediate medical attention if a battery is suspected to be swallowed or inserted inside any part of the body."
+            }
+        ],
+        "warranty": {
+            "information": "Sony Interactive Entertainment LLC (\"SIE LLC\") warrants to the original purchaser that this product shall be free from defects in material and workmanship for a period of one (1) year from the date of purchase. This warranty does not apply to any consumables (such as batteries). For defects in material or workmanship within the warranty period, upon showing a proof of purchase, SIE LLC agrees for a period of one (1) year to either repair or replace this product with a new or factory recertified product at SIE LLC's option. For the purpose of this Limited Warranty, \"factory recertified\" means a product that has been returned to its original specifications. Visit playstation.com/help or call 1-800-345-7669 to receive a return authorization and shipping instructions. As the original purchaser, you will be responsible for inbound shipping costs and any packaging materials required. SIE LLC will then return the repaired or replaced product at no cost to you including return shipping. This warranty shall not be applicable and shall be void if the defect in the SIE LLC product has arisen through abuse, unreasonable use, mistreatment, neglect, or means other than from a defect in materials or workmanship.",
+            "length": null,
+            "url": "https://www.playstation.com/en-us/legal/warranties/accessories/"
+        },
+        "nutrition_facts": {
+            "calorie_info": null,
+            "key_nutrients": null,
+            "vitamin_minerals": null,
+            "serving_info": null,
+            "additional_disclaimer": null,
+            "static_content": null
+        }
+    },
+    "result_count": 1,
+    "remaining_credits": 7778724.0
+}

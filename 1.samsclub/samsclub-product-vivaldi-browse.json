@@ -1,0 +1,433 @@
+{
+  "status": "SUCCESS",
+  "payload": {
+    "products": [
+      {
+        "productId": "prod18983410",
+        "productType": "NORMALITEM",
+        "descriptors": {
+          "name": "Famous Amos Chocolate Chip Cookies, 2 oz., 42 pk.",
+          "shortDescription": "<ul>\n<li>42 packs - 2 ounces each</li>\n<li>Made with premium Ambrosia chocolate chips</li>\n<li>Snack size is great for vending, daycare centers and foodservice use</li>\n<li>Familiar chocolate chip cookie taste</li>\n<li>Perfect for on-the-go snacking</li>\n</ul>",
+          "longDescription": "<p>Treat yourself to the rich taste of Famous Amos&reg; Chocolate Chip Cookies (2 oz., 42 ct.). These tempting baked desserts are convenient for snacking, packing and enjoying while on-the-go.</p>\n\n<h3>Bite-Size Cookies</h3>\n\n<p>Each cookie is bite-sized, which is perfect for snacking. The small shape of these chocolate chip treats makes them ideal for&nbsp;inside&nbsp;a lunch box, in the pocket of a backpack or in the glove compartment of a car. Snack on these Famous Amos cookies while running errands&nbsp;or munch on them while watching TV. With so many crunchy treats in each bag, you&#39;ll have plenty to satisfy a mid-day craving.</p>\n\n<h3>Large Variety Pack</h3>\n\n<p>This variety pack contains 42 bags of Famous Amos Chocolate Chip Cookies, each in a convenient 2 oz. size. This means you&#39;ll have enough for many packed lunches, as well as enough bags for concession stands or birthday parties. The bags come in a convenient box, which is great for storing in a pantry or in a cabinet.</p>\n\n<h3>Rich Chocolate Chip Taste</h3>\n\n<p>With the taste of freshly baked goodness, these Famous Amos Chocolate Chip Cookies will transport you back to your childhood in one bite. They contain semisweet chocolate chips in every crunchy morsel, which makes them even more delicious with a glass of cold milk.</p>\n\n<h3>Famous Amos Chocolate Chip Cookies</h3>\n\n<p>These chocolate chip cookies were invented by Wally Amos in 1975. He set up shop in Los Angeles, where&nbsp;his cookies quickly gained a cult following. Kellogg&#39;s&reg; now owns the brand and distributes them throughout the world because of their immense popularity.</p>\n\n<h3>Great for Parties</h3>\n\n<p>With a small, bite-sized shape, these chocolate chip cookies are wonderful to hand out to guests at parties and other celebrations. You can simply place them in a bowl or a goodie bag to share with friends and family. These Famous Amos cookies can also be used as a topping for creating delicious cupcakes, sundaes or other desserts for a party.</p>",
+          "productdescription": "Famous Amos Chocolate Chip Cookies, 2 oz., 42 pk."
+        },
+        "category": {
+          "categoryId": "1464",
+          "breadcrumbs": [
+            {
+              "displayName": "All Departments",
+              "navId": 100001,
+              "seoUrl": "/c/all-products/100001"
+            },
+            {
+              "displayName": "Grocery",
+              "navId": 1444,
+              "seoUrl": "/c/grocery/1444"
+            },
+            {
+              "displayName": "Snacks",
+              "navId": 16290442,
+              "seoUrl": "/c/snacks/16290442"
+            }
+          ],
+          "seoUrl": "/b/cookies/1464",
+          "name": "Cookies"
+        },
+        "assets": {
+          "template": "/shop/product/templates/samsShop_productType_typical.jsp"
+        },
+        "searchAndSeo": {
+          "keywords": "Famous Amos Chocolate Chip Cookies,Famous Amos,Chocolate chip cookies,Cookies,Vending,C-store,C store,Concessions,Kellogg,00076677296602",
+          "name": "famous-amos-chocolate-chip-cookies-42ct",
+          "url": "/p/famous-amos-chocolate-chip-cookies-42ct/prod18983410"
+        },
+        "shippingOption": {
+          "info": "Standard<br>Shipping not available to Alaska, Hawaii or Puerto Rico"
+        },
+        "manufacturingInfo": {
+          "model": "239157",
+          "brand": "Famous Amos",
+          "assembledCountry": "United States",
+          "componentCountry": "USA",
+          "specification": "<ul>\n<li>Kosher</li>\n<li>No trans fats</li>\n</ul>\n<p><strong>Net weight:</strong> 5.19 pounds (83 ounces)</p>\n<p><strong>Includes</strong>:  42 packs - 2 ounces each</p>\n<p><strong>Ingredients</strong>: Wheat Flour, Semi-Sweet Chocolate (Cocoa Liquor, Sugar, Dextrose, Soy Lecithin, Natural Flavor), Sugar, Vegetable, Palm And Palm Kernel Oil Shortening, Blackstrap Molasses, Salt, Dried Whole Eggs, Baking Soda, Natural And Artificial Flavour, Ammonium Bicarbonate, Modified Milk Ingredients, Soy Lecithin.</p>\n<p><strong>Allergy Information</strong>:  Contains Wheat, Soy, Egg and Milk Ingredients. May Contain Tree Nuts.</p>",
+          "warranty": "This product is covered by the Sam's Club Member Satisfaction Guarantee.",
+          "salesTaxCode": 2050078
+        },
+        "reviewsAndRatings": {
+          "numReviews": 3763,
+          "avgRating": 4.7983,
+          "avgRecommended": 0.2,
+          "isEligibleForAskAndAnswer": true
+        },
+        "skus": [
+          {
+            "skuId": "sku19497359",
+            "productId": "prod18983410",
+            "clubOffer": {
+              "productId": "prod18983410",
+              "unitofMeasureUnitPrice": "EA",
+              "msrpPrice": 13.42,
+              "gtin": "7667729660",
+              "id": "prod18983410_sku19497359_6371",
+              "inventory": {
+                "status": "AVAILABLE",
+                "availableTotalQty": 62,
+                "availableToSellQuantity": 62,
+                "qtySold": -1,
+                "qtyLeft": -1
+              },
+              "itemNumber": "87523",
+              "mdsFamId": "51254549",
+              "offerStatus": "PURCHASABLE",
+              "price": {
+                "type": "FIXED",
+                "finalPrice": {
+                  "amount": 17.88,
+                  "currency": "USD"
+                },
+                "startPrice": {
+                  "amount": 17.88,
+                  "currency": "USD"
+                },
+                "priceStatus": "ACTIVE",
+                "priceDisplayOption": "SHOW",
+                "unitPrice": {
+                  "amount": 0.43,
+                  "currency": "USD"
+                }
+              },
+              "status": "A",
+              "clubItem": {
+                "clubItemProperties": [
+                  "DFC_ENABLED"
+                ]
+              },
+              "variableWeightIndicator": "false",
+              "sellQtyUnitofMeasure": "OZ",
+              "mapOptions": "SHOW",
+              "offerLogistics": {
+                "packSizeUnitPrice": 42
+              },
+              "isSNAPEligibleInd": "Y",
+              "skuId": "sku19497359",
+              "clubId": 6371,
+              "cpuEnabled": true,
+              "offerId": "prod18983410_sku19497359",
+              "generatedUPC": "00076677296602",
+              "isFBTEligible": true,
+              "recommendedDisplayOffer": true,
+              "clubOfferProperties": [
+                "MERCHANT_AUTHORIZED",
+                "TAX_EXEMPT",
+                "CPU_ENABLED",
+                "IS_ACTIVE",
+                "AIR_SHIPPABLE",
+                "DISCOUNT_INDICATOR",
+                "UNIT_PRICE_ITEM"
+              ]
+            },
+            "merchandiseFineLine": "0000",
+            "descriptors": {
+              "name": "Famous Amos Chocolate Chip Cookies, 2 oz., 42 pk.",
+              "comments": "Republish OAR 8-1-23"
+            },
+            "assets": {
+              "image": "0007667729660_A"
+            },
+            "restriction": [
+              {
+                "type": "RESTRICTIONCRITERION",
+                "shipCriterionName": "All-Restriction",
+                "states": "PO,AS,HI,AE,FPO,MP,VI,APO,AA,PR,AK,GU,AP",
+                "zipCodes": "43446,98279,49757,49782,98286,43438,98261,98545,98222,98250,98297,98243,90704,98280"
+              },
+              {
+                "type": "RESTRICTIONCRITERION",
+                "shipCriterionName": "Military Bases and Puerto Rico",
+                "states": "VI,AS,GU,AK,PR,APO,AE,AP,FPO,PO,AA",
+                "zipCodes": "99663,99784,99691,99519,99672,99771,99770,99689,99504,99655,99670,99568,99578,99626,99789,99664,99745,99563,99772,99709,99686,99523,99742,99760,99505,99513,99714,99927,99925,99631,99576,99832,99769,99788,99675,99801,99707,99612,99623,99514,99730,99688,99777,99749,99577,99548,99779,99687,99747,99701,99649,99625,99566,99765,99619,99694,99564,99829,99725,99606,99627,99547,99697,99726,99756,99723,99739,99710,99622,99802,99692,99628,99791,99604,99653,99610,99821,99820,99581,99554,99561,99733,99751,99667,99711,99638,99639,99614,99740,99901,99529,99630,99918,99685,99583,99776,99743,99727,99926,99516,99555,99650,99780,99579,99551,99736,99722,99522,99836,99633,99835,99645,99682,99503,99575,99679,99752,99643,99574,99613,99580,99648,99746,99640,99774,99681,99641,99778,99734,99840,99569,99737,99511,99647,99652,99611,99755,99690,99824,99658,99510,99721,99517,99676,99757,99762,99502,99731,99556,99518,99524,99636,99632,99950,99629,99674,99919,99644,99615,99783,99590,99668,99508,99763,99565,99758,99767,99553,99732,99773,99768,99654,99790,99704,99608,99712,99782,99666,99803,99637,99706,99521,99702,99744,99620,99683,99693,99786,99665,99585,99720,99781,99515,99812,99588,99651,99677,99833,99811,99609,99599,99662,99775,99607,99741,99738,99703,99567,99572,99656,99716,99929,99922,99550,99827,99507,99761,99764,99921,99530,99602,99661,99850,99903,99748,99587,99708,99546,99558,99684,99559,99660,99657,99552,99605,99759,99659,99634,99750,99830,99573,99549,99923,99669,99928,99785,99589,99586,99557,99729,99724,99754,99635,99571,99841,99678,99545,99671,99501,99506,99766,99825,99540,99520,99705,99826,99753,99591,99603,99509,99695,99680,99624,99621"
+              }
+            ],
+            "shippingOption": {
+              "info": "Standard<br>Shipping not available to Alaska, Hawaii or Puerto Rico",
+              "costType": "Calculated",
+              "flag": "freeEligible",
+              "isAirShippable": true
+            },
+            "returnInfo": {
+              "returnLocation": "Perishable",
+              "returnDays": "9999",
+              "refundAuthentication": "false",
+              "returnDaysUOM": "DAYS",
+              "returnDescription": "Return this item for a full refund or replacement at anytime. Restrictions apply.",
+              "returnLinkText": "Read the full policy",
+              "returnLinkUrl": "https://www.samsclub.com/content/terms-and-conditions#satisfaction-guarantee"
+            },
+            "skuLogistics": {
+              "numberOfBoxes": 1,
+              "length": {
+                "value": 13.25,
+                "unitOfMeasure": "IN"
+              },
+              "width": {
+                "value": 9.94,
+                "unitOfMeasure": "IN"
+              },
+              "weight": {
+                "value": 5,
+                "unitOfMeasure": "LB"
+              },
+              "height": {
+                "value": 8.81,
+                "unitOfMeasure": "IN"
+              }
+            },
+            "type": "NORMAL_SKU",
+            "fulfillmentChannels": [
+              "CLUB_PICKUP",
+              "D2H"
+            ],
+            "merchandiseCategory": 78,
+            "merchandiseSubCategory": 41,
+            "shippingMethods": [
+              "STANDARD"
+            ],
+            "skuProperties": [
+              "AVAILABLE_SEPARATELY",
+              "AIR_SHIPPABLE"
+            ],
+            "status": "ACTIVE",
+            "itemPolicies": [],
+            "recommendedDisplayChannel": "CLUB",
+            "deliveryOffer": {
+              "productId": "prod18983410",
+              "unitofMeasureUnitPrice": "EA",
+              "msrpPrice": 13.42,
+              "gtin": "7667729660",
+              "id": "prod18983410_sku19497359_6371",
+              "inventory": {
+                "status": "AVAILABLE",
+                "availableTotalQty": 62,
+                "availableToSellQuantity": 62,
+                "qtySold": -1,
+                "qtyLeft": -1
+              },
+              "itemNumber": "87523",
+              "mdsFamId": "51254549",
+              "offerStatus": "PURCHASABLE",
+              "price": {
+                "type": "FIXED",
+                "finalPrice": {
+                  "amount": 17.88,
+                  "currency": "USD"
+                },
+                "startPrice": {
+                  "amount": 17.88,
+                  "currency": "USD"
+                },
+                "priceStatus": "ACTIVE",
+                "priceDisplayOption": "SHOW",
+                "unitPrice": {
+                  "amount": 0.43,
+                  "currency": "USD"
+                }
+              },
+              "status": "A",
+              "clubItem": {
+                "clubItemProperties": [
+                  "DFC_ENABLED"
+                ]
+              },
+              "variableWeightIndicator": "false",
+              "sellQtyUnitofMeasure": "OZ",
+              "mapOptions": "SHOW",
+              "offerLogistics": {
+                "packSizeUnitPrice": 42
+              },
+              "isSNAPEligibleInd": "Y",
+              "skuId": "sku19497359",
+              "clubId": 6371,
+              "cpuEnabled": true,
+              "offerId": "prod18983410_sku19497359",
+              "generatedUPC": "00076677296602",
+              "isFBTEligible": true,
+              "recommendedDisplayOffer": true,
+              "deliveryOfferProperties": [
+                "MERCHANT_AUTHORIZED",
+                "TAX_EXEMPT",
+                "IS_ACTIVE",
+                "AIR_SHIPPABLE",
+                "DISCOUNT_INDICATOR",
+                "UNIT_PRICE_ITEM",
+                "DFC_ENABLED"
+              ]
+            }
+          }
+        ],
+        "expiresAt": "2025-03-25T12:25:37.588Z",
+        "cached": true,
+        "id": "prod18983410",
+        "prodProperties": [
+          "MERCHANT_AUTHORIZED",
+          "ELIGIBLE_FOR_ASKANDANSWER"
+        ],
+        "legacyProductType": "NORMALITEM",
+        "parentCategories": [
+          "1820",
+          "16290897",
+          "10150113",
+          "1080119",
+          "15960237",
+          "15620238",
+          "1430",
+          "10850151",
+          "14530183",
+          "1464",
+          "7560111",
+          "15620152"
+        ],
+        "status": "ACTIVE",
+        "itemPolicies": [],
+        "hasPromotion": false,
+        "isOOS": false,
+        "freeWarranty": false,
+        "messages": [
+          {
+            "key": "channelbanner.pickup.message",
+            "message": "Free for <font color=\"#0067A0\"><i><b>Plus</b></i></font>, free for Club on eligible orders over $50"
+          },
+          {
+            "key": "channelbanner.delivery.message",
+            "message": "Free for <font color=\"#0067A0\"><i><b>Plus</b></i></font> on eligible orders over $50, $12 for Club. Get it in a few hours with Express for $8 extra."
+          },
+          {
+            "key": "channelbanner.shipping.message",
+            "message": "Free for <font color=\"#0067A0\"><i><b>Plus</b></i></font> on eligible orders over $50"
+          },
+          {
+            "key": "carousel.frontcard.shipping.message",
+            "message": ""
+          },
+          {
+            "key": "sidesheet.shipping.upsell.title",
+            "message": "Become a <i>Plus</i> member"
+          },
+          {
+            "key": "sidesheet.shipping.upsell.message",
+            "message": "Free shipping on eligible orders over $50"
+          },
+          {
+            "key": "sidesheet.delivery.message",
+            "message": "Free for <font color=\"#0067A0\"><i><b>Plus</b></i></font> on eligible orders over $50, $12 for Club"
+          },
+          {
+            "key": "channelbanner.upsell.banner.title",
+            "message": "Become a <i>Plus</i> member"
+          },
+          {
+            "key": "channelbanner.upsell.banner.pickup.message",
+            "message": "Free pickup on eligible orders"
+          },
+          {
+            "key": "channelbanner.upsell.banner.delivery.message",
+            "message": ""
+          },
+          {
+            "key": "channelbanner.upsell.banner.shipping.message",
+            "message": "Free shipping on eligible orders over $50"
+          },
+          {
+            "key": "channelbanner.upsell.modal.shipping.title",
+            "message": ""
+          },
+          {
+            "key": "channelbanner.upsell.modal.pickup.title",
+            "message": ""
+          },
+          {
+            "key": "channelbanner.upsell.modal.delivery.title",
+            "message": ""
+          },
+          {
+            "key": "channelbanner.upsell.modal.shipping.subtext",
+            "message": ""
+          },
+          {
+            "key": "channel.delivery.header.message",
+            "message": "Delivery from club"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "key": "channelbanner.pickup.message",
+        "message": "Free for <font color=\"#0067A0\"><i><b>Plus</b></i></font>, free for Club on eligible orders over $50"
+      },
+      {
+        "key": "channelbanner.delivery.message",
+        "message": "Free for <font color=\"#0067A0\"><i><b>Plus</b></i></font> on eligible orders over $50, $12 for Club. Get it in a few hours with Express for $8 extra."
+      },
+      {
+        "key": "channelbanner.shipping.message",
+        "message": "Free for <font color=\"#0067A0\"><i><b>Plus</b></i></font> on eligible orders over $50"
+      },
+      {
+        "key": "carousel.frontcard.shipping.message",
+        "message": ""
+      },
+      {
+        "key": "sidesheet.shipping.upsell.title",
+        "message": "Become a <i>Plus</i> member"
+      },
+      {
+        "key": "sidesheet.shipping.upsell.message",
+        "message": "Free shipping on eligible orders over $50"
+      },
+      {
+        "key": "sidesheet.delivery.message",
+        "message": "Free for <font color=\"#0067A0\"><i><b>Plus</b></i></font> on eligible orders over $50, $12 for Club"
+      },
+      {
+        "key": "channelbanner.upsell.banner.title",
+        "message": "Become a <i>Plus</i> member"
+      },
+      {
+        "key": "channelbanner.upsell.banner.pickup.message",
+        "message": "Free pickup on eligible orders"
+      },
+      {
+        "key": "channelbanner.upsell.banner.delivery.message",
+        "message": ""
+      },
+      {
+        "key": "channelbanner.upsell.banner.shipping.message",
+        "message": "Free shipping on eligible orders over $50"
+      },
+      {
+        "key": "channelbanner.upsell.modal.shipping.title",
+        "message": ""
+      },
+      {
+        "key": "channelbanner.upsell.modal.pickup.title",
+        "message": ""
+      },
+      {
+        "key": "channelbanner.upsell.modal.delivery.title",
+        "message": ""
+      },
+      {
+        "key": "channelbanner.upsell.modal.shipping.subtext",
+        "message": ""
+      },
+      {
+        "key": "channel.delivery.header.message",
+        "message": "Delivery from club"
+      },
+      {
+        "key": "giftMessage",
+        "message": "Add a gift message in checkout"
+      }
+    ]
+  }
+}

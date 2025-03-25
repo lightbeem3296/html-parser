@@ -239,6 +239,19 @@ def parse_detail(html_content: str) -> dict[str, Any]:
     # Variants
     detail["variants"] = get_from_json(product_data, ["variantSummary", "variantInfoMap"])
 
+    # Breadcrumbs
+    detail["breadcrumbs"] = None
+    breadcrumbs = get_from_json(product_data, ["category", "breadcrumbs"])
+    if breadcrumbs:
+        detail["breadcrumbs"] = [
+            {
+                "name": get_from_json(a, ["displayName"]),
+                "url": get_from_json(a, ["seoUrl"]),
+                "nav_id": get_from_json(a, ["navId"]),
+            }
+            for a in breadcrumbs
+        ]
+
     dict_details["detail"] = detail
     dict_details["remaining_credits"] = None
 
